@@ -1,15 +1,36 @@
 ---
-title: My Rad Blog
+title: Sketchy Sermons
 ---
-
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }}</title>
+
+    <style>
+         @font-face {
+            font-family: StoneHarbour;
+            src: url("fonts/stoneharbour/StoneHarbour.otf") format("opentype");
+        }
+
+        h1,h2,h3,h4{
+            font-family:StoneHarbour;
+        }
+
+    </style>
+
   </head>
   <body>
+    <header>
+        <h1>{{ title }} what?</h1>
+        <aside id="featured-container">
+            <img id="featured-image" src="" alt="Cover Image for" />
+        </aside>
+    </header>
+    <article>
     {{ content | safe }}
+    </article>
+    <footer>Article Footer</footer>
   </body>
 </html>
