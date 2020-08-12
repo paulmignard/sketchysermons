@@ -11,21 +11,25 @@ title: Sketchy Sermons
     <style>
          @font-face {
             font-family: StoneHarbour;
-            src: url("fonts/stoneharbour/StoneHarbour.otf") format("opentype");
+            src: url("/fonts/stoneharbour/StoneHarbour.otf") format("opentype");
         }
 
         h1,h2,h3,h4{
             font-family:StoneHarbour;
         }
 
+        #featured-image{
+          width:100%;
+          height:auto;
+        }
     </style>
 
   </head>
   <body>
     <header>
-        <h1>{{ title }} what?</h1>
+        <h1>{{ title }}</h1>
         <aside id="featured-container">
-            <img id="featured-image" src="" alt="Cover Image for" />
+            <img id="featured-image" src="{{ featuredImage }}" alt="Cover Image for {{ title }}" />
         </aside>
     </header>
     <article>
