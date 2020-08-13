@@ -2,6 +2,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.setTemplateFormats([
         "png",
         "jpg",
+        "jpeg",
         "gif",
         "js",
         "liquid",
@@ -20,4 +21,5 @@ module.exports = function(eleventyConfig) {
     };
 
     eleventyConfig.setLibrary("liquid", liquidJs(options))
+
   };

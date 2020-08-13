@@ -12,12 +12,18 @@ title: Sketchy Sermons
       {% include '_navigation' %}
       </nav>
     </header>
-    <div id="content">
+    <div id="content"> 
       <header>
           <h1>{{ title }}</h1>
           {% if featuredImage != null %}
           <aside id="featured-container">
               <img id="featured-image" src="{{ featuredImage }}" alt="Cover Image for {{ title }}" />
+          </aside>
+          {% endif %}
+
+          {% if coverImage != null %}
+          <aside id="featured-container">
+              <img id="featured-image" src="/images/posts/{{ coverImage }}" alt="Cover Image for {{ coverImage }}" />
           </aside>
           {% endif %}
       </header>
