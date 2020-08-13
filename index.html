@@ -1,6 +1,11 @@
 ---
 title: Sketchy Sermons
-layout: post
+layout: home
 ---
 
-Homepage - what is going on?
+<h2>All Posts</h2>
+<ul>
+    {%- for post in collections.all -%}
+      <li><a href="{{ post.url }}">{{ post.url }}</a></li>
+    {%- endfor -%}
+</ul>
