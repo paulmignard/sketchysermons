@@ -23,8 +23,55 @@ title: Sketchy Sermons
       {{ content }}
 
       {% if download != null %}
+        
+        <style>
+
+          .download-container{
+            padding:10px;
+            border: 1px solid lightgray;
+            width: 100%;
+            height: 160px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin:50px 0;
+            transform-style: preserve-3d;
+            perspective: 400px;
+          }
+
+          .download-container:hover .download-preview{
+            transform: rotateY(-95deg);
+          }
+
+
+          .download-preview{
+            position:absolute;
+            height:150px;
+            width:auto;
+            right:0;
+            top: 10px;
+            box-shadow:5px 5px 15px rgba(0,0,0,.5);
+            transform: rotateY(-30deg);
+            transition: transform 1s ease;
+          }
+
+          .download-preview img{
+            height:100%;
+            width:auto;
+            
+            
+          }
+
+        </style>
+        
         <div class="download-container">
           <a href="{{ download }}">Download</a>
+
+          <div class="download-preview">
+            <img src="{{ featuredImage }}" />
+          </div>
+
+
         </div>
         
       {% endif %}

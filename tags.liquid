@@ -4,6 +4,8 @@ pagination:
   size: 1
   alias: tag
 permalink: /tags/{{ tag }}/
+layout: home
+eleventyExcludeFromCollections: true
 ---
 <h1>Tagged “{{ tag }}”</h1>
  
@@ -11,7 +13,7 @@ permalink: /tags/{{ tag }}/
   {% assign tagName = {{tag}} %}
   {% assign taglist = collections[tagName] %}
 	{%- for post in taglist -%}
-		<li>post: {{ post.data.title }}</li>
+		<li>post: {{ post.data.title }} - {{ post.data.featuredImage }}</li>
 	{%- endfor -%}
 </ol>
 
