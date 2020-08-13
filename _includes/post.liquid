@@ -3,9 +3,11 @@ title: Sketchy Sermons
 ---
 {% include '_header' %}
     <header id="site-header">
-      <a class="logo" href="/">
-        <img src="https://sketchysermons.com/wp-content/themes/twentytwenty-child/assets/images/sketchy-header-v2.png?v=87982739478" />
-      </a>
+      <div id="logo-container">
+        <a class="logo" href="/">
+          <img src="https://sketchysermons.com/wp-content/themes/twentytwenty-child/assets/images/sketchy-header-v2.png?v=87982739478" />
+        </a>
+      </div>
       <nav>
       {% include '_navigation' %}
       </nav>
@@ -26,8 +28,27 @@ title: Sketchy Sermons
         
         <style>
 
+          #logo-container{
+            width: 100%;
+            text-align: center;
+
+          }
+
+          #site-header nav{
+            background-color:lightgray;
+            text-align: center;
+          }
+
+          #site-header nav ul{
+            padding:10px 0;
+          }
+
+          #site-header nav ul li{
+            display:inline-block;
+            padding:0 5px;
+          }
+
           .download-container{
-            padding:10px;
             border: 1px solid lightgray;
             width: 100%;
             height: 160px;
@@ -40,16 +61,17 @@ title: Sketchy Sermons
           }
 
           .download-container:hover .download-preview{
-            transform: rotateY(-95deg);
+            transform: rotateY(-35deg);
           }
+
 
 
           .download-preview{
             position:absolute;
             height:150px;
             width:auto;
-            right:0;
-            top: 10px;
+            right: 46px;
+            top: 3px;
             box-shadow:5px 5px 15px rgba(0,0,0,.5);
             transform: rotateY(-30deg);
             transition: transform 1s ease;
@@ -58,8 +80,16 @@ title: Sketchy Sermons
           .download-preview img{
             height:100%;
             width:auto;
-            
-            
+          }
+
+          @media only screen and (max-width: 600px) {
+              .download-container{
+                  padding:0;
+              }
+              
+              .download-preview{
+                  display:none;
+              }
           }
 
         </style>
@@ -77,6 +107,7 @@ title: Sketchy Sermons
       {% endif %}
 
       <ul class="tags">
+        <span>🔖 </span> 
         {%- for tag in tags -%}
           <li><a href="/tags/{{ tag }}">{{ tag }}</a></li>
         {%- endfor -%}

@@ -6,13 +6,15 @@
     <title>{{ title }}</title>
 
     <style>
+        @import url("https://use.typekit.net/ldl2qrh.css");
+
         @font-face {
           font-family: StoneHarbour;
           src: url("/fonts/stoneharbour/StoneHarbour.otf") format("opentype");
         }
 
         body{
-          font-family: NonBreakingSpaceOverride, "Hoefler Text", Garamond, "Times New Roman", serif;
+          font-family: source-sans-pro, sans-serif;
           letter-spacing: normal;
           line-height: 1.8em;
           font-size:1.2em;
@@ -67,6 +69,7 @@
         .logo img{
             width:100%;
             max-width:550px;
+            text-align:center;
         }
 
         .tags{
@@ -75,7 +78,7 @@
 
         .tags li{
             display:inline-block;
-            padding-right:5px;
+            padding:0 5px;
         }
 
         .footer-splash{
