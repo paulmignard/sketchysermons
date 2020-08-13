@@ -1,0 +1,32 @@
+---
+pagination:
+  data: collections
+  size: 1
+  alias: tag
+permalink: /tags/{{ tag }}/
+---
+<h1>Tagged “{{ tag }}”</h1>
+ 
+<ol>
+  {% assign tagName = {{tag}} %}
+  {% assign taglist = collections[tagName] %}
+	{%- for post in taglist -%}
+		<li>post: {{ post.data.title }}</li>
+	{%- endfor -%}
+</ol>
+
+
+
+{% comment %}
+{% assign taglist = collections[ alias ] %}
+
+<ol>
+{% assign taglist = collections %}
+{% for post in taglist | reverse %}
+  <li><a href="{{ post.url | url }}">{{ post.data.title }}</a></li>
+{% endfor %}
+</ol> 
+
+
+
+ {% endcomment %}
