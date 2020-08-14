@@ -5,8 +5,25 @@ eleventyExcludeFromCollections: true
 ---
 
 <h2>Latest Post!</h2>
+{% for post in collections.latestPost %}
+    <h5>Image: {{ post.data.title }}</h5>
+    <img style="width:auto;height:200px;" src="{{ config.imageDirectory }}{{ post.data.coverImage }}" />
+    <br /><span>{{ post.url }}</span>
+    <br /><span>{{ post.date }}</span>
+    <br /><span>{{ post.data.tags }}</span>
+    <br /><span>{{ post.data.download }}</span>
+    <p>{{ post.templateContent }}</p>
+{% endfor %}
 
 <h2>Last 6 posts!</h2>
+
+<h2>What do I do here?</h2>
+
+sermon notes
+
+book summaries
+
+quotes
 
 <h2>Every Single Post Ever</h2>
 
