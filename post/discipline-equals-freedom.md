@@ -1,6 +1,10 @@
 ---
 title: "Discipline Equals Freedom"
 date: "2019-12-19"
+coverImage: "img_0171.png"
+
+tags:           ['post','download','book summary','jocko willink']
+download:       “discipline-equals-freedom.pdf”
 ---
 
 \*Quick note: This is a diversion from the kind of content I usually post here but here’s what I’m thinking. I like books but I tend to buy more than I read (this book came out in 2017)- I don’t want to have a big library so I’m going to read the books, summarize and sketch them out, then post the sketch and give away the books. The theme of most of the books I buy are books about Christianity, self-help, and creativity so that’s mostly what you’ll see when I do this. I’ll compare them to the ultimate word on Christianity, self-help, and creativity: the Bible. Don’t expect long exposition here, a paragraph or two and that’s it!

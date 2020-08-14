@@ -1,6 +1,10 @@
 ---
 title: "Atomic Habits by James Clear"
 date: "2020-01-02"
+coverImage: "img_0211.png"
+
+tags:           ['post','download','book summary','james clear']
+download:       "atomic-habits.pdf"
 ---
 
 This book...man, it’s packed full of realistic habit changing fuel that you can apply to your life today. Seriously. It’s almost a reference manual in that there are so many good ideas and tactics that are explained in a simple and clear manner. Here are some of the most salient points that stuck out to me:

@@ -1,6 +1,8 @@
 ---
 title: "Wilson Community Church Children’s Ministry"
 date: "2018-08-11"
+
+tags:           ['post','wilson community church','commission']
 ---
 
 I had the pleasure of being commissioned to make some GIANT stickers for the hallway of the new kids ministry wing for Wilson Community Church. An old boss and friend set up the narrative and after handling my many delays (still sorry about that 😬) they were able to get them installed for the grand opening!
