@@ -1,4 +1,5 @@
 module.exports = function(eleventyConfig) {
+    
     eleventyConfig.setTemplateFormats([
         "png",
         "jpg",
@@ -21,5 +22,20 @@ module.exports = function(eleventyConfig) {
     };
 
     eleventyConfig.setLibrary("liquid", liquidJs(options))
+
+
+    // Let's sort for year
+    /*
+    eleventyConfig.addCollection("byYear", function(collectionApi) {
+
+        let yearArray = [];
+        collectionApi.getAll().forEach(function(a){
+            let t = new Date(a.date);
+            console.log(t.getFullYear());
+        });
+
+        return collectionApi.getAll();
+
+    });*/
 
   };

@@ -4,9 +4,34 @@ layout: home
 eleventyExcludeFromCollections: true
 ---
 
-<h2>All Posts</h2>
-<ul>
-    {%- for post in collections.all -%}
-      <li><a href="{{ post.url }}">{{ post.url }}</a></li>
-    {%- endfor -%}
-</ul>
+<h2>Latest Post!</h2>
+
+<h2>Last 6 posts!</h2>
+
+<h2>Every Single Post Ever</h2>
+
+{% for year in postYears %}
+    <h2>{{ year }}</h2>
+    <ul>
+        {% for post in collections.all reversed %}
+            
+            {% assign t = post.date | date: '%Y' %}
+            
+            {% if t contains year %}
+            <li>
+                <a href="{{ post.url }}">{{ post.url }}</a>
+                <br /> {{ post.data.coverImage }}
+                <br /> {{ post.date }}
+                <br /> {{ post.data.tags }}
+                {% if post.data.download != nil %}
+                <br /> DOWNLOAD!
+                {% endif %}
+            </li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+{% endfor %}
+
+
+
+
