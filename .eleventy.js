@@ -1,3 +1,4 @@
+
 module.exports = function(eleventyConfig) {
     
     eleventyConfig.addCollection("latestPost", function(collectionApi) {
@@ -13,12 +14,14 @@ module.exports = function(eleventyConfig) {
         "gif",
         "js",
         "liquid",
+        "njk",
         "html",
         "otf",
         "md",
         "css" // css is not yet a recognized template extension in Eleventy
     ]);
 
+    // Let's set up liquid!
     let liquidJs = require("liquidjs");
     let options = {
         extname: ".liquid",
@@ -26,11 +29,15 @@ module.exports = function(eleventyConfig) {
         strict_filters: true,
         root: ["_includes"]
     };
-
     eleventyConfig.setLibrary("liquid", liquidJs(options))
 
+    // Let's add our rss feed!
+    // https://www.11ty.dev/docs/plugins/rss/
+    const pluginRss = require("@11ty/eleventy-plugin-rss");
+        module.exports = function(eleventyConfig) {
+        eleventyConfig.addPlugin(pluginRss);
+    };
     
-
     // Let's sort for year
     /*
     eleventyConfig.addCollection("byYear", function(collectionApi) {
