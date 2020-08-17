@@ -1,5 +1,5 @@
 ---
-title: Sketchy Sermons
+
 ---
 {% include '_header' %}
     <header id="site-header">
@@ -15,15 +15,17 @@ title: Sketchy Sermons
     <div id="content"> 
       <header>
           <h1>{{ title }}</h1>
-          {% if featuredImage != null %}
+          {% if coverImage != nil %}
           <aside id="featured-container">
-              <img id="featured-image" src="{{ featuredImage }}" alt="Cover Image for {{ title }}" />
-          </aside>
-          {% endif %}
+            
+            <img id="featured-image" src="/images/posts/{{ coverImage }}" alt="Cover Image for {{ coverImage }}" />
+            {% comment %}
+            {{ coverImage | makeResponsive: alt:"moar alt text", options:"options" }}
 
-          {% if coverImage != null %}
-          <aside id="featured-container">
+              
               <img id="featured-image" src="/images/posts/{{ coverImage }}" alt="Cover Image for {{ coverImage }}" />
+            {% endcomment %}
+
           </aside>
           {% endif %}
       </header>

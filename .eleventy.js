@@ -1,25 +1,34 @@
 
 module.exports = function(eleventyConfig) {
-    
+  
+    eleventyConfig.setQuietMode(false);
+
     eleventyConfig.addCollection("latestPost", function(collectionApi) {
         console.log(collectionApi.getAll()[0].data.title)
         let collections = collectionApi.getAll();
         return collections.slice(0,1);
     });
 
+    eleventyConfig.addCollection("getLatestPostCluster", function(collectionApi) {
+      
+      // TODO: The number of posts here should be configurable
+      let postCount = 6;
+      
+      // Let's sort this by date
+      let collections = collectionApi.getAll().sort(function(a, b) {
+        return b.date - a.date;
+      });
+
+      return collections.slice(1,postCount + 1);
+    });
+
     eleventyConfig.setTemplateFormats([
-        "png",
-        "jpg",
-        "jpeg",
-        "gif",
-        "js",
-        "liquid",
-        "njk",
         "html",
-        "otf",
-        "md",
-        "css" // css is not yet a recognized template extension in Eleventy
+        "liquid",
+        "md"
     ]);
+
+    eleventyConfig.addPassthroughCopy("img");
 
     // Let's set up liquid!
     let liquidJs = require("liquidjs");
@@ -37,19 +46,4 @@ module.exports = function(eleventyConfig) {
         module.exports = function(eleventyConfig) {
         eleventyConfig.addPlugin(pluginRss);
     };
-    
-    // Let's sort for year
-    /*
-    eleventyConfig.addCollection("byYear", function(collectionApi) {
-
-        let yearArray = [];
-        collectionApi.getAll().forEach(function(a){
-            let t = new Date(a.date);
-            console.log(t.getFullYear());
-        });
-
-        return collectionApi.getAll();
-
-    });*/
-
   };

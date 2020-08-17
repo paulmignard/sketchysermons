@@ -4,10 +4,57 @@ layout: home
 eleventyExcludeFromCollections: true
 ---
 
-<h2>Latest Post!</h2>
+<style>
+
+
+.post-image-list {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.grid-row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+.grid-item {
+  flex-basis: 33%;
+  -ms-flex: auto;
+  position: relative;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+    .grid-item .preview{
+        text-align:center;
+    }
+
+    .grid-item .preview img{
+        width:auto;
+        height:200px;
+        min-height:200px;
+        min-width:200px;
+        box-shadow:0 5px 5px rgba(0,0,0,.5);
+        padding: 5px;
+        border: 1px solid rgba(0,0,0,.1);
+    }
+
+    .grid-item .title,.grid-item .date{
+        text-align:center;
+    }
+
+.post-image-list .post{
+    background-color:yellow;
+}
+
+</style>
+
+
+
 {% for post in collections.latestPost %}
-    <h5>Image: {{ post.data.title }}</h5>
-    <img style="width:auto;height:200px;" src="{{ config.imageDirectory }}{{ post.data.coverImage }}" />
+    <h2>Latest Post: {{ post.data.title }}</h2>
+    <img style="width:100%;height:auto" src="{{ config.imageDirectory }}{{ post.data.coverImage }}" />
     <br /><span>{{ post.url }}</span>
     <br /><span>{{ post.date }}</span>
     <br /><span>{{ post.data.tags }}</span>
@@ -15,7 +62,22 @@ eleventyExcludeFromCollections: true
     <p>{{ post.templateContent }}</p>
 {% endfor %}
 
-<h2>Last 6 posts!</h2>
+<h3>Last 6 posts!</h3>
+
+<div class="post-image-list">
+    <div class="grid-row">
+    {% for post in collections.getLatestPostCluster %}
+        <div class="grid-item">
+            <div class="preview">
+                <img src="{{ config.imageDirectory }}{{ post.data.coverImage }}" />
+            </div>
+            <h5>{{ post.data.title }}</h5>
+            <h5 class="date">{{ post.date }}</h5>
+        </div>
+    {% endfor %}
+    </div class="row">
+</div>
+
 
 <h2>What do I do here?</h2>
 
@@ -25,28 +87,32 @@ book summaries
 
 quotes
 
-<h2>Every Single Post Ever</h2>
+<h2>Every Single Post Ever!</h2>
 
 {% for year in postYears %}
     <h2>{{ year }}</h2>
-    <ul>
+    <div class="post-image-list">
+        <div class="grid-row">
         {% for post in collections.all reversed %}
             
             {% assign t = post.date | date: '%Y' %}
-            
+             
             {% if t contains year %}
-            <li>
-                <a href="{{ post.url }}">{{ post.url }}</a>
-                <br /> {{ post.data.coverImage }}
-                <br /> {{ post.date }}
-                <br /> {{ post.data.tags }}
-                {% if post.data.download != nil %}
-                <br /> DOWNLOAD!
-                {% endif %}
-            </li>
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="{{ config.imageDirectory }}{{ post.data.coverImage }}" />
+                </div>
+                <h5 class="title">{{ post.data.title }}</h5>
+                <h5 class="date">{{ post.date }}</h5>
+                {% comment %}
+                <br /><span>{{ post.data.tags }}</span>
+                <br /><span>{{ post.data.download }}</span>
+                {% endcomment %}
+            </div>
             {% endif %}
         {% endfor %}
-    </ul>
+        </div>
+    </div>
 {% endfor %}
 
 

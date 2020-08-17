@@ -54,7 +54,7 @@
 
         #content,#site-footer{
             margin:0 auto;
-            max-width:900px;
+            max-width:1024px;
             padding:15px;
         }
 
@@ -92,29 +92,142 @@
 
   </head>
     <body>
-    
-    
-<h2>Latest Post!</h2>
+    <header id="site-header">
+      <div id="logo-container">
+        <a class="logo" href="/">
+          <h1>Sketchy Sermons</h1>  
+        </a>
+      </div>
+      <nav>
+      
+<ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/about">About</a></li>
+</ul>
 
-    <h5>Image: Ezekiel 37:9</h5>
-    <img style="width:auto;height:200px;" src="/images/posts/Ezekiel-37-9.png" />
+      </nav>
+    </header>
+    <div id="content"> 
+      
+      
+<style>
+
+
+.post-image-list {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.grid-row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+.grid-item {
+  flex-basis: 33%;
+  -ms-flex: auto;
+  position: relative;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+    .grid-item .preview{
+        text-align:center;
+    }
+
+    .grid-item .preview img{
+        width:auto;
+        height:200px;
+        min-height:200px;
+        min-width:200px;
+        box-shadow:0 5px 5px rgba(0,0,0,.5);
+        padding: 5px;
+        border: 1px solid rgba(0,0,0,.1);
+    }
+
+    .grid-item .title,.grid-item .date{
+        text-align:center;
+    }
+
+.post-image-list .post{
+    background-color:yellow;
+}
+
+</style>
+
+
+
+
+    <h2>Latest Post: Ezekiel 37:9</h2>
+    <img style="width:100%;height:auto" src="/images/posts/Ezekiel-37-9.png" />
     <br /><span>/post/ezekiel-37_9/</span>
     <br /><span>Tue Aug 11 2020 20:00:00 GMT-0400 (Eastern Daylight Time)</span>
     <br /><span>["post","download","verse","ezekiel","sermon-notes"]</span>
     <br /><span>https://sketchysermons.com/wp-content/uploads/2020/08/Ezekiel-37-9.pdf</span>
-    <p>
-<p>I’m not trying to be dark; stay with me for a second….</p>
-
+    <p><p>I’m not trying to be dark; stay with me for a second….</p>
 <p>The last sermon I sketch noted had me looking up Ezekiels prophecy and I just found the language around it so interesting. Ezekiel 37 is a vision about being placed in a valley of dry bones and how the Lord commands Ezekiel to prophecy to the bones to make them live again. The vision is explained to be the restoring of the Israelites to their land but the vision cast is super-grim and at the same time, super epic.</p>
-
 <p>Then He said to me, “Son of man, these bones are the whole house of Israel; behold, they say, ‘Our bones are dried up and our hope has perished. We are completely cut off.’ Therefore prophesy and say to them, ‘Thus says the Lord God, “Behold, I will open your graves and cause you to come up out of your graves, My people; and I will bring you into the land of Israel. Then you will know that I am the Lord, when I have opened your graves and caused you to come up out of your graves, My people. I will put My Spirit within you and you will come to life, and I will place you on your own land. Then you will know that I, the Lord, have spoken and done it,” declares the Lord.’”</p>
- 
 <p>The imagery of the Old Testament can be so grand.</p>
-
 </p>
 
 
-<h2>Last 6 posts!</h2>
+<h3>Last 6 posts!</h3>
+
+<div class="post-image-list">
+    <div class="grid-row">
+    
+        <div class="grid-item">
+            <div class="preview">
+                <img src="/images/posts/reschurch-8-9-20.png" />
+            </div>
+            <h5>4-Letter Words Part III: Hope</h5>
+            <h5 class="date">Mon Aug 10 2020 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
+        </div>
+    
+        <div class="grid-item">
+            <div class="preview">
+                <img src="/images/posts/TRBC-8-9-20.png" />
+            </div>
+            <h5>There is a River</h5>
+            <h5 class="date">Sat Aug 08 2020 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
+        </div>
+    
+        <div class="grid-item">
+            <div class="preview">
+                <img src="/images/posts/love-in-every-season.png" />
+            </div>
+            <h5>Love in Every Season by Debra Fileta</h5>
+            <h5 class="date">Wed Aug 05 2020 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
+        </div>
+    
+        <div class="grid-item">
+            <div class="preview">
+                <img src="/images/posts/psalm-119.png" />
+            </div>
+            <h5>The Unfolding of Your Words</h5>
+            <h5 class="date">Tue Aug 04 2020 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
+        </div>
+    
+        <div class="grid-item">
+            <div class="preview">
+                <img src="/images/posts/reschurch-8-2-20.png" />
+            </div>
+            <h5>4-Letter Words Part II: Hell</h5>
+            <h5 class="date">Sat Aug 01 2020 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
+        </div>
+    
+        <div class="grid-item">
+            <div class="preview">
+                <img src="/images/posts/trbc-8-2-20.png" />
+            </div>
+            <h5>A Life Worth Living</h5>
+            <h5 class="date">Sat Aug 01 2020 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
+        </div>
+    
+    </div class="row">
+</div>
+
 
 <h2>What do I do here?</h2>
 
@@ -124,4078 +237,4087 @@ book summaries
 
 quotes
 
-<h2>Every Single Post Ever</h2>
+<h2>Every Single Post Ever!</h2>
 
 
     <h2>2020</h2>
-    <ul>
+    <div class="post-image-list">
+        <div class="grid-row">
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/ezekiel-37_9/">/post/ezekiel-37_9/</a>
-                <br /> Ezekiel-37-9.png
-                <br /> Tue Aug 11 2020 20:00:00 GMT-0400 (Eastern Daylight Time)
-                <br /> ["post","download","verse","ezekiel","sermon-notes"]
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/Ezekiel-37-9.png" />
+                </div>
+                <h5 class="title">Ezekiel 37:9</h5>
+                <h5 class="date">Tue Aug 11 2020 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
                 
-                <br /> DOWNLOAD!
-                
-            </li>
+            </div>
             
         
-            
             
             
+             
             
-            <li>
-                <a href="/post/4-letter-words-part-iii-hope/">/post/4-letter-words-part-iii-hope/</a>
-                <br /> reschurch-8-9-20.png
-                <br /> Mon Aug 10 2020 20:00:00 GMT-0400 (Eastern Daylight Time)
-                <br /> ["post","download","sermon notes","ed doepel","resurrection church"]
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/reschurch-8-9-20.png" />
+                </div>
+                <h5 class="title">4-Letter Words Part III: Hope</h5>
+                <h5 class="date">Mon Aug 10 2020 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
                 
-                <br /> DOWNLOAD!
-                
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/there-is-a-river/">/post/there-is-a-river/</a>
-                <br /> TRBC-8-9-20.png
-                <br /> Sat Aug 08 2020 20:00:00 GMT-0400 (Eastern Daylight Time)
-                <br /> ["post","download","sermon notes","charles billingsley","trbc"]
-                
-                <br /> DOWNLOAD!
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/TRBC-8-9-20.png" />
+                </div>
+                <h5 class="title">There is a River</h5>
+                <h5 class="date">Sat Aug 08 2020 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
                 
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/love-in-every-season-by-debra-fileta/">/post/love-in-every-season-by-debra-fileta/</a>
-                <br /> love-in-every-season.png
-                <br /> Wed Aug 05 2020 20:00:00 GMT-0400 (Eastern Daylight Time)
-                <br /> ["post","download","book summary","debra fileta"]
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/love-in-every-season.png" />
+                </div>
+                <h5 class="title">Love in Every Season by Debra Fileta</h5>
+                <h5 class="date">Wed Aug 05 2020 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
                 
-                <br /> DOWNLOAD!
-                
-            </li>
+            </div>
             
         
-            
             
             
+             
             
-            <li>
-                <a href="/post/the-unfolding-of-your-words/">/post/the-unfolding-of-your-words/</a>
-                <br /> psalm-119.png
-                <br /> Tue Aug 04 2020 20:00:00 GMT-0400 (Eastern Daylight Time)
-                <br /> ["post","download","verse","psalm"]
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/psalm-119.png" />
+                </div>
+                <h5 class="title">The Unfolding of Your Words</h5>
+                <h5 class="date">Tue Aug 04 2020 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
                 
-                <br /> DOWNLOAD!
-                
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/a-life-worth-living/">/post/a-life-worth-living/</a>
-                <br /> trbc-8-2-20.png
-                <br /> Sat Aug 01 2020 20:00:00 GMT-0400 (Eastern Daylight Time)
-                <br /> ["post","download","sermon notes","jonathan falwell","trbc"]
-                
-                <br /> DOWNLOAD!
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/trbc-8-2-20.png" />
+                </div>
+                <h5 class="title">A Life Worth Living</h5>
+                <h5 class="date">Sat Aug 01 2020 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
                 
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/4-letter-words-part-ii-hell/">/post/4-letter-words-part-ii-hell/</a>
-                <br /> reschurch-8-2-20.png
-                <br /> Sat Aug 01 2020 20:00:00 GMT-0400 (Eastern Daylight Time)
-                <br /> ["post","download","sermon notes","resurrection church","james maxwell"]
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/reschurch-8-2-20.png" />
+                </div>
+                <h5 class="title">4-Letter Words Part II: Hell</h5>
+                <h5 class="date">Sat Aug 01 2020 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
                 
-                <br /> DOWNLOAD!
-                
-            </li>
+            </div>
             
         
-            
             
             
+             
             
-            <li>
-                <a href="/post/faith-with-feet-james-5/">/post/faith-with-feet-james-5/</a>
-                <br /> TRBC-7-26-20.png
-                <br /> Sat Jul 25 2020 20:00:00 GMT-0400 (Eastern Daylight Time)
-                <br /> ["post","download","sermon notes","jonathan falwell","trbc"]
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/TRBC-7-26-20.png" />
+                </div>
+                <h5 class="title">Faith With Feet: James 5</h5>
+                <h5 class="date">Sat Jul 25 2020 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
                 
-                <br /> DOWNLOAD!
-                
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/ron-finley-on-fat-burning-man/">/post/ron-finley-on-fat-burning-man/</a>
-                <br /> Finley.png
-                <br /> Thu Jul 23 2020 20:00:00 GMT-0400 (Eastern Daylight Time)
-                <br /> ["post","download","podcast","fat burning man","ron finley"]
-                
-                <br /> DOWNLOAD!
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/Finley.png" />
+                </div>
+                <h5 class="title">Ron Finley on Fat-Burning Man</h5>
+                <h5 class="date">Thu Jul 23 2020 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
                 
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/faith-with-feet-the-right-path/">/post/faith-with-feet-the-right-path/</a>
-                <br /> TRBC-7-19-20.png
-                <br /> Sat Jul 18 2020 20:00:00 GMT-0400 (Eastern Daylight Time)
-                <br /> ["post","download","sermon notes","jonathan falwell","trbc"]
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/TRBC-7-19-20.png" />
+                </div>
+                <h5 class="title">Faith With Feet: The Right Path</h5>
+                <h5 class="date">Sat Jul 18 2020 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
                 
-                <br /> DOWNLOAD!
-                
-            </li>
+            </div>
             
         
-            
             
             
+             
             
-            <li>
-                <a href="/post/faith-with-feet-what-we-say-and-what-we-sow/">/post/faith-with-feet-what-we-say-and-what-we-sow/</a>
-                <br /> TRBC-7-12-20.png
-                <br /> Sat Jul 11 2020 20:00:00 GMT-0400 (Eastern Daylight Time)
-                <br /> ["post","download","sermon notes","charles billingsley","trbc"]
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/TRBC-7-12-20.png" />
+                </div>
+                <h5 class="title">Faith With Feet: What We Say and What We Sow</h5>
+                <h5 class="date">Sat Jul 11 2020 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
                 
-                <br /> DOWNLOAD!
-                
-            </li>
+            </div>
             
         
-            
             
             
+             
             
-            <li>
-                <a href="/post/faith-with-feet-faith-and-works/">/post/faith-with-feet-faith-and-works/</a>
-                <br /> TRBC-7-5-20.png
-                <br /> Sat Jul 04 2020 20:00:00 GMT-0400 (Eastern Daylight Time)
-                <br /> ["post","download","sermon notes","jonathan falwell","trbc","charles billingsley","taranda greene"]
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/TRBC-7-5-20.png" />
+                </div>
+                <h5 class="title">Faith With Feet: Faith and Works</h5>
+                <h5 class="date">Sat Jul 04 2020 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
                 
-                <br /> DOWNLOAD!
-                
-            </li>
+            </div>
             
         
-            
             
             
+             
             
-            <li>
-                <a href="/post/faith-with-feet/">/post/faith-with-feet/</a>
-                <br /> TRBC-6-28-20.png
-                <br /> Sat Jun 27 2020 20:00:00 GMT-0400 (Eastern Daylight Time)
-                <br /> ["post","download","sermon notes","jonathan falwell","trbc"]
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/TRBC-6-28-20.png" />
+                </div>
+                <h5 class="title">Faith with Feet</h5>
+                <h5 class="date">Sat Jun 27 2020 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
                 
-                <br /> DOWNLOAD!
-                
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/aaron-draplin-on-creative-pep-talk/">/post/aaron-draplin-on-creative-pep-talk/</a>
-                <br /> Draplin.png
-                <br /> Tue Jun 23 2020 20:00:00 GMT-0400 (Eastern Daylight Time)
-                <br /> ["post","download","podcast","aaron draplin","creative pep talk"]
-                
-                <br /> DOWNLOAD!
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/Draplin.png" />
+                </div>
+                <h5 class="title">Aaron Draplin on Creative Pep Talk</h5>
+                <h5 class="date">Tue Jun 23 2020 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
                 
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/father-of-fathers/">/post/father-of-fathers/</a>
-                <br /> TRBC-6-21-20.png
-                <br /> Sat Jun 20 2020 20:00:00 GMT-0400 (Eastern Daylight Time)
-                <br /> ["post","download","sermon notes","matt wilmington","trbc"]
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/TRBC-6-21-20.png" />
+                </div>
+                <h5 class="title">Father of Fathers</h5>
+                <h5 class="date">Sat Jun 20 2020 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
                 
-                <br /> DOWNLOAD!
-                
-            </li>
+            </div>
             
         
-            
             
             
+             
             
-            <li>
-                <a href="/post/run-the-race-running-with-heart-part-ii/">/post/run-the-race-running-with-heart-part-ii/</a>
-                <br /> TRBC-6-14-20.png
-                <br /> Sat Jun 13 2020 20:00:00 GMT-0400 (Eastern Daylight Time)
-                <br /> ["post","download","sermon notes","jonathan falwell","trbc"]
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/TRBC-6-14-20.png" />
+                </div>
+                <h5 class="title">Run the Race: Running with Heart Part II</h5>
+                <h5 class="date">Sat Jun 13 2020 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
                 
-                <br /> DOWNLOAD!
-                
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/no-one-else-to-blame/">/post/no-one-else-to-blame/</a>
-                <br /> Jocko.png
-                <br /> Tue Jun 09 2020 20:00:00 GMT-0400 (Eastern Daylight Time)
-                <br /> ["post","download","book summary","jocko willink"]
-                
-                <br /> DOWNLOAD!
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/Jocko.png" />
+                </div>
+                <h5 class="title">No One Else to Blame</h5>
+                <h5 class="date">Tue Jun 09 2020 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
                 
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/run-the-race-run-it-with-heart/">/post/run-the-race-run-it-with-heart/</a>
-                <br /> TRBC-6-7-20.png
-                <br /> Sat Jun 06 2020 20:00:00 GMT-0400 (Eastern Daylight Time)
-                <br /> ["post","download","sermon notes","jonathan falwell","trbc"]
-                
-                <br /> DOWNLOAD!
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/TRBC-6-7-20.png" />
+                </div>
+                <h5 class="title">Run the Race: Run it with Heart!</h5>
+                <h5 class="date">Sat Jun 06 2020 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
                 
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/jonathan-falwell-quote/">/post/jonathan-falwell-quote/</a>
-                <br /> Falwell.png
-                <br /> Mon Jun 01 2020 20:00:00 GMT-0400 (Eastern Daylight Time)
-                <br /> ["post","download","quote","jonathan falwell","trbc"]
-                
-                <br /> DOWNLOAD!
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/Falwell.png" />
+                </div>
+                <h5 class="title">Jonathan Falwell on Racism</h5>
+                <h5 class="date">Mon Jun 01 2020 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
                 
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/run-the-race-running-into-the-wind/">/post/run-the-race-running-into-the-wind/</a>
-                <br /> TRBC-5-31-20.png
-                <br /> Sat May 30 2020 20:00:00 GMT-0400 (Eastern Daylight Time)
-                <br /> ["post","download","sermon notes","jonathan falwell","trbc"]
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/TRBC-5-31-20.png" />
+                </div>
+                <h5 class="title">Run the Race: Running into the Wind</h5>
+                <h5 class="date">Sat May 30 2020 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
                 
-                <br /> DOWNLOAD!
-                
-            </li>
+            </div>
             
         
-            
             
             
+             
             
-            <li>
-                <a href="/post/run-the-race-a-new-beginning/">/post/run-the-race-a-new-beginning/</a>
-                <br /> TRBC-5-24-20.png
-                <br /> Sat May 23 2020 20:00:00 GMT-0400 (Eastern Daylight Time)
-                <br /> ["post","download","sermon notes","jonathan falwell","trbc"]
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/TRBC-5-24-20.png" />
+                </div>
+                <h5 class="title">Run The Race: A New Beginning</h5>
+                <h5 class="date">Sat May 23 2020 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
                 
-                <br /> DOWNLOAD!
-                
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/youve-been-prayed-for-today/">/post/youve-been-prayed-for-today/</a>
-                <br /> prayed-for.png
-                <br /> Thu May 21 2020 20:00:00 GMT-0400 (Eastern Daylight Time)
-                <br /> ["post","download","quote"]
-                
-                <br /> DOWNLOAD!
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/prayed-for.png" />
+                </div>
+                <h5 class="title">You've Been Prayed For Today</h5>
+                <h5 class="date">Thu May 21 2020 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
                 
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/steven-furtick-quote/">/post/steven-furtick-quote/</a>
-                <br /> Furtick.png
-                <br /> Wed May 20 2020 20:00:00 GMT-0400 (Eastern Daylight Time)
-                <br /> ["post","download","quote","steven furtick"]
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/Furtick.png" />
+                </div>
+                <h5 class="title">Steven Furtick Quote</h5>
+                <h5 class="date">Wed May 20 2020 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
                 
-                <br /> DOWNLOAD!
-                
-            </li>
+            </div>
             
         
-            
             
             
+             
             
-            <li>
-                <a href="/post/run-the-race-never-never-quit/">/post/run-the-race-never-never-quit/</a>
-                <br /> TRBC-5-17-20.png
-                <br /> Sat May 16 2020 20:00:00 GMT-0400 (Eastern Daylight Time)
-                <br /> ["post","download","sermon notes","dr jerry falwell","trbc"]
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/TRBC-5-17-20.png" />
+                </div>
+                <h5 class="title">Run The Race: Never, Never Quit</h5>
+                <h5 class="date">Sat May 16 2020 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
                 
-                <br /> DOWNLOAD!
-                
-            </li>
+            </div>
             
         
-            
             
             
+             
             
-            <li>
-                <a href="/post/the-power-of-a-godly-woman-and-man/">/post/the-power-of-a-godly-woman-and-man/</a>
-                <br /> TRBC-5-10-20-1.png
-                <br /> Sat May 09 2020 20:00:00 GMT-0400 (Eastern Daylight Time)
-                <br /> ["post","download","sermon notes","jonathan falwell","trbc"]
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/TRBC-5-10-20-1.png" />
+                </div>
+                <h5 class="title">The Power of a Godly Woman...and Man!</h5>
+                <h5 class="date">Sat May 09 2020 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
                 
-                <br /> DOWNLOAD!
-                
-            </li>
+            </div>
             
         
-            
             
             
+             
             
-            <li>
-                <a href="/post/acorns-and-oak-trees/">/post/acorns-and-oak-trees/</a>
-                <br /> TRBC-5-3-20.png
-                <br /> Sat May 02 2020 20:00:00 GMT-0400 (Eastern Daylight Time)
-                <br /> ["post","download","sermon notes","charles billingsley","trbc"]
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/TRBC-5-3-20.png" />
+                </div>
+                <h5 class="title">Acorns and Oak Trees</h5>
+                <h5 class="date">Sat May 02 2020 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
                 
-                <br /> DOWNLOAD!
-                
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/and-you-shall/">/post/and-you-shall/</a>
-                <br /> TRBC-4-26-20.png
-                <br /> Sat Apr 25 2020 20:00:00 GMT-0400 (Eastern Daylight Time)
-                <br /> ["post","download","sermon notes","jonathan falwell","trbc"]
-                
-                <br /> DOWNLOAD!
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/TRBC-4-26-20.png" />
+                </div>
+                <h5 class="title">And You Shall...</h5>
+                <h5 class="date">Sat Apr 25 2020 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
                 
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/famous-last-words-never-alone/">/post/famous-last-words-never-alone/</a>
-                <br /> TRBC-4-19-20.png
-                <br /> Sat Apr 18 2020 20:00:00 GMT-0400 (Eastern Daylight Time)
-                <br /> ["post","download","sermon notes","jonathan falwell","trbc"]
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/TRBC-4-19-20.png" />
+                </div>
+                <h5 class="title">Famous Last Words: Never Alone</h5>
+                <h5 class="date">Sat Apr 18 2020 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
                 
-                <br /> DOWNLOAD!
-                
-            </li>
+            </div>
             
         
-            
             
             
+             
             
-            <li>
-                <a href="/post/easter-sunday-he-lives/">/post/easter-sunday-he-lives/</a>
-                <br /> TRBC-4-12-20.png
-                <br /> Sat Apr 11 2020 20:00:00 GMT-0400 (Eastern Daylight Time)
-                <br /> ["post","download","sermon notes","jonathan falwell","trbc"]
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/TRBC-4-12-20.png" />
+                </div>
+                <h5 class="title">Easter Sunday: He Lives!</h5>
+                <h5 class="date">Sat Apr 11 2020 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
                 
-                <br /> DOWNLOAD!
-                
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/famous-last-words-part-ii/">/post/famous-last-words-part-ii/</a>
-                <br /> TRBC-4-5-20.png
-                <br /> Sat Apr 04 2020 20:00:00 GMT-0400 (Eastern Daylight Time)
-                <br /> ["post","download","sermon notes","jonathan falwell","trbc"]
-                
-                <br /> DOWNLOAD!
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/TRBC-4-5-20.png" />
+                </div>
+                <h5 class="title">Famous Last Words, Part II</h5>
+                <h5 class="date">Sat Apr 04 2020 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
                 
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/pen-test/">/post/pen-test/</a>
-                <br /> Pen-test.png
-                <br /> Mon Mar 30 2020 20:00:00 GMT-0400 (Eastern Daylight Time)
-                <br /> ["post","download","procreate"]
-                
-                <br /> DOWNLOAD!
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/Pen-test.png" />
+                </div>
+                <h5 class="title">Pen Test!</h5>
+                <h5 class="date">Mon Mar 30 2020 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
                 
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/famous-last-words-part-i/">/post/famous-last-words-part-i/</a>
-                <br /> TRBC-3-29-20.png
-                <br /> Sat Mar 28 2020 20:00:00 GMT-0400 (Eastern Daylight Time)
-                <br /> ["post","download","sermon notes","jonathan falwell","trbc"]
-                
-                <br /> DOWNLOAD!
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/TRBC-3-29-20.png" />
+                </div>
+                <h5 class="title">Famous Last Words, Part I</h5>
+                <h5 class="date">Sat Mar 28 2020 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
                 
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/seth-godin-is-everything-going-to-be-ok/">/post/seth-godin-is-everything-going-to-be-ok/</a>
-                <br /> Godin.png
-                <br /> Thu Mar 26 2020 20:00:00 GMT-0400 (Eastern Daylight Time)
-                <br /> ["post","download","blog summary","seth godin"]
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/Godin.png" />
+                </div>
+                <h5 class="title">Seth Godin : Is everything going to be ok?</h5>
+                <h5 class="date">Thu Mar 26 2020 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
                 
-                <br /> DOWNLOAD!
-                
-            </li>
+            </div>
             
         
-            
             
             
+             
             
-            <li>
-                <a href="/post/lessons-from-the-belly-of-the-whale/">/post/lessons-from-the-belly-of-the-whale/</a>
-                <br /> TRBC-3-22-20.png
-                <br /> Sat Mar 21 2020 20:00:00 GMT-0400 (Eastern Daylight Time)
-                <br /> ["post","download","sermon notes","jonathan falwell","trbc"]
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/TRBC-3-22-20.png" />
+                </div>
+                <h5 class="title">Lessons from the Belly of the Whale</h5>
+                <h5 class="date">Sat Mar 21 2020 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
                 
-                <br /> DOWNLOAD!
-                
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/trying-out-adobe-fresco/">/post/trying-out-adobe-fresco/</a>
-                <br /> fresco-tiger.png
-                <br /> Wed Mar 18 2020 20:00:00 GMT-0400 (Eastern Daylight Time)
-                <br /> ["post","download","adobe fresco","vector"]
-                
-                <br /> DOWNLOAD!
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/fresco-tiger.png" />
+                </div>
+                <h5 class="title">Trying out Adobe Fresco</h5>
+                <h5 class="date">Wed Mar 18 2020 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
                 
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/living-the-dash/">/post/living-the-dash/</a>
-                <br /> TRBC-3-15-20.png
-                <br /> Sat Mar 14 2020 20:00:00 GMT-0400 (Eastern Daylight Time)
-                <br /> ["post","download","sermon notes","charles billingsley","paul baloche","trbc"]
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/TRBC-3-15-20.png" />
+                </div>
+                <h5 class="title">Living the Dash</h5>
+                <h5 class="date">Sat Mar 14 2020 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
                 
-                <br /> DOWNLOAD!
-                
-            </li>
+            </div>
             
         
-            
             
             
+             
             
-            <li>
-                <a href="/post/managing-leadership-anxiety-steve-cuss/">/post/managing-leadership-anxiety-steve-cuss/</a>
-                <br /> Managing-leadership-anxiety.png
-                <br /> Tue Mar 10 2020 20:00:00 GMT-0400 (Eastern Daylight Time)
-                <br /> ["post","download","book summary","steve cuss"]
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/Managing-leadership-anxiety.png" />
+                </div>
+                <h5 class="title">Managing Leadership Anxiety - Steve Cuss</h5>
+                <h5 class="date">Tue Mar 10 2020 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
                 
-                <br /> DOWNLOAD!
-                
-            </li>
+            </div>
             
         
-            
             
             
+             
             
-            <li>
-                <a href="/post/proverbs-3029-31/">/post/proverbs-3029-31/</a>
-                <br /> proverbs-30-29-31.png
-                <br /> Mon Mar 09 2020 20:00:00 GMT-0400 (Eastern Daylight Time)
-                <br /> ["post","download","verse","proverbs"]
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/proverbs-30-29-31.png" />
+                </div>
+                <h5 class="title">Proverbs 30:29-31</h5>
+                <h5 class="date">Mon Mar 09 2020 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
                 
-                <br /> DOWNLOAD!
-                
-            </li>
+            </div>
             
         
-            
             
             
+             
             
-            <li>
-                <a href="/post/a-changed-life/">/post/a-changed-life/</a>
-                <br /> TRBC-3-8-20.png
-                <br /> Sat Mar 07 2020 19:00:00 GMT-0500 (Eastern Standard Time)
-                <br /> ["post","download","sermon notes","jonathan falwell","trbc"]
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/TRBC-3-8-20.png" />
+                </div>
+                <h5 class="title">A Changed Life</h5>
+                <h5 class="date">Sat Mar 07 2020 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
                 
-                <br /> DOWNLOAD!
-                
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/proverbs-3030/">/post/proverbs-3030/</a>
-                <br /> lion-2.png
-                <br /> Wed Mar 04 2020 19:00:00 GMT-0500 (Eastern Standard Time)
-                <br /> ["post","download","verse","proverbs","lion"]
-                
-                <br /> DOWNLOAD!
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/lion-2.png" />
+                </div>
+                <h5 class="title">Proverbs 30:30</h5>
+                <h5 class="date">Wed Mar 04 2020 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
                 
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/debra-fileta-quote/">/post/debra-fileta-quote/</a>
-                <br /> Fileta.png
-                <br /> Tue Mar 03 2020 19:00:00 GMT-0500 (Eastern Standard Time)
-                <br /> ["post","download","podcast","choosing marriage","debra fileta"]
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/Fileta.png" />
+                </div>
+                <h5 class="title">Debra Fileta Quote</h5>
+                <h5 class="date">Tue Mar 03 2020 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
                 
-                <br /> DOWNLOAD!
-                
-            </li>
+            </div>
             
         
-            
             
             
+             
             
-            <li>
-                <a href="/post/the-best-job-with-the-best-pay/">/post/the-best-job-with-the-best-pay/</a>
-                <br /> TRBC-3-1-20.png
-                <br /> Sat Feb 29 2020 19:00:00 GMT-0500 (Eastern Standard Time)
-                <br /> ["post","download","sermon notes","jonathan falwell","trbc"]
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/TRBC-3-1-20.png" />
+                </div>
+                <h5 class="title">The Best Job With The Best Pay</h5>
+                <h5 class="date">Sat Feb 29 2020 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
                 
-                <br /> DOWNLOAD!
-                
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/plugged-in-by-dr-daniel-strange/">/post/plugged-in-by-dr-daniel-strange/</a>
-                <br /> Strange.png
-                <br /> Thu Feb 27 2020 19:00:00 GMT-0500 (Eastern Standard Time)
-                <br /> ["post","download","book summary","daniel strange"]
-                
-                <br /> DOWNLOAD!
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/Strange.png" />
+                </div>
+                <h5 class="title">Plugged In by Dr. Daniel Strange</h5>
+                <h5 class="date">Thu Feb 27 2020 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
                 
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/gods-road-is-better-than-ours/">/post/gods-road-is-better-than-ours/</a>
-                <br /> TRBC-2-23-20.png
-                <br /> Sat Feb 22 2020 19:00:00 GMT-0500 (Eastern Standard Time)
-                <br /> ["post","download","sermon notes","jonathan falwell","trbc"]
-                
-                <br /> DOWNLOAD!
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/TRBC-2-23-20.png" />
+                </div>
+                <h5 class="title">God's Road Is Better Than Ours</h5>
+                <h5 class="date">Sat Feb 22 2020 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
                 
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/powersource-none-of-your-business/">/post/powersource-none-of-your-business/</a>
-                <br /> powersource-2-20-20.png
-                <br /> Wed Feb 19 2020 19:00:00 GMT-0500 (Eastern Standard Time)
-                <br /> ["post","download","sermon notes","powersource","trbc","jeremy rader"]
-                
-                <br /> DOWNLOAD!
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/powersource-2-20-20.png" />
+                </div>
+                <h5 class="title">Powersource - None of Your Business</h5>
+                <h5 class="date">Wed Feb 19 2020 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
                 
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/school-of-greatness-763/">/post/school-of-greatness-763/</a>
-                <br /> Howes-McManus.png
-                <br /> Mon Feb 17 2020 19:00:00 GMT-0500 (Eastern Standard Time)
-                <br /> ["post","download","podcast","erwin mcmanus","lewis howes"]
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/Howes-McManus.png" />
+                </div>
+                <h5 class="title">School of Greatness #763</h5>
+                <h5 class="date">Mon Feb 17 2020 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
                 
-                <br /> DOWNLOAD!
-                
-            </li>
+            </div>
             
         
-            
             
             
+             
             
-            <li>
-                <a href="/post/the-truth-that-sets-you-free/">/post/the-truth-that-sets-you-free/</a>
-                <br /> TRBC-2-16-20.png
-                <br /> Sat Feb 15 2020 19:00:00 GMT-0500 (Eastern Standard Time)
-                <br /> ["post","download","sermon notes","phil waldrep","trbc"]
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/TRBC-2-16-20.png" />
+                </div>
+                <h5 class="title">The Truth that Sets You Free</h5>
+                <h5 class="date">Sat Feb 15 2020 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
                 
-                <br /> DOWNLOAD!
-                
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/battle-ready-podcast/">/post/battle-ready-podcast/</a>
-                <br /> McManus-McManus.png
-                <br /> Thu Feb 13 2020 19:00:00 GMT-0500 (Eastern Standard Time)
-                <br /> ["post","download","podcast","erwin mcmanus","battle ready"]
-                
-                <br /> DOWNLOAD!
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/McManus-McManus.png" />
+                </div>
+                <h5 class="title">Battle Ready Podcast</h5>
+                <h5 class="date">Thu Feb 13 2020 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
                 
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/psalm-27-afraid-and-alone/">/post/psalm-27-afraid-and-alone/</a>
-                <br /> TRBC-2-9-20.png
-                <br /> Sat Feb 08 2020 19:00:00 GMT-0500 (Eastern Standard Time)
-                <br /> ["post","download","sermon notes","jonathan falwell","trbc"]
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/TRBC-2-9-20.png" />
+                </div>
+                <h5 class="title">Psalm 27: Afraid and Alone</h5>
+                <h5 class="date">Sat Feb 08 2020 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
                 
-                <br /> DOWNLOAD!
-                
-            </li>
+            </div>
             
         
-            
             
             
+             
             
-            <li>
-                <a href="/post/friday-habit-episode-2/">/post/friday-habit-episode-2/</a>
-                <br /> Friday-habit.png
-                <br /> Thu Feb 06 2020 19:00:00 GMT-0500 (Eastern Standard Time)
-                <br /> ["post","download","podcast","friday habit","ben manley","mark labriola"]
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/Friday-habit.png" />
+                </div>
+                <h5 class="title">Friday Habit - Episode 2</h5>
+                <h5 class="date">Thu Feb 06 2020 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
                 
-                <br /> DOWNLOAD!
-                
-            </li>
+            </div>
             
         
-            
             
             
+             
             
-            <li>
-                <a href="/post/perspective-collective-iron-bean-coffee/">/post/perspective-collective-iron-bean-coffee/</a>
-                <br /> perspective-collective-157.png
-                <br /> Tue Feb 04 2020 19:00:00 GMT-0500 (Eastern Standard Time)
-                <br /> ["post","download","podcast","scotty russell","perspective collective","iron bean coffee"]
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/perspective-collective-157.png" />
+                </div>
+                <h5 class="title">Perspective Collective - Iron Bean Coffee</h5>
+                <h5 class="date">Tue Feb 04 2020 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
                 
-                <br /> DOWNLOAD!
-                
-            </li>
+            </div>
             
         
-            
             
             
+             
             
-            <li>
-                <a href="/post/so-much-more-reaching-beyond-our-grasp/">/post/so-much-more-reaching-beyond-our-grasp/</a>
-                <br /> TRBC-2-2-20-1.png
-                <br /> Sat Feb 01 2020 19:00:00 GMT-0500 (Eastern Standard Time)
-                <br /> ["post","download","sermon notes","jonathan falwell","trbc"]
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/TRBC-2-2-20-1.png" />
+                </div>
+                <h5 class="title">So Much More: Reaching Beyond Our Grasp</h5>
+                <h5 class="date">Sat Feb 01 2020 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
                 
-                <br /> DOWNLOAD!
-                
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/dhh-tweet/">/post/dhh-tweet/</a>
-                <br /> dhh-.png
-                <br /> Sat Feb 01 2020 19:00:00 GMT-0500 (Eastern Standard Time)
-                <br /> ["post","download","tweet","dhh"]
-                
-                <br /> DOWNLOAD!
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/dhh-.png" />
+                </div>
+                <h5 class="title">@DHH - Tweet</h5>
+                <h5 class="date">Sat Feb 01 2020 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
                 
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/master-of-one-jordan-raynor/">/post/master-of-one-jordan-raynor/</a>
-                <br /> master-of-one.png
-                <br /> Thu Jan 30 2020 19:00:00 GMT-0500 (Eastern Standard Time)
-                <br /> ["post","download","book summary","jordan raynor"]
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/master-of-one.png" />
+                </div>
+                <h5 class="title">Master of One - Jordan Raynor</h5>
+                <h5 class="date">Thu Jan 30 2020 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
                 
-                <br /> DOWNLOAD!
-                
-            </li>
+            </div>
             
         
-            
             
             
+             
             
-            <li>
-                <a href="/post/call-to-mastery-luke-lefevre/">/post/call-to-mastery-luke-lefevre/</a>
-                <br /> call-to-mastery.png
-                <br /> Tue Jan 28 2020 19:00:00 GMT-0500 (Eastern Standard Time)
-                <br /> ["post","download","podcast","jordan raynor"]
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/call-to-mastery.png" />
+                </div>
+                <h5 class="title">Call To Mastery - Luke LeFevre</h5>
+                <h5 class="date">Tue Jan 28 2020 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
                 
-                <br /> DOWNLOAD!
-                
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/so-much-more-being-faithful/">/post/so-much-more-being-faithful/</a>
-                <br /> TRBC-1-26-20.png
-                <br /> Sat Jan 25 2020 19:00:00 GMT-0500 (Eastern Standard Time)
-                <br /> ["post","download","sermon notes","jonathan falwell","trbc"]
-                
-                <br /> DOWNLOAD!
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/TRBC-1-26-20.png" />
+                </div>
+                <h5 class="title">So Much More: Being Faithful</h5>
+                <h5 class="date">Sat Jan 25 2020 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
                 
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/finish-by-jon-acuff/">/post/finish-by-jon-acuff/</a>
-                <br /> finish-acuff.png
-                <br /> Mon Jan 20 2020 19:00:00 GMT-0500 (Eastern Standard Time)
-                <br /> ["post","download","book summary","jon acuff"]
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/finish-acuff.png" />
+                </div>
+                <h5 class="title">Finish by Jon Acuff</h5>
+                <h5 class="date">Mon Jan 20 2020 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
                 
-                <br /> DOWNLOAD!
-                
-            </li>
+            </div>
             
         
-            
             
             
+             
             
-            <li>
-                <a href="/post/so-much-more-the-heart-of-gratitude/">/post/so-much-more-the-heart-of-gratitude/</a>
-                <br /> TRBC-1-19-20.png
-                <br /> Sat Jan 18 2020 19:00:00 GMT-0500 (Eastern Standard Time)
-                <br /> ["post","download","sermon notes","jonathan falwell","trbc"]
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/TRBC-1-19-20.png" />
+                </div>
+                <h5 class="title">So Much More: The Heart of Gratitude</h5>
+                <h5 class="date">Sat Jan 18 2020 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
                 
-                <br /> DOWNLOAD!
-                
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/finding-your-artistic-voice-lisa-congdon/">/post/finding-your-artistic-voice-lisa-congdon/</a>
-                <br /> Congdon.png
-                <br /> Fri Jan 17 2020 19:00:00 GMT-0500 (Eastern Standard Time)
-                <br /> ["post","download","book summary","lisa congdon"]
-                
-                <br /> DOWNLOAD!
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/Congdon.png" />
+                </div>
+                <h5 class="title">Finding Your Artistic Voice - Lisa Congdon</h5>
+                <h5 class="date">Fri Jan 17 2020 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
                 
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/hanselminutes-myself/">/post/hanselminutes-myself/</a>
-                <br /> hanselminutes.png
-                <br /> Wed Jan 15 2020 19:00:00 GMT-0500 (Eastern Standard Time)
-                <br /> ["post","download","podcast","scott hanselman","hanselminutes"]
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/hanselminutes.png" />
+                </div>
+                <h5 class="title">Hanselminutes - Myself</h5>
+                <h5 class="date">Wed Jan 15 2020 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
                 
-                <br /> DOWNLOAD!
-                
-            </li>
+            </div>
             
         
-            
             
             
+             
             
-            <li>
-                <a href="/post/keep-going-austin-kleon/">/post/keep-going-austin-kleon/</a>
-                <br /> keep-going-Kleon.png
-                <br /> Tue Jan 14 2020 19:00:00 GMT-0500 (Eastern Standard Time)
-                <br /> ["post","download","book summary","austin kleon"]
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/keep-going-Kleon.png" />
+                </div>
+                <h5 class="title">Keep Going - Austin Kleon</h5>
+                <h5 class="date">Tue Jan 14 2020 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
                 
-                <br /> DOWNLOAD!
-                
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/so-much-more-conversations-and-commitments/">/post/so-much-more-conversations-and-commitments/</a>
-                <br /> TRBC-1-12-20.png
-                <br /> Sat Jan 11 2020 19:00:00 GMT-0500 (Eastern Standard Time)
-                <br /> ["post","download","sermon notes","jonathan falwell","trbc"]
-                
-                <br /> DOWNLOAD!
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/TRBC-1-12-20.png" />
+                </div>
+                <h5 class="title">So Much More - Conversations and Commitments</h5>
+                <h5 class="date">Sat Jan 11 2020 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
                 
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/perspective-collective-lisa-congdon/">/post/perspective-collective-lisa-congdon/</a>
-                <br /> perspective-collective-congdon.png
-                <br /> Mon Jan 06 2020 19:00:00 GMT-0500 (Eastern Standard Time)
-                <br /> ["post","download","podcast","perspective collective","scott russell","lisa congdon"]
-                
-                <br /> DOWNLOAD!
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/perspective-collective-congdon.png" />
+                </div>
+                <h5 class="title">Perspective Collective - Lisa Congdon</h5>
+                <h5 class="date">Mon Jan 06 2020 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
                 
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/so-much-more-a-walk-in-the-world/">/post/so-much-more-a-walk-in-the-world/</a>
-                <br /> TRBC-1-5-20.png
-                <br /> Sat Jan 04 2020 19:00:00 GMT-0500 (Eastern Standard Time)
-                <br /> ["post","download","sermon notes","charles billingsley","trbc"]
-                
-                <br /> DOWNLOAD!
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/TRBC-1-5-20.png" />
+                </div>
+                <h5 class="title">So Much More - A Walk in the World</h5>
+                <h5 class="date">Sat Jan 04 2020 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
                 
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/i-will-teach-you-to-be-rich-ramit-sethi/">/post/i-will-teach-you-to-be-rich-ramit-sethi/</a>
-                <br /> iwtytbr-sethi.png
-                <br /> Sat Jan 04 2020 19:00:00 GMT-0500 (Eastern Standard Time)
-                <br /> ["post","download","book summary","ramit sethi"]
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/iwtytbr-sethi.png" />
+                </div>
+                <h5 class="title">I Will Teach You To Be Rich - Ramit Sethi</h5>
+                <h5 class="date">Sat Jan 04 2020 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
                 
-                <br /> DOWNLOAD!
-                
-            </li>
+            </div>
             
         
-            
             
             
+             
             
-            <li>
-                <a href="/post/atomic-habits-by-james-clear/">/post/atomic-habits-by-james-clear/</a>
-                <br /> img_0211.png
-                <br /> Wed Jan 01 2020 19:00:00 GMT-0500 (Eastern Standard Time)
-                <br /> ["post","download","book summary","james clear"]
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/img_0211.png" />
+                </div>
+                <h5 class="title">Atomic Habits by James Clear</h5>
+                <h5 class="date">Wed Jan 01 2020 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
                 
-                <br /> DOWNLOAD!
-                
-            </li>
+            </div>
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
-    </ul>
+        </div>
+    </div>
 
     <h2>2019</h2>
-    <ul>
+    <div class="post-image-list">
+        <div class="grid-row">
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
             
             
+             
             
-            
         
-            
             
             
+             
             
-            <li>
-                <a href="/post/parables/">/post/parables/</a>
-                <br /> 
-                <br /> Sun Dec 29 2019 19:00:00 GMT-0500 (Eastern Standard Time)
-                <br /> ["post","download","sermon notes","wilson community church","jonathan minter"]
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/" />
+                </div>
+                <h5 class="title">Parables</h5>
+                <h5 class="date">Sun Dec 29 2019 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
                 
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/the-most-important-thing/">/post/the-most-important-thing/</a>
-                <br /> 
-                <br /> Sat Dec 28 2019 19:00:00 GMT-0500 (Eastern Standard Time)
-                <br /> 
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/" />
+                </div>
+                <h5 class="title">The Most Important Thing</h5>
+                <h5 class="date">Sat Dec 28 2019 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
                 
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/sing-noel-joy-to-the-world/">/post/sing-noel-joy-to-the-world/</a>
-                <br /> Joy-to-the-world.png
-                <br /> Sat Dec 21 2019 19:00:00 GMT-0500 (Eastern Standard Time)
-                <br /> 
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/Joy-to-the-world.png" />
+                </div>
+                <h5 class="title">Sing Noel - Joy to the World!</h5>
+                <h5 class="date">Sat Dec 21 2019 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
                 
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/receiving-gods-peace/">/post/receiving-gods-peace/</a>
-                <br /> 
-                <br /> Sat Dec 21 2019 19:00:00 GMT-0500 (Eastern Standard Time)
-                <br /> 
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/" />
+                </div>
+                <h5 class="title">Receiving Gods Peace</h5>
+                <h5 class="date">Sat Dec 21 2019 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
                 
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/rickisms/">/post/rickisms/</a>
-                <br /> 
-                <br /> Thu Dec 19 2019 19:00:00 GMT-0500 (Eastern Standard Time)
-                <br /> ["post","commission","rick ouimet"]
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/" />
+                </div>
+                <h5 class="title">Rickisms!</h5>
+                <h5 class="date">Thu Dec 19 2019 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
                 
-                <br /> DOWNLOAD!
+            </div>
+            
+        
+            
+            
+             
+            
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/img_0171.png" />
+                </div>
+                <h5 class="title">Discipline Equals Freedom</h5>
+                <h5 class="date">Wed Dec 18 2019 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
                 
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/discipline-equals-freedom/">/post/discipline-equals-freedom/</a>
-                <br /> img_0171.png
-                <br /> Wed Dec 18 2019 19:00:00 GMT-0500 (Eastern Standard Time)
-                <br /> ["post","download","book summary","jocko willink"]
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/" />
+                </div>
+                <h5 class="title">Sing Noel - O’ Holy Night</h5>
+                <h5 class="date">Sun Dec 15 2019 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
                 
-                <br /> DOWNLOAD!
+            </div>
+            
+        
+            
+            
+             
+            
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/preachers-n-sneakers.png" />
+                </div>
+                <h5 class="title">Preachers N Sneakers - Whitney Bauck</h5>
+                <h5 class="date">Sun Dec 15 2019 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
                 
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/sing-noel-o-holy-night/">/post/sing-noel-o-holy-night/</a>
-                <br /> 
-                <br /> Sun Dec 15 2019 19:00:00 GMT-0500 (Eastern Standard Time)
-                <br /> 
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/" />
+                </div>
+                <h5 class="title">Sing Noel - Hark! The Herald Angels Sing</h5>
+                <h5 class="date">Sat Dec 07 2019 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
                 
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/preachers-n-sneakers-whitney-bauck/">/post/preachers-n-sneakers-whitney-bauck/</a>
-                <br /> preachers-n-sneakers.png
-                <br /> Sun Dec 15 2019 19:00:00 GMT-0500 (Eastern Standard Time)
-                <br /> ["post","download","podcast","whitney bauck","tyler","preachers n sneakers"]
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/IMG_6849-scaled.jpeg" />
+                </div>
+                <h5 class="title">Drawing at Church</h5>
+                <h5 class="date">Thu Dec 05 2019 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
                 
-                <br /> DOWNLOAD!
+            </div>
+            
+        
+            
+            
+             
+            
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/IMG_0097-scaled.png" />
+                </div>
+                <h5 class="title">Sing Noel</h5>
+                <h5 class="date">Sat Nov 30 2019 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
                 
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/sing-noel-hark-the-herald-angels-sing/">/post/sing-noel-hark-the-herald-angels-sing/</a>
-                <br /> 
-                <br /> Sat Dec 07 2019 19:00:00 GMT-0500 (Eastern Standard Time)
-                <br /> 
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/IMG_0092-scaled.png" />
+                </div>
+                <h5 class="title">A Season of Giving for the Joy of Living</h5>
+                <h5 class="date">Sat Nov 16 2019 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
                 
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/drawing-at-church/">/post/drawing-at-church/</a>
-                <br /> IMG_6849-scaled.jpeg
-                <br /> Thu Dec 05 2019 19:00:00 GMT-0500 (Eastern Standard Time)
-                <br /> 
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/IMG_0094-scaled.png" />
+                </div>
+                <h5 class="title">Resolving Conflict</h5>
+                <h5 class="date">Sat Nov 09 2019 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
                 
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/sing-noel/">/post/sing-noel/</a>
-                <br /> IMG_0097-scaled.png
-                <br /> Sat Nov 30 2019 19:00:00 GMT-0500 (Eastern Standard Time)
-                <br /> 
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/IMG_0087-scaled.png" />
+                </div>
+                <h5 class="title">Daniel 6</h5>
+                <h5 class="date">Sat Nov 09 2019 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
                 
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/a-season-of-giving-for-the-joy-of-living/">/post/a-season-of-giving-for-the-joy-of-living/</a>
-                <br /> IMG_0092-scaled.png
-                <br /> Sat Nov 16 2019 19:00:00 GMT-0500 (Eastern Standard Time)
-                <br /> 
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/IMG_0080-scaled.png" />
+                </div>
+                <h5 class="title">Daniel 3: Though He Slay me, I will trust HIM</h5>
+                <h5 class="date">Sat Oct 19 2019 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
                 
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/resolving-conflict/">/post/resolving-conflict/</a>
-                <br /> IMG_0094-scaled.png
-                <br /> Sat Nov 09 2019 19:00:00 GMT-0500 (Eastern Standard Time)
-                <br /> ["post","download","mosaic va","rick ouimet"]
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/IMG_0076-scaled.png" />
+                </div>
+                <h5 class="title">Daniel 2: But God!</h5>
+                <h5 class="date">Sat Oct 12 2019 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
                 
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/daniel-6/">/post/daniel-6/</a>
-                <br /> IMG_0087-scaled.png
-                <br /> Sat Nov 09 2019 19:00:00 GMT-0500 (Eastern Standard Time)
-                <br /> 
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/IMG_0112-scaled.png" />
+                </div>
+                <h5 class="title">Daniel 1: The Story of Daniel</h5>
+                <h5 class="date">Sat Oct 05 2019 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
                 
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/daniel-3-though-he-slay-me-i-will-trust-him/">/post/daniel-3-though-he-slay-me-i-will-trust-him/</a>
-                <br /> IMG_0080-scaled.png
-                <br /> Sat Oct 19 2019 20:00:00 GMT-0400 (Eastern Daylight Time)
-                <br /> 
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/IMG_0111-scaled.png" />
+                </div>
+                <h5 class="title">Won't you be my Neighbor - Part IV</h5>
+                <h5 class="date">Sat Sep 28 2019 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
                 
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/daniel-2-but-god/">/post/daniel-2-but-god/</a>
-                <br /> IMG_0076-scaled.png
-                <br /> Sat Oct 12 2019 20:00:00 GMT-0400 (Eastern Daylight Time)
-                <br /> 
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/IMG_0110-scaled.png" />
+                </div>
+                <h5 class="title">Won't you be my Neighbor - Part III</h5>
+                <h5 class="date">Sat Sep 21 2019 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
                 
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/daniel-1-the-story-of-daniel/">/post/daniel-1-the-story-of-daniel/</a>
-                <br /> IMG_0112-scaled.png
-                <br /> Sat Oct 05 2019 20:00:00 GMT-0400 (Eastern Daylight Time)
-                <br /> 
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/IMG_0109-scaled.png" />
+                </div>
+                <h5 class="title">Won't you be my Neighbor - Part II</h5>
+                <h5 class="date">Sat Sep 14 2019 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
                 
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/wont-you-be-my-neighbor-part-iv/">/post/wont-you-be-my-neighbor-part-iv/</a>
-                <br /> IMG_0111-scaled.png
-                <br /> Sat Sep 28 2019 20:00:00 GMT-0400 (Eastern Daylight Time)
-                <br /> 
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/IMG_0108-scaled.png" />
+                </div>
+                <h5 class="title">Won't you be my Neighbor</h5>
+                <h5 class="date">Sat Sep 07 2019 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
                 
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/wont-you-be-my-neighbor-part-iii/">/post/wont-you-be-my-neighbor-part-iii/</a>
-                <br /> IMG_0110-scaled.png
-                <br /> Sat Sep 21 2019 20:00:00 GMT-0400 (Eastern Daylight Time)
-                <br /> 
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/IMG_0107-scaled.png" />
+                </div>
+                <h5 class="title">Jesus in the House</h5>
+                <h5 class="date">Sat Aug 31 2019 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
                 
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/wont-you-be-my-neighbor-part-ii/">/post/wont-you-be-my-neighbor-part-ii/</a>
-                <br /> IMG_0109-scaled.png
-                <br /> Sat Sep 14 2019 20:00:00 GMT-0400 (Eastern Daylight Time)
-                <br /> 
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/IMG_0106-scaled.png" />
+                </div>
+                <h5 class="title">Get in the Game</h5>
+                <h5 class="date">Sat Aug 24 2019 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
                 
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/wont-you-be-my-neighbor/">/post/wont-you-be-my-neighbor/</a>
-                <br /> IMG_0108-scaled.png
-                <br /> Sat Sep 07 2019 20:00:00 GMT-0400 (Eastern Daylight Time)
-                <br /> 
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/IMG_0105-scaled.png" />
+                </div>
+                <h5 class="title">Good News for Hard Times - Part IV</h5>
+                <h5 class="date">Sat Jul 20 2019 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
                 
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/jesus-in-the-house/">/post/jesus-in-the-house/</a>
-                <br /> IMG_0107-scaled.png
-                <br /> Sat Aug 31 2019 20:00:00 GMT-0400 (Eastern Daylight Time)
-                <br /> 
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/IMG_0104-scaled.png" />
+                </div>
+                <h5 class="title">Good New for Hard Times - Part III</h5>
+                <h5 class="date">Sat Jul 13 2019 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
                 
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/get-in-the-game/">/post/get-in-the-game/</a>
-                <br /> IMG_0106-scaled.png
-                <br /> Sat Aug 24 2019 20:00:00 GMT-0400 (Eastern Daylight Time)
-                <br /> 
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/IMG_0103-scaled.png" />
+                </div>
+                <h5 class="title">Good New for Hard Times - Part II</h5>
+                <h5 class="date">Sat Jul 06 2019 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
                 
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/good-news-for-hard-times-part-iv/">/post/good-news-for-hard-times-part-iv/</a>
-                <br /> IMG_0105-scaled.png
-                <br /> Sat Jul 20 2019 20:00:00 GMT-0400 (Eastern Daylight Time)
-                <br /> 
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/IMG_0102-scaled.png" />
+                </div>
+                <h5 class="title">Good News for Hard Times - Part I</h5>
+                <h5 class="date">Sat Jun 29 2019 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
                 
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/good-new-for-hard-times-part-iii/">/post/good-new-for-hard-times-part-iii/</a>
-                <br /> IMG_0104-scaled.png
-                <br /> Sat Jul 13 2019 20:00:00 GMT-0400 (Eastern Daylight Time)
-                <br /> 
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/IMG_0101-scaled.png" />
+                </div>
+                <h5 class="title">The Call to Continue</h5>
+                <h5 class="date">Sat Jun 22 2019 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
                 
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/good-new-for-hard-times-part-ii/">/post/good-new-for-hard-times-part-ii/</a>
-                <br /> IMG_0103-scaled.png
-                <br /> Sat Jul 06 2019 20:00:00 GMT-0400 (Eastern Daylight Time)
-                <br /> 
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/IMG_0100-scaled.png" />
+                </div>
+                <h5 class="title">God's Timing is Always Perfect</h5>
+                <h5 class="date">Sat Jun 15 2019 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
                 
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/good-news-for-hard-times-part-i/">/post/good-news-for-hard-times-part-i/</a>
-                <br /> IMG_0102-scaled.png
-                <br /> Sat Jun 29 2019 20:00:00 GMT-0400 (Eastern Daylight Time)
-                <br /> 
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/IMG_0098-scaled.png" />
+                </div>
+                <h5 class="title">Discipline Goes a Long Way</h5>
+                <h5 class="date">Sat May 25 2019 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
                 
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/the-call-to-continue/">/post/the-call-to-continue/</a>
-                <br /> IMG_0101-scaled.png
-                <br /> Sat Jun 22 2019 20:00:00 GMT-0400 (Eastern Daylight Time)
-                <br /> 
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/5-5-2019.png" />
+                </div>
+                <h5 class="title">Survive or Thrive, Part II</h5>
+                <h5 class="date">Sat May 04 2019 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
                 
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/gods-timing-is-always-perfect/">/post/gods-timing-is-always-perfect/</a>
-                <br /> IMG_0100-scaled.png
-                <br /> Sat Jun 15 2019 20:00:00 GMT-0400 (Eastern Daylight Time)
-                <br /> ["post","download","sermon notes","Ben Gutierrez","trbc"]
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/4-28-2019.png" />
+                </div>
+                <h5 class="title">Survive or Thrive</h5>
+                <h5 class="date">Sat Apr 27 2019 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
                 
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/discipline-goes-a-long-way/">/post/discipline-goes-a-long-way/</a>
-                <br /> IMG_0098-scaled.png
-                <br /> Sat May 25 2019 20:00:00 GMT-0400 (Eastern Daylight Time)
-                <br /> 
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/4-14-2019.png" />
+                </div>
+                <h5 class="title">Words Matter, Part IV</h5>
+                <h5 class="date">Sat Apr 13 2019 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
                 
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/survive-or-thrive-part-ii/">/post/survive-or-thrive-part-ii/</a>
-                <br /> 5-5-2019.png
-                <br /> Sat May 04 2019 20:00:00 GMT-0400 (Eastern Daylight Time)
-                <br /> 
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/4-7-2019.png" />
+                </div>
+                <h5 class="title">Words Matter, Part III</h5>
+                <h5 class="date">Sat Apr 06 2019 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
                 
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/survive-or-thrive/">/post/survive-or-thrive/</a>
-                <br /> 4-28-2019.png
-                <br /> Sat Apr 27 2019 20:00:00 GMT-0400 (Eastern Daylight Time)
-                <br /> 
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/3-24-2019.jpeg" />
+                </div>
+                <h5 class="title">Words Matter</h5>
+                <h5 class="date">Sat Mar 23 2019 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
                 
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/words-matter-part-iv/">/post/words-matter-part-iv/</a>
-                <br /> 4-14-2019.png
-                <br /> Sat Apr 13 2019 20:00:00 GMT-0400 (Eastern Daylight Time)
-                <br /> 
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/3-17-2019.jpeg" />
+                </div>
+                <h5 class="title">The Impact of a Godly Man</h5>
+                <h5 class="date">Sat Mar 16 2019 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
                 
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/words-matter-part-iii/">/post/words-matter-part-iii/</a>
-                <br /> 4-7-2019.png
-                <br /> Sat Apr 06 2019 20:00:00 GMT-0400 (Eastern Daylight Time)
-                <br /> 
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/3-10-2019.jpeg" />
+                </div>
+                <h5 class="title">Love in Action, Part II</h5>
+                <h5 class="date">Sat Mar 09 2019 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
                 
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/words-matter/">/post/words-matter/</a>
-                <br /> 3-24-2019.jpeg
-                <br /> Sat Mar 23 2019 20:00:00 GMT-0400 (Eastern Daylight Time)
-                <br /> 
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/3-3-2019.png" />
+                </div>
+                <h5 class="title">Love in Action</h5>
+                <h5 class="date">Sat Mar 02 2019 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
                 
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/the-impact-of-a-godly-man/">/post/the-impact-of-a-godly-man/</a>
-                <br /> 3-17-2019.jpeg
-                <br /> Sat Mar 16 2019 20:00:00 GMT-0400 (Eastern Daylight Time)
-                <br /> 
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/fullsizeoutput_1920.jpeg" />
+                </div>
+                <h5 class="title">And The Greatest of These is Love</h5>
+                <h5 class="date">Sat Feb 16 2019 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
                 
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/love-in-action-part-ii/">/post/love-in-action-part-ii/</a>
-                <br /> 3-10-2019.jpeg
-                <br /> Sat Mar 09 2019 19:00:00 GMT-0500 (Eastern Standard Time)
-                <br /> 
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/IMG_0349.png" />
+                </div>
+                <h5 class="title">Say Yes...Time to Follow, Part II</h5>
+                <h5 class="date">Sat Feb 09 2019 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
                 
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/love-in-action/">/post/love-in-action/</a>
-                <br /> 3-3-2019.png
-                <br /> Sat Mar 02 2019 19:00:00 GMT-0500 (Eastern Standard Time)
-                <br /> 
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/test_image.jpg" />
+                </div>
+                <h5 class="title">Say Yes...Time to Follow</h5>
+                <h5 class="date">Sat Feb 02 2019 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
                 
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/and-the-greatest-of-these-is-love/">/post/and-the-greatest-of-these-is-love/</a>
-                <br /> fullsizeoutput_1920.jpeg
-                <br /> Sat Feb 16 2019 19:00:00 GMT-0500 (Eastern Standard Time)
-                <br /> 
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/say-yes-2.jpg" />
+                </div>
+                <h5 class="title">Say Yes: First and Foremost...Love!</h5>
+                <h5 class="date">Sat Jan 26 2019 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
                 
-            </li>
+            </div>
             
         
             
             
-            
-            
-            <li>
-                <a href="/post/say-yes-time-to-follow-part-ii/">/post/say-yes-time-to-follow-part-ii/</a>
-                <br /> IMG_0349.png
-                <br /> Sat Feb 09 2019 19:00:00 GMT-0500 (Eastern Standard Time)
-                <br /> 
-                
-            </li>
+             
             
         
             
             
-            
-            
-            <li>
-                <a href="/post/say-yes-time-to-follow/">/post/say-yes-time-to-follow/</a>
-                <br /> test_image.jpg
-                <br /> Sat Feb 02 2019 19:00:00 GMT-0500 (Eastern Standard Time)
-                <br /> 
-                
-            </li>
+             
             
         
             
             
-            
-            
-            <li>
-                <a href="/post/say-yes-first-and-foremost-love/">/post/say-yes-first-and-foremost-love/</a>
-                <br /> say-yes-2.jpg
-                <br /> Sat Jan 26 2019 19:00:00 GMT-0500 (Eastern Standard Time)
-                <br /> 
-                
-            </li>
+             
             
         
             
             
-            
-            
-        
-            
-            
-            
+             
             
         
             
             
-            
-            
-        
-            
-            
-            
+             
             
         
             
             
-            
-            
-        
-            
-            
-            
+             
             
         
             
             
-            
-            
-        
-            
-            
-            
+             
             
         
             
             
-            
-            
-        
-            
-            
-            
+             
             
         
             
             
-            
-            
-        
-            
-            
-            
+             
             
         
             
             
-            
-            
-        
-            
-            
-            
+             
             
         
             
             
-            
-            
-        
-            
-            
-            
+             
             
         
             
             
-            
-            
-        
-            
-            
-            
+             
             
         
             
             
-            
-            
-        
-            
-            
-            
+             
             
         
             
             
-            
-            
-        
-            
-            
-            
+             
             
         
             
             
-            
-            
-        
-            
-            
-            
+             
             
         
             
             
-            
-            
-        
-            
-            
-            
+             
             
         
             
             
-            
-            
-        
-            
-            
-            
+             
             
         
             
             
-            
-            
-        
-            
-            
-            
+             
             
         
             
             
+             
             
+        
+            
+            
+             
             
         
             
             
-            
+             
             
         
-    </ul>
+            
+            
+             
+            
+        
+            
+            
+             
+            
+        
+            
+            
+             
+            
+        
+            
+            
+             
+            
+        
+            
+            
+             
+            
+        
+            
+            
+             
+            
+        
+            
+            
+             
+            
+        
+            
+            
+             
+            
+        
+            
+            
+             
+            
+        
+            
+            
+             
+            
+        
+            
+            
+             
+            
+        
+        </div>
+    </div>
 
     <h2>2018</h2>
-    <ul>
+    <div class="post-image-list">
+        <div class="grid-row">
         
             
             
+             
             
-            
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
-            <li>
-                <a href="/post/final-word-for-the-year/">/post/final-word-for-the-year/</a>
-                <br /> fullsizeoutput_1910.jpeg
-                <br /> Sat Dec 29 2018 19:00:00 GMT-0500 (Eastern Standard Time)
-                <br /> 
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/fullsizeoutput_1910.jpeg" />
+                </div>
+                <h5 class="title">Final Word (For the Year)</h5>
+                <h5 class="date">Sat Dec 29 2018 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
                 
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/christmas-2018/">/post/christmas-2018/</a>
-                <br /> fullsizeoutput_190e.jpeg
-                <br /> Sun Dec 23 2018 19:00:00 GMT-0500 (Eastern Standard Time)
-                <br /> 
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/fullsizeoutput_190e.jpeg" />
+                </div>
+                <h5 class="title">Christmas 2018</h5>
+                <h5 class="date">Sun Dec 23 2018 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
                 
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/for-unto-you-a-savior/">/post/for-unto-you-a-savior/</a>
-                <br /> fullsizeoutput_190d.jpeg
-                <br /> Sat Dec 22 2018 19:00:00 GMT-0500 (Eastern Standard Time)
-                <br /> 
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/fullsizeoutput_190d.jpeg" />
+                </div>
+                <h5 class="title">For Unto You...A Savior</h5>
+                <h5 class="date">Sat Dec 22 2018 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
                 
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/for-unto-you-a-messiah/">/post/for-unto-you-a-messiah/</a>
-                <br /> fullsizeoutput_190c.jpeg
-                <br /> Sat Dec 15 2018 19:00:00 GMT-0500 (Eastern Standard Time)
-                <br /> 
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/fullsizeoutput_190c.jpeg" />
+                </div>
+                <h5 class="title">For Unto You...A Messiah</h5>
+                <h5 class="date">Sat Dec 15 2018 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
                 
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/for-unto-you-righteousness/">/post/for-unto-you-righteousness/</a>
-                <br /> for-unto-us-righteousness.png
-                <br /> Sat Dec 08 2018 19:00:00 GMT-0500 (Eastern Standard Time)
-                <br /> 
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/for-unto-us-righteousness.png" />
+                </div>
+                <h5 class="title">For Unto You...Righteousness</h5>
+                <h5 class="date">Sat Dec 08 2018 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
                 
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/for-unto-you-a-son-is-given/">/post/for-unto-you-a-son-is-given/</a>
-                <br /> fullsizeoutput_190b.jpeg
-                <br /> Sat Dec 01 2018 19:00:00 GMT-0500 (Eastern Standard Time)
-                <br /> 
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/fullsizeoutput_190b.jpeg" />
+                </div>
+                <h5 class="title">For Unto You...A Son is Given</h5>
+                <h5 class="date">Sat Dec 01 2018 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
                 
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/being-thankful-is-not-enough/">/post/being-thankful-is-not-enough/</a>
-                <br /> fullsizeoutput_18ed.jpeg
-                <br /> Sat Nov 24 2018 19:00:00 GMT-0500 (Eastern Standard Time)
-                <br /> 
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/fullsizeoutput_18ed.jpeg" />
+                </div>
+                <h5 class="title">Being Thankful is Not Enough</h5>
+                <h5 class="date">Sat Nov 24 2018 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
                 
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/giving-gaining-and-greed/">/post/giving-gaining-and-greed/</a>
-                <br /> fullsizeoutput_18ec.jpeg
-                <br /> Sat Nov 10 2018 19:00:00 GMT-0500 (Eastern Standard Time)
-                <br /> 
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/fullsizeoutput_18ec.jpeg" />
+                </div>
+                <h5 class="title">Giving, Gaining, and Greed</h5>
+                <h5 class="date">Sat Nov 10 2018 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
                 
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/uncaged/">/post/uncaged/</a>
-                <br /> fullsizeoutput_18eb.jpeg
-                <br /> Sat Nov 03 2018 20:00:00 GMT-0400 (Eastern Daylight Time)
-                <br /> 
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/fullsizeoutput_18eb.jpeg" />
+                </div>
+                <h5 class="title">Uncaged</h5>
+                <h5 class="date">Sat Nov 03 2018 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
                 
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/masquerade-take-off-the-mask/">/post/masquerade-take-off-the-mask/</a>
-                <br /> fullsizeoutput_18ea.jpeg
-                <br /> Sat Oct 27 2018 20:00:00 GMT-0400 (Eastern Daylight Time)
-                <br /> 
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/fullsizeoutput_18ea.jpeg" />
+                </div>
+                <h5 class="title">Masquerade: Take Off the Mask</h5>
+                <h5 class="date">Sat Oct 27 2018 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
                 
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/masks-of-addiction/">/post/masks-of-addiction/</a>
-                <br /> fullsizeoutput_18e9.jpeg
-                <br /> Sat Oct 20 2018 20:00:00 GMT-0400 (Eastern Daylight Time)
-                <br /> 
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/fullsizeoutput_18e9.jpeg" />
+                </div>
+                <h5 class="title">Masks of Addiction</h5>
+                <h5 class="date">Sat Oct 20 2018 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
                 
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/masquerade/">/post/masquerade/</a>
-                <br /> fullsizeoutput_18e6.jpeg
-                <br /> Sat Sep 29 2018 20:00:00 GMT-0400 (Eastern Daylight Time)
-                <br /> 
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/fullsizeoutput_18e6.jpeg" />
+                </div>
+                <h5 class="title">Masquerade</h5>
+                <h5 class="date">Sat Sep 29 2018 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
                 
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/why-church-2/">/post/why-church-2/</a>
-                <br /> fullsizeoutput_18e5.jpeg
-                <br /> Sat Sep 15 2018 20:00:00 GMT-0400 (Eastern Daylight Time)
-                <br /> 
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/fullsizeoutput_18e5.jpeg" />
+                </div>
+                <h5 class="title">Why Church?</h5>
+                <h5 class="date">Sat Sep 15 2018 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
                 
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/why-church/">/post/why-church/</a>
-                <br /> fullsizeoutput_18e4.jpeg
-                <br /> Sat Sep 08 2018 20:00:00 GMT-0400 (Eastern Daylight Time)
-                <br /> 
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/fullsizeoutput_18e4.jpeg" />
+                </div>
+                <h5 class="title">Why Church</h5>
+                <h5 class="date">Sat Sep 08 2018 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
                 
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/passing-it-on/">/post/passing-it-on/</a>
-                <br /> fullsizeoutput_18e3.jpeg
-                <br /> Sat Aug 11 2018 20:00:00 GMT-0400 (Eastern Daylight Time)
-                <br /> 
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/fullsizeoutput_18e3.jpeg" />
+                </div>
+                <h5 class="title">Passing It On</h5>
+                <h5 class="date">Sat Aug 11 2018 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
                 
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/wilson-community-church-childrens-ministry/">/post/wilson-community-church-childrens-ministry/</a>
-                <br /> 
-                <br /> Fri Aug 10 2018 20:00:00 GMT-0400 (Eastern Daylight Time)
-                <br /> ["post","wilson community church","commission"]
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/" />
+                </div>
+                <h5 class="title">Wilson Community Church Children’s Ministry</h5>
+                <h5 class="date">Fri Aug 10 2018 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
                 
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/flannel-graph-faith/">/post/flannel-graph-faith/</a>
-                <br /> fullsizeoutput_18e1.jpeg
-                <br /> Sat Aug 04 2018 20:00:00 GMT-0400 (Eastern Daylight Time)
-                <br /> 
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/fullsizeoutput_18e1.jpeg" />
+                </div>
+                <h5 class="title">Flannel Graph Faith</h5>
+                <h5 class="date">Sat Aug 04 2018 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
                 
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/reframing-the-familiar/">/post/reframing-the-familiar/</a>
-                <br /> fullsizeoutput_18df.jpeg
-                <br /> Sat Jul 28 2018 20:00:00 GMT-0400 (Eastern Daylight Time)
-                <br /> 
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/fullsizeoutput_18df.jpeg" />
+                </div>
+                <h5 class="title">Reframing the Familiar</h5>
+                <h5 class="date">Sat Jul 28 2018 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
                 
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/flannel-graph-faith-2nd-edition/">/post/flannel-graph-faith-2nd-edition/</a>
-                <br /> fullsizeoutput_18dc.jpeg
-                <br /> Sat Jul 07 2018 20:00:00 GMT-0400 (Eastern Daylight Time)
-                <br /> 
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/fullsizeoutput_18dc.jpeg" />
+                </div>
+                <h5 class="title">Flannel Graph Faith 2nd Edition</h5>
+                <h5 class="date">Sat Jul 07 2018 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
                 
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/the-church-here-and-now/">/post/the-church-here-and-now/</a>
-                <br /> fullsizeoutput_18db.jpeg
-                <br /> Sat Jun 30 2018 20:00:00 GMT-0400 (Eastern Daylight Time)
-                <br /> 
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/fullsizeoutput_18db.jpeg" />
+                </div>
+                <h5 class="title">The Church Here and Now</h5>
+                <h5 class="date">Sat Jun 30 2018 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
                 
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/the-holy-spirit/">/post/the-holy-spirit/</a>
-                <br /> fullsizeoutput_18f5.jpeg
-                <br /> Sat Jun 09 2018 20:00:00 GMT-0400 (Eastern Daylight Time)
-                <br /> 
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/fullsizeoutput_18f5.jpeg" />
+                </div>
+                <h5 class="title">The Holy Spirit</h5>
+                <h5 class="date">Sat Jun 09 2018 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
                 
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/how-to-live/">/post/how-to-live/</a>
-                <br /> fullsizeoutput_18f4.jpeg
-                <br /> Sat Jun 02 2018 20:00:00 GMT-0400 (Eastern Daylight Time)
-                <br /> 
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/fullsizeoutput_18f4.jpeg" />
+                </div>
+                <h5 class="title">How to Live</h5>
+                <h5 class="date">Sat Jun 02 2018 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
                 
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/i-didnt-catch-the-title-of-this-one/">/post/i-didnt-catch-the-title-of-this-one/</a>
-                <br /> fullsizeoutput_18f3.jpeg
-                <br /> Sat May 05 2018 20:00:00 GMT-0400 (Eastern Daylight Time)
-                <br /> 
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/fullsizeoutput_18f3.jpeg" />
+                </div>
+                <h5 class="title">I Didn't Catch the title of this One...</h5>
+                <h5 class="date">Sat May 05 2018 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
                 
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/a-brand-new-day-of-relating/">/post/a-brand-new-day-of-relating/</a>
-                <br /> fullsizeoutput_18f1.jpeg
-                <br /> Sat Apr 14 2018 20:00:00 GMT-0400 (Eastern Daylight Time)
-                <br /> 
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/fullsizeoutput_18f1.jpeg" />
+                </div>
+                <h5 class="title">A Brand New Day of Relating</h5>
+                <h5 class="date">Sat Apr 14 2018 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
                 
-            </li>
+            </div>
             
         
             
             
-            
-            
-        
-            
-            
-            
+             
             
         
             
             
-            
-            
-        
-            
-            
-            
+             
             
         
             
             
-            
-            
-        
-            
-            
-            
+             
             
         
             
             
+             
             
+        
+            
+            
+             
             
         
             
             
-            
+             
             
         
-    </ul>
+            
+            
+             
+            
+        
+            
+            
+             
+            
+        
+        </div>
+    </div>
 
     <h2>2017</h2>
-    <ul>
+    <div class="post-image-list">
+        <div class="grid-row">
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
-            
             
             
+             
             
         
             
             
+             
             
-            
         
             
             
+             
             
-            
         
-            
             
             
+             
             
-            <li>
-                <a href="/post/tiny-giants/">/post/tiny-giants/</a>
-                <br /> fullsizeoutput_1900.jpeg
-                <br /> Sat Nov 18 2017 19:00:00 GMT-0500 (Eastern Standard Time)
-                <br /> 
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/fullsizeoutput_1900.jpeg" />
+                </div>
+                <h5 class="title">Tiny Giants</h5>
+                <h5 class="date">Sat Nov 18 2017 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
                 
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/start/">/post/start/</a>
-                <br /> fullsizeoutput_18fb.jpeg
-                <br /> Fri Oct 13 2017 20:00:00 GMT-0400 (Eastern Daylight Time)
-                <br /> 
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/fullsizeoutput_18fb.jpeg" />
+                </div>
+                <h5 class="title">Start!</h5>
+                <h5 class="date">Fri Oct 13 2017 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
                 
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/mens-summit-2017/">/post/mens-summit-2017/</a>
-                <br /> fullsizeoutput_18fe.jpeg
-                <br /> Fri Oct 13 2017 20:00:00 GMT-0400 (Eastern Daylight Time)
-                <br /> 
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/fullsizeoutput_18fe.jpeg" />
+                </div>
+                <h5 class="title">Men's Summit 2017</h5>
+                <h5 class="date">Fri Oct 13 2017 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
                 
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/this-is-your-life/">/post/this-is-your-life/</a>
-                <br /> fullsizeoutput_18f9.jpeg
-                <br /> Sat Jun 24 2017 20:00:00 GMT-0400 (Eastern Daylight Time)
-                <br /> 
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/fullsizeoutput_18f9.jpeg" />
+                </div>
+                <h5 class="title">This is Your Life</h5>
+                <h5 class="date">Sat Jun 24 2017 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
                 
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/the-case-for-christ/">/post/the-case-for-christ/</a>
-                <br /> fullsizeoutput_18f7.jpeg
-                <br /> Sat Apr 22 2017 20:00:00 GMT-0400 (Eastern Daylight Time)
-                <br /> 
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/fullsizeoutput_18f7.jpeg" />
+                </div>
+                <h5 class="title">The Case for Christ</h5>
+                <h5 class="date">Sat Apr 22 2017 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
                 
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/outsiders/">/post/outsiders/</a>
-                <br /> fullsizeoutput_18f6.jpeg
-                <br /> Sat Apr 01 2017 20:00:00 GMT-0400 (Eastern Daylight Time)
-                <br /> 
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/fullsizeoutput_18f6.jpeg" />
+                </div>
+                <h5 class="title">Outsiders</h5>
+                <h5 class="date">Sat Apr 01 2017 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
                 
-            </li>
+            </div>
             
         
             
             
+             
             
-            
-            <li>
-                <a href="/post/5-things-to-build-wealth/">/post/5-things-to-build-wealth/</a>
-                <br /> fullsizeoutput_18f0.jpeg
-                <br /> Sat Jan 14 2017 19:00:00 GMT-0500 (Eastern Standard Time)
-                <br /> 
+            <div class="grid-item">
+                <div class="preview">
+                    <img src="/images/posts/fullsizeoutput_18f0.jpeg" />
+                </div>
+                <h5 class="title">5 Things to Build Wealth</h5>
+                <h5 class="date">Sat Jan 14 2017 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
                 
-            </li>
+            </div>
             
         
             
             
-            
+             
             
         
-    </ul>
+        </div>
+    </div>
 
 
 
@@ -4203,8 +4325,9 @@ quotes
 
 
 
-   
-  <style>
+    </div>
+    
+    <style>
     /*header*/
 
     #logo-container{
@@ -4301,5 +4424,6 @@ quotes
         <span><a href="/privacy">Privacy Policy</a></span>
     </aside>
 </footer>
+
   </body>
 </html>

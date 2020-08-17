@@ -2,10 +2,23 @@
 title: Sketchy Sermons
 ---
 {% include '_header' %}
-    
-    {{ content }}
+    <header id="site-header">
+      <div id="logo-container">
+        <a class="logo" href="/">
+          <h1>Sketchy Sermons</h1>  
+        </a>
+      </div>
+      <nav>
+      {% include '_navigation' %}
+      </nav>
+    </header>
+    <div id="content"> 
+      
+      {{ content }}
 
-   
-  {% include '_footer' %}
+    </div>
+    
+    {% include '_footer' %}
+
   </body>
 </html>
