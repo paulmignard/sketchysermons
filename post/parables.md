@@ -2,6 +2,7 @@
 title: "Parables"
 date: "2019-12-30"
 
+coverImage:     "fullsizeoutput_18e3.jpeg"
 tags:           ['post','download','sermon notes','wilson community church','jonathan minter']
 ---
 

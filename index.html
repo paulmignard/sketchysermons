@@ -48,13 +48,24 @@ eleventyExcludeFromCollections: true
     background-color:yellow;
 }
 
+.main-preview img{
+    width: 100% !important;
+    height: auto !important;
+}
+
 </style>
 
 
 
 {% for post in collections.latestPost %}
     <h2>Latest Post: {{ post.data.title }}</h2>
+    <div class="main-preview">
+    {% responsiveImage post.data.coverImage post.data.title 1050 %}
+    </div>
+    {% comment %}
     <img style="width:100%;height:auto" src="{{ config.imageDirectory }}{{ post.data.coverImage }}" />
+    {% endcomment %}
+
     <br /><span>{{ post.url }}</span>
     <br /><span>{{ post.date }}</span>
     <br /><span>{{ post.data.tags }}</span>
@@ -69,7 +80,9 @@ eleventyExcludeFromCollections: true
     {% for post in collections.getLatestPostCluster %}
         <div class="grid-item">
             <div class="preview">
-                <img src="{{ config.imageDirectory }}{{ post.data.coverImage }}" />
+
+                {% responsiveImage post.data.coverImage post.data.title 275 %}
+                
             </div>
             <h5>{{ post.data.title }}</h5>
             <h5 class="date">{{ post.date }}</h5>
@@ -100,10 +113,17 @@ quotes
             {% if t contains year %}
             <div class="grid-item">
                 <div class="preview">
+{% comment %}
+                    {% responsiveImage post.data.coverImage post.data.title 200 %}
+{% endcomment %}
+                    
                     <img src="{{ config.imageDirectory }}{{ post.data.coverImage }}" />
+                    
                 </div>
                 <h5 class="title">{{ post.data.title }}</h5>
+                <h5>{{ post.data.coverImage }} </h5>
                 <h5 class="date">{{ post.date }}</h5>
+
                 {% comment %}
                 <br /><span>{{ post.data.tags }}</span>
                 <br /><span>{{ post.data.download }}</span>
@@ -114,7 +134,5 @@ quotes
         </div>
     </div>
 {% endfor %}
-
-
 
 
