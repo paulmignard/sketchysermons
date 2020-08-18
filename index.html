@@ -8,6 +8,7 @@ eleventyExcludeFromCollections: true
     {% assign latestPost = post %}
 {% endfor %}
 <div id="latest-post">
+    <div class="latest-header">Latest Post:</div>
     <h2 class="header">{{ latestPost.data.title }}</h2>
     <h3 class="date">{{ latestPost.date | formatDate }}</h3>
     <div class="main-preview">

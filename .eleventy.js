@@ -70,7 +70,6 @@ module.exports = function(eleventyConfig) {
 
     });
 
-
     eleventyConfig.addCollection("latestPost", function(collectionApi) {
         console.log("Latest Post title: " + collectionApi.getAll()[0].data.title)
         // Let's sort this by date
