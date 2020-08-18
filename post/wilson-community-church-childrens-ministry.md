@@ -2,6 +2,7 @@
 title: "Wilson Community Church Children’s Ministry"
 date: "2018-08-11"
 
+coverImage:     "wilson-community-church-mural.jpg"
 tags:           ['post','wilson community church','commission']
 ---
 

@@ -1,7 +1,7 @@
 ---
 title:          Ezekiel 37:9
 date:           2020-08-12
-tags:           ['post','download','verse','ezekiel','sermon-notes']
+tags:           ['post','download','verse','ezekiel','sermon notes']
 layout:         post
 
 coverImage:     Ezekiel-37-9.png

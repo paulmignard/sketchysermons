@@ -2,6 +2,7 @@
 
 ---
 {% include '_header' %}
+    
     <header id="site-header">
       <div id="logo-container">
         <a class="logo" href="/">
@@ -12,13 +13,20 @@
       {% include '_navigation' %}
       </nav>
     </header>
-    <div id="content"> 
+    <div id="content" class="post"> 
       <header>
-          <h1>{{ title }}</h1>
+          <h1 class="title">{{ title }}</h1>
+          <div class="date">🗓 {{ date | formatDate }}</div>
           {% if coverImage != nil %}
           <aside id="featured-container">
             
-            <img id="featured-image" src="/images/posts/{{ coverImage }}" alt="Cover Image for {{ coverImage }}" />
+            {% if config.debug %}
+                <img id="featured-image" src="/images/posts/{{ coverImage }}" alt="Cover Image for {{ coverImage }}" />
+            {% else %}
+                {% responsiveImage coverImage post.data.title 1050 %}
+            {% endif %}
+            
+
             {% comment %}
             {{ coverImage | makeResponsive: alt:"moar alt text", options:"options" }}
 
@@ -34,57 +42,8 @@
 
       {% if download != null %}
         
-        <style>
-
-
-          .download-container{
-            border: 1px solid lightgray;
-            width: 100%;
-            height: 160px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin:50px 0;
-            transform-style: preserve-3d;
-            perspective: 400px;
-          }
-
-          .download-container:hover .download-preview{
-            transform: rotateY(-35deg);
-          }
-
-
-
-          .download-preview{
-            position:absolute;
-            height:150px;
-            width:auto;
-            right: 46px;
-            top: 3px;
-            box-shadow:5px 5px 15px rgba(0,0,0,.5);
-            transform: rotateY(-30deg);
-            transition: transform 1s ease;
-          }
-
-          .download-preview img{
-            height:100%;
-            width:auto;
-          }
-
-          @media only screen and (max-width: 600px) {
-              .download-container{
-                  padding:0;
-              }
-              
-              .download-preview{
-                  display:none;
-              }
-          }
-
-        </style>
-        
         <div class="download-container">
-          <a href="{{ download }}">Download</a>
+          <a href="/downloads/{{ download }}" download>Download 💾</a>
 
           <div class="download-preview">
             <img src="{{ featuredImage }}" />
@@ -95,13 +54,14 @@
         
       {% endif %}
 
+      {% if tags != nil %}
       <ul class="tags">
         <span>🔖 </span> 
         {%- for tag in tags -%}
           <li><a href="/tags/{{ tag }}">{{ tag }}</a></li>
         {%- endfor -%}
       </ul>
-
+      {% endif %}
       </article>
       <footer>
         {% include 'author' %}

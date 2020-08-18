@@ -1,19 +1,25 @@
 const Image = require("@11ty/eleventy-img");
+var moment = require('moment');
 
 module.exports = function(eleventyConfig) {
-  
-    eleventyConfig.setQuietMode(false);
+
+
+
+    eleventyConfig.setQuietMode(true);
 
     // Alright, let's resize some images!
-    eleventyConfig.addLiquidShortcode("responsiveImage", async function(src, alt, size) {
-      
+    eleventyConfig.addLiquidShortcode("responsiveImage", async function(src, alt, size, lazy=false) {
+
+      /*
       if(alt === undefined) {
         // You bet we throw an error on missing alt (alt="" works okay)
         throw new Error(`Missing \`alt\` on myResponsiveImage from: ${src}`);
-      }
+      }*/
 
       src = "images/posts/" + src;
       
+      console.log("Messing with image: " + src);
+
       // Let's figure out our width strategy here:
       let widthArray = [];
       if(typeof size == 'string'){
@@ -39,7 +45,12 @@ module.exports = function(eleventyConfig) {
       let stats = await Image(src, options);
       let lowestSrc = stats.jpeg[0];
       let sizes = "100vw"; // Make sure you customize this!
-  
+      
+      let lazyString = ' loading="lazy" '
+      if(!lazy){
+        lazyString = "";
+      }
+
       // Iterate over formats and widths
       return `<picture>
         ${Object.values(stats).map(imageFormat => {
@@ -49,16 +60,26 @@ module.exports = function(eleventyConfig) {
             alt="${alt}"
             src="${lowestSrc.url}"
             width="${lowestSrc.width}"
+            ${lazyString}
             height="${lowestSrc.height}">
         </picture>`;
+    });
 
-      
+    // Let's change how the dates display universally!
+    eleventyConfig.addLiquidFilter("formatDate",function(date){
+
+      return moment(date).format('MMMM Do, YYYY');
+
     });
 
 
     eleventyConfig.addCollection("latestPost", function(collectionApi) {
-        console.log(collectionApi.getAll()[0].data.title)
-        let collections = collectionApi.getAll();
+        console.log("Latest Post title: " + collectionApi.getAll()[0].data.title)
+        // Let's sort this by date
+        let collections = collectionApi.getAll().sort(function(a, b) {
+          return b.date - a.date;
+        });
+
         return collections.slice(0,1);
     });
 
@@ -82,14 +103,17 @@ module.exports = function(eleventyConfig) {
     ]);
 
     eleventyConfig.addPassthroughCopy("img");
+    eleventyConfig.addPassthroughCopy("downloads");
+    eleventyConfig.addPassthroughCopy("images/posts");
+    eleventyConfig.addPassthroughCopy("images/site");
 
     // Let's set up liquid!
     let liquidJs = require("liquidjs");
     let options = {
         extname: ".liquid",
-        dynamicPartials: true,
+        dynamicPartials: true, 
         strict_filters: true,
-        root: ["_includes"]
+        root: ["_includes"] 
     };
     eleventyConfig.setLibrary("liquid", liquidJs(options))
 

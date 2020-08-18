@@ -1,4 +1,5 @@
 {
     "imageDirectory"    : "/images/posts/",
-    "downloadDirectory" : "/downloads/"   
+    "downloadDirectory" : "/downloads/", 
+    "debug"             : true  
 }

@@ -2,6 +2,7 @@
 title: "Rickisms!"
 date: "2019-12-20"
 
+coverImage:     "rickisms.png"
 tags:           ['post','commission','rick ouimet']
 download:       "download"
 ---

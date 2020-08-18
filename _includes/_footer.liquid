@@ -1,58 +1,3 @@
-<style>
-    /*header*/
-
-    #logo-container{
-        width: 100%;
-        text-align: center;
-    }
-
-    #site-header nav{
-        text-align: center;
-    }
-
-    #site-header nav ul{
-        padding:10px 0;
-    }
-
-    #site-header nav ul li{
-        display:inline-block;
-        padding:0 5px;
-    }
-
-    /*footer*/
-
-    #copyright{
-        border-top:1px solid #dcd7ca;
-        padding:40px 0px;
-    }
-
-    .footer-widgets{
-        display:flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-
-    .widget{
-        flex: 0 50%;
-        /*height: 100px;
-        margin-bottom: 2%; /* (100-32*3)/2 */
-    }
-
-        .widget ul{
-            padding:10px 0;
-        }
-
-        .widget ul li{
-            list-style-type: none;
-        }
-
-    @media only screen and (max-width: 600px) {
-        .widget{
-            flex: 0 100%;
-        }
-    }
-
-</style>
 
 <footer id="site-footer">
     <div class="footer-widgets">
@@ -85,8 +30,13 @@
         <img class="footer-splash" src="/images/sketchy-footer.jpg" />
     </div>
     <aside id="copyright">
-        <span>&copy; 2020</span>
-        <span><a href="/">Sketchy Sermons</a></span>
-        <span><a href="/privacy">Privacy Policy</a></span>
+        <div class="left">
+            <span>&copy; 2020</span>
+            <span><a href="/">Sketchy Sermons</a></span>
+            <span><a href="/privacy">Privacy Policy</a></span>
+        </div> 
+        <div class="right">
+            <span>All content here is under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Common</a> license.
+        </div>
     </aside>
 </footer>

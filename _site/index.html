@@ -8,86 +8,226 @@
     <style>
         @import url("https://use.typekit.net/ldl2qrh.css");
 
-        body{
-          font-family: source-sans-pro, sans-serif;
-          letter-spacing: normal;
-          line-height: 1.8em;
-          font-size:1.2em;
-        }
+      body{
+        font-family: source-sans-pro, sans-serif;
+        letter-spacing: normal;
+        line-height: 1.8em;
+        font-size:1.2em;
+      }
 
-        h1,h2,h3,h4{
-          font-family: flood-std, sans-serif;
-          font-style: normal;
-          font-weight: 400;
-          letter-spacing: -0.0415625em;
-          line-height: 1.25;
-          -webkit-font-smoothing: antialiased;
-        }
+      h1,h2,h3,h4{
+        font-family: flood-std, sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: -0.0415625em;
+        line-height: 1.25;
+        -webkit-font-smoothing: antialiased;
+      }
 
-        h1{
-          font-size:3em;
+      h1{
+        font-size:3em;
+        text-align:center;
+      }
+
+      h3{
+        font-size: 2.4rem;
+        text-align:center;
+      }
+
+      #featured-image{
+        width:100%;
+        height:auto;
+      }
+
+
+      #avatar img{
+        border-radius:50%;
+        width:100px;
+      }
+
+
+      #site-header{
+          margin:0 auto;
+          max-width:900px;
+          padding:15px;
+      }
+
+      #content,#site-footer{
+          margin:0 auto;
+          max-width:1024px;
+          padding:15px;
+      }
+
+      #site-footer .splash{
           text-align:center;
-        }
+      }
 
-        h3{
-          font-size: 2.4rem;
+      .logo img{
+          width:100%;
+          max-width:550px;
           text-align:center;
-        }
+      }
 
-        #featured-image{
+      .tags{
+          padding-left:0;
+      }
+
+      .tags li{
+          display:inline-block;
+          padding:0 5px;
+      }
+
+      .footer-splash{
           width:100%;
           height:auto;
-        }
+          
+      }
 
 
-        #avatar img{
-          border-radius:50%;
-          width:100px;
-        }
+      a{
+          color: #cd2653;
+          font-weight: 700;
+      }
+
+      .post-image-list {
+        max-width: 1024px;
+        margin: 0 auto;
+      }
+
+      .grid-row {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+      }
+
+      .grid-item {
+        -ms-flex: auto;
+        position: relative;
+        padding: 10px;
+        box-sizing: border-box;
+      }
+
+      .third{
+          flex-basis: 33%;
+      }
+
+      .quarter{
+          flex-basis: 25%;
+      }
+
+      .grid-item .preview{
+          text-align:center;
+      }
+  
+      .grid-item .preview img{
+          width:auto;
+          height:150px;
+          /*min-height:200px;
+          min-width:200px;*/
+          box-shadow:0 5px 5px rgba(0,0,0,.5);
+          padding: 5px;
+          border: 1px solid rgba(0,0,0,.1);
+      }
+
+      .grid-item .title,.grid-item .date{
+          text-align:center;
+      }
+
+      .grid-item h5{
+          font-weight: normal;
+          text-align: center;
+          margin-bottom: 0;
+          margin-top: 10px;
+      }
+
+      .grid-item h5.date{
+          color:#666;
+          font-weight: normal;
+          text-align: center;
+          margin-top: 0;
+      }
+
+      .post-image-list .post{
+          background-color:yellow;
+      }
+
+      .main-preview img{
+          width: 100% !important;
+          height: auto !important;
+      }
+
+      h2.header{
+          font-size:3em;
+          text-align:center;
+      }
+
+      h3.date{
+          text-align:center;
+      }
+
+      .post .title{
+          margin-top:0;
+          margin-bottom:0;
+      }
+
+      .post .date{
+          color: rgb(109, 109, 109);
+          font-weight:bold;
+          text-align:center;
+          margin-bottom:50px;
+      }
 
 
-        #site-header{
-            margin:0 auto;
-            max-width:900px;
-            padding:15px;
-        }
+      .download-container{
+        border: 1px solid lightgray;
+        width: 100%;
+        height: 160px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin:50px 0;
+        transform-style: preserve-3d;
+        perspective: 400px;
+      }
 
-        #content,#site-footer{
-            margin:0 auto;
-            max-width:1024px;
-            padding:15px;
-        }
-
-        #site-footer .splash{
-            text-align:center;
-        }
-
-        .logo img{
-            width:100%;
-            max-width:550px;
-            text-align:center;
-        }
-
-        .tags{
-            padding-left:0;
-        }
-
-        .tags li{
-            display:inline-block;
-            padding:0 5px;
-        }
-
-        .footer-splash{
-            width:100%;
-            height:auto;
-            
-        }
+      .download-container:hover .download-preview{
+        transform: rotateY(-35deg);
+      }
 
 
-        a{
-            color: #cd2653;
-            font-weight: 700;
-        }
+
+      .download-preview{
+        position:absolute;
+        height:150px;
+        width:auto;
+        right: 46px;
+        top: 3px;
+        box-shadow:5px 5px 15px rgba(0,0,0,.5);
+        transform: rotateY(-30deg);
+        transition: transform 1s ease;
+      }
+
+      .download-preview img{
+        height:100%;
+        width:auto;
+      }
+
+      @media only screen and (max-width: 600px) {
+          .download-container{
+              padding:0;
+          }
+          
+          .download-preview{
+              display:none;
+          }
+      }
+
+      .download-container a{
+        font-size:2em;
+        color:lightgray;
+      }
+
+</style>
     </style>
 
   </head>
@@ -95,7 +235,7 @@
     <header id="site-header">
       <div id="logo-container">
         <a class="logo" href="/">
-          <h1>Sketchy Sermons</h1>  
+          <img src="/images/site/sketchy-header-v2.png" />
         </a>
       </div>
       <nav>
@@ -103,6 +243,7 @@
 <ul>
     <li><a href="/">Home</a></li>
     <li><a href="/about">About</a></li>
+    <li><a href="/contact">Contact</a></li>
 </ul>
 
       </nav>
@@ -110,221 +251,132 @@
     <div id="content"> 
       
       
-<style>
 
+    
 
-.post-image-list {
-  max-width: 1024px;
-  margin: 0 auto;
-}
-
-.grid-row {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-start;
-}
-
-.grid-item {
-  flex-basis: 33%;
-  -ms-flex: auto;
-  position: relative;
-  padding: 10px;
-  box-sizing: border-box;
-}
-
-    .grid-item .preview{
-        text-align:center;
-    }
-
-    .grid-item .preview img{
-        width:auto;
-        height:200px;
-        min-height:200px;
-        min-width:200px;
-        box-shadow:0 5px 5px rgba(0,0,0,.5);
-        padding: 5px;
-        border: 1px solid rgba(0,0,0,.1);
-    }
-
-    .grid-item .title,.grid-item .date{
-        text-align:center;
-    }
-
-.post-image-list .post{
-    background-color:yellow;
-}
-
-.main-preview img{
-    width: 100% !important;
-    height: auto !important;
-}
-
-</style>
-
-
-
-
-    <h2>Latest Post: Ezekiel 37:9</h2>
+<div id="latest-post">
+    <h2 class="header">Whom Do We Serve</h2>
+    <h3 class="date">August 15th, 2020</h3>
     <div class="main-preview">
-    <picture>
-          <source type="image/webp" srcset="/img/c2940261-1050.webp 1050w" sizes="100vw">
-  <source type="image/jpeg" srcset="/img/c2940261-1050.jpeg 1050w" sizes="100vw">
-  <source type="image/png" srcset="/img/c2940261-1050.png 1050w" sizes="100vw">
-          <img
-            alt="Ezekiel 37:9"
-            src="/img/c2940261-1050.jpeg"
-            width="1050"
-            height="1050">
-        </picture>
+
+        
+            <img src="/images/posts/TRBC-8-16-20.png" />
+        
+        
+    </div>
+    <p><p>“Never forget your purpose.” I feel like that could be the last point to just about any mission statement out there. Pastor Jonathan was bringing some 🔥 at Thomas Road Baptist Church yesterday!</p>
+</p>
+    
+    
+    <div class="tag-container">
+        <ul class="tags">
+            <span>🔖 </span> 
+            
+                <li><a href="/tags/post">post</a></li>
+            
+                <li><a href="/tags/download">download</a></li>
+            
+                <li><a href="/tags/sermon notes">sermon notes</a></li>
+            
+                <li><a href="/tags/trbc">trbc</a></li>
+            
+                <li><a href="/tags/jonathan falwell">jonathan falwell</a></li>
+            
+                <li><a href="/tags/jerry falwell">jerry falwell</a></li>
+            
+        </ul>
+    </div>
+    <div class="download-container">
+        <a href="TRBC-8-16-20.pdf">Download! </a>
     </div>
     
 
-    <br /><span>/post/ezekiel-37_9/</span>
-    <br /><span>Tue Aug 11 2020 20:00:00 GMT-0400 (Eastern Daylight Time)</span>
-    <br /><span>["post","download","verse","ezekiel","sermon-notes"]</span>
-    <br /><span>https://sketchysermons.com/wp-content/uploads/2020/08/Ezekiel-37-9.pdf</span>
-    <p><p>I’m not trying to be dark; stay with me for a second….</p>
-<p>The last sermon I sketch noted had me looking up Ezekiels prophecy and I just found the language around it so interesting. Ezekiel 37 is a vision about being placed in a valley of dry bones and how the Lord commands Ezekiel to prophecy to the bones to make them live again. The vision is explained to be the restoring of the Israelites to their land but the vision cast is super-grim and at the same time, super epic.</p>
-<p>Then He said to me, “Son of man, these bones are the whole house of Israel; behold, they say, ‘Our bones are dried up and our hope has perished. We are completely cut off.’ Therefore prophesy and say to them, ‘Thus says the Lord God, “Behold, I will open your graves and cause you to come up out of your graves, My people; and I will bring you into the land of Israel. Then you will know that I am the Lord, when I have opened your graves and caused you to come up out of your graves, My people. I will put My Spirit within you and you will come to life, and I will place you on your own land. Then you will know that I, the Lord, have spoken and done it,” declares the Lord.’”</p>
-<p>The imagery of the Old Testament can be so grand.</p>
-</p>
+</div> 
 
 
-<h3>Last 6 posts!</h3>
-
+<h2 class="header">Last 6 posts!</h2>
 <div class="post-image-list">
     <div class="grid-row">
     
-        <div class="grid-item">
-            <div class="preview">
-
-                <picture>
-          <source type="image/webp" srcset="/img/ab3a4c20-275.webp 275w" sizes="100vw">
-  <source type="image/jpeg" srcset="/img/ab3a4c20-275.jpeg 275w" sizes="100vw">
-  <source type="image/png" srcset="/img/ab3a4c20-275.png 275w" sizes="100vw">
-          <img
-            alt="4-Letter Words Part III: Hope"
-            src="/img/ab3a4c20-275.jpeg"
-            width="275"
-            height="213">
-        </picture>
-                
-            </div>
-            <h5>4-Letter Words Part III: Hope</h5>
-            <h5 class="date">Mon Aug 10 2020 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
+        <div class="grid-item third">
+            <a href="/post/ezekiel-37_9/">
+                <div class="preview">
+                    
+                        <img src="/images/posts/Ezekiel-37-9.png" />
+                    
+                </div>
+                <h5>Ezekiel 37:9</h5>
+                <h5 class="date">August 11th, 2020</h5>
+            </a>
         </div>
     
-        <div class="grid-item">
-            <div class="preview">
-
-                <picture>
-          <source type="image/webp" srcset="/img/582e0fa4-275.webp 275w" sizes="100vw">
-  <source type="image/jpeg" srcset="/img/582e0fa4-275.jpeg 275w" sizes="100vw">
-  <source type="image/png" srcset="/img/582e0fa4-275.png 275w" sizes="100vw">
-          <img
-            alt="There is a River"
-            src="/img/582e0fa4-275.jpeg"
-            width="275"
-            height="213">
-        </picture>
-                
-            </div>
-            <h5>There is a River</h5>
-            <h5 class="date">Sat Aug 08 2020 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
+        <div class="grid-item third">
+            <a href="/post/4-letter-words-part-iii-hope/">
+                <div class="preview">
+                    
+                        <img src="/images/posts/reschurch-8-9-20.png" />
+                    
+                </div>
+                <h5>4-Letter Words Part III: Hope</h5>
+                <h5 class="date">August 10th, 2020</h5>
+            </a>
         </div>
     
-        <div class="grid-item">
-            <div class="preview">
-
-                <picture>
-          <source type="image/webp" srcset="/img/b99b46cf-275.webp 275w" sizes="100vw">
-  <source type="image/jpeg" srcset="/img/b99b46cf-275.jpeg 275w" sizes="100vw">
-  <source type="image/png" srcset="/img/b99b46cf-275.png 275w" sizes="100vw">
-          <img
-            alt="Love in Every Season by Debra Fileta"
-            src="/img/b99b46cf-275.jpeg"
-            width="275"
-            height="213">
-        </picture>
-                
-            </div>
-            <h5>Love in Every Season by Debra Fileta</h5>
-            <h5 class="date">Wed Aug 05 2020 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
+        <div class="grid-item third">
+            <a href="/post/there-is-a-river/">
+                <div class="preview">
+                    
+                        <img src="/images/posts/TRBC-8-9-20.png" />
+                    
+                </div>
+                <h5>There is a River</h5>
+                <h5 class="date">August 8th, 2020</h5>
+            </a>
         </div>
     
-        <div class="grid-item">
-            <div class="preview">
-
-                <picture>
-          <source type="image/webp" srcset="/img/6428689a-275.webp 275w" sizes="100vw">
-  <source type="image/jpeg" srcset="/img/6428689a-275.jpeg 275w" sizes="100vw">
-  <source type="image/png" srcset="/img/6428689a-275.png 275w" sizes="100vw">
-          <img
-            alt="The Unfolding of Your Words"
-            src="/img/6428689a-275.jpeg"
-            width="275"
-            height="275">
-        </picture>
-                
-            </div>
-            <h5>The Unfolding of Your Words</h5>
-            <h5 class="date">Tue Aug 04 2020 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
+        <div class="grid-item third">
+            <a href="/post/love-in-every-season-by-debra-fileta/">
+                <div class="preview">
+                    
+                        <img src="/images/posts/love-in-every-season.png" />
+                    
+                </div>
+                <h5>Love in Every Season by Debra Fileta</h5>
+                <h5 class="date">August 5th, 2020</h5>
+            </a>
         </div>
     
-        <div class="grid-item">
-            <div class="preview">
-
-                <picture>
-          <source type="image/webp" srcset="/img/678a39ef-275.webp 275w" sizes="100vw">
-  <source type="image/jpeg" srcset="/img/678a39ef-275.jpeg 275w" sizes="100vw">
-  <source type="image/png" srcset="/img/678a39ef-275.png 275w" sizes="100vw">
-          <img
-            alt="A Life Worth Living"
-            src="/img/678a39ef-275.jpeg"
-            width="275"
-            height="213">
-        </picture>
-                
-            </div>
-            <h5>A Life Worth Living</h5>
-            <h5 class="date">Sat Aug 01 2020 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
+        <div class="grid-item third">
+            <a href="/post/the-unfolding-of-your-words/">
+                <div class="preview">
+                    
+                        <img src="/images/posts/psalm-119.png" />
+                    
+                </div>
+                <h5>The Unfolding of Your Words</h5>
+                <h5 class="date">August 4th, 2020</h5>
+            </a>
         </div>
     
-        <div class="grid-item">
-            <div class="preview">
-
-                <picture>
-          <source type="image/webp" srcset="/img/6792914b-275.webp 275w" sizes="100vw">
-  <source type="image/jpeg" srcset="/img/6792914b-275.jpeg 275w" sizes="100vw">
-  <source type="image/png" srcset="/img/6792914b-275.png 275w" sizes="100vw">
-          <img
-            alt="4-Letter Words Part II: Hell"
-            src="/img/6792914b-275.jpeg"
-            width="275"
-            height="213">
-        </picture>
-                
-            </div>
-            <h5>4-Letter Words Part II: Hell</h5>
-            <h5 class="date">Sat Aug 01 2020 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
+        <div class="grid-item third">
+            <a href="/post/4-letter-words-part-ii-hell/">
+                <div class="preview">
+                    
+                        <img src="/images/posts/reschurch-8-2-20.png" />
+                    
+                </div>
+                <h5>4-Letter Words Part II: Hell</h5>
+                <h5 class="date">August 1st, 2020</h5>
+            </a>
         </div>
     
     </div class="row">
 </div>
 
-
-<h2>What do I do here?</h2>
-
-sermon notes
-
-book summaries
-
-quotes
-
-<h2>Every Single Post Ever!</h2>
+<h2 class="header">Every Single Post Ever!</h2>
 
 
-    <h2>2020</h2>
+    <h2 class="header">2020</h2>
     <div class="post-image-list">
         <div class="grid-row">
         
@@ -332,18 +384,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/Ezekiel-37-9.png" />
-                    
-                </div>
-                <h5 class="title">Ezekiel 37:9</h5>
-                <h5>Ezekiel-37-9.png </h5>
-                <h5 class="date">Tue Aug 11 2020 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/whom-do-we-serve/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/TRBC-8-16-20.png" />
+                        
+                    </div>
+                    <h5>Whom Do We Serve</h5>
+                    <h5 class="date">August 15th, 2020</h5>
+                </a>
             </div>
             
         
@@ -351,18 +401,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/reschurch-8-9-20.png" />
-                    
-                </div>
-                <h5 class="title">4-Letter Words Part III: Hope</h5>
-                <h5>reschurch-8-9-20.png </h5>
-                <h5 class="date">Mon Aug 10 2020 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/ezekiel-37_9/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/Ezekiel-37-9.png" />
+                        
+                    </div>
+                    <h5>Ezekiel 37:9</h5>
+                    <h5 class="date">August 11th, 2020</h5>
+                </a>
             </div>
             
         
@@ -370,18 +418,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/TRBC-8-9-20.png" />
-                    
-                </div>
-                <h5 class="title">There is a River</h5>
-                <h5>TRBC-8-9-20.png </h5>
-                <h5 class="date">Sat Aug 08 2020 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/4-letter-words-part-iii-hope/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/reschurch-8-9-20.png" />
+                        
+                    </div>
+                    <h5>4-Letter Words Part III: Hope</h5>
+                    <h5 class="date">August 10th, 2020</h5>
+                </a>
             </div>
             
         
@@ -389,18 +435,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/love-in-every-season.png" />
-                    
-                </div>
-                <h5 class="title">Love in Every Season by Debra Fileta</h5>
-                <h5>love-in-every-season.png </h5>
-                <h5 class="date">Wed Aug 05 2020 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/there-is-a-river/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/TRBC-8-9-20.png" />
+                        
+                    </div>
+                    <h5>There is a River</h5>
+                    <h5 class="date">August 8th, 2020</h5>
+                </a>
             </div>
             
         
@@ -408,18 +452,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/psalm-119.png" />
-                    
-                </div>
-                <h5 class="title">The Unfolding of Your Words</h5>
-                <h5>psalm-119.png </h5>
-                <h5 class="date">Tue Aug 04 2020 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/love-in-every-season-by-debra-fileta/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/love-in-every-season.png" />
+                        
+                    </div>
+                    <h5>Love in Every Season by Debra Fileta</h5>
+                    <h5 class="date">August 5th, 2020</h5>
+                </a>
             </div>
             
         
@@ -427,18 +469,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/trbc-8-2-20.png" />
-                    
-                </div>
-                <h5 class="title">A Life Worth Living</h5>
-                <h5>trbc-8-2-20.png </h5>
-                <h5 class="date">Sat Aug 01 2020 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/the-unfolding-of-your-words/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/psalm-119.png" />
+                        
+                    </div>
+                    <h5>The Unfolding of Your Words</h5>
+                    <h5 class="date">August 4th, 2020</h5>
+                </a>
             </div>
             
         
@@ -446,18 +486,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/reschurch-8-2-20.png" />
-                    
-                </div>
-                <h5 class="title">4-Letter Words Part II: Hell</h5>
-                <h5>reschurch-8-2-20.png </h5>
-                <h5 class="date">Sat Aug 01 2020 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/a-life-worth-living/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/trbc-8-2-20.png" />
+                        
+                    </div>
+                    <h5>A Life Worth Living</h5>
+                    <h5 class="date">August 1st, 2020</h5>
+                </a>
             </div>
             
         
@@ -465,18 +503,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/TRBC-7-26-20.png" />
-                    
-                </div>
-                <h5 class="title">Faith With Feet: James 5</h5>
-                <h5>TRBC-7-26-20.png </h5>
-                <h5 class="date">Sat Jul 25 2020 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/4-letter-words-part-ii-hell/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/reschurch-8-2-20.png" />
+                        
+                    </div>
+                    <h5>4-Letter Words Part II: Hell</h5>
+                    <h5 class="date">August 1st, 2020</h5>
+                </a>
             </div>
             
         
@@ -484,18 +520,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/Finley.png" />
-                    
-                </div>
-                <h5 class="title">Ron Finley on Fat-Burning Man</h5>
-                <h5>Finley.png </h5>
-                <h5 class="date">Thu Jul 23 2020 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/faith-with-feet-james-5/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/TRBC-7-26-20.png" />
+                        
+                    </div>
+                    <h5>Faith With Feet: James 5</h5>
+                    <h5 class="date">July 25th, 2020</h5>
+                </a>
             </div>
             
         
@@ -503,18 +537,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/TRBC-7-19-20.png" />
-                    
-                </div>
-                <h5 class="title">Faith With Feet: The Right Path</h5>
-                <h5>TRBC-7-19-20.png </h5>
-                <h5 class="date">Sat Jul 18 2020 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/ron-finley-on-fat-burning-man/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/Finley.png" />
+                        
+                    </div>
+                    <h5>Ron Finley on Fat-Burning Man</h5>
+                    <h5 class="date">July 23rd, 2020</h5>
+                </a>
             </div>
             
         
@@ -522,18 +554,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/TRBC-7-12-20.png" />
-                    
-                </div>
-                <h5 class="title">Faith With Feet: What We Say and What We Sow</h5>
-                <h5>TRBC-7-12-20.png </h5>
-                <h5 class="date">Sat Jul 11 2020 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/faith-with-feet-the-right-path/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/TRBC-7-19-20.png" />
+                        
+                    </div>
+                    <h5>Faith With Feet: The Right Path</h5>
+                    <h5 class="date">July 18th, 2020</h5>
+                </a>
             </div>
             
         
@@ -541,18 +571,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/TRBC-7-5-20.png" />
-                    
-                </div>
-                <h5 class="title">Faith With Feet: Faith and Works</h5>
-                <h5>TRBC-7-5-20.png </h5>
-                <h5 class="date">Sat Jul 04 2020 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/faith-with-feet-what-we-say-and-what-we-sow/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/TRBC-7-12-20.png" />
+                        
+                    </div>
+                    <h5>Faith With Feet: What We Say and What We Sow</h5>
+                    <h5 class="date">July 11th, 2020</h5>
+                </a>
             </div>
             
         
@@ -560,18 +588,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/TRBC-6-28-20.png" />
-                    
-                </div>
-                <h5 class="title">Faith with Feet</h5>
-                <h5>TRBC-6-28-20.png </h5>
-                <h5 class="date">Sat Jun 27 2020 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/faith-with-feet-faith-and-works/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/TRBC-7-5-20.png" />
+                        
+                    </div>
+                    <h5>Faith With Feet: Faith and Works</h5>
+                    <h5 class="date">July 4th, 2020</h5>
+                </a>
             </div>
             
         
@@ -579,18 +605,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/Draplin.png" />
-                    
-                </div>
-                <h5 class="title">Aaron Draplin on Creative Pep Talk</h5>
-                <h5>Draplin.png </h5>
-                <h5 class="date">Tue Jun 23 2020 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/faith-with-feet/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/TRBC-6-28-20.png" />
+                        
+                    </div>
+                    <h5>Faith with Feet</h5>
+                    <h5 class="date">June 27th, 2020</h5>
+                </a>
             </div>
             
         
@@ -598,18 +622,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/TRBC-6-21-20.png" />
-                    
-                </div>
-                <h5 class="title">Father of Fathers</h5>
-                <h5>TRBC-6-21-20.png </h5>
-                <h5 class="date">Sat Jun 20 2020 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/aaron-draplin-on-creative-pep-talk/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/Draplin.png" />
+                        
+                    </div>
+                    <h5>Aaron Draplin on Creative Pep Talk</h5>
+                    <h5 class="date">June 23rd, 2020</h5>
+                </a>
             </div>
             
         
@@ -617,18 +639,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/TRBC-6-14-20.png" />
-                    
-                </div>
-                <h5 class="title">Run the Race: Running with Heart Part II</h5>
-                <h5>TRBC-6-14-20.png </h5>
-                <h5 class="date">Sat Jun 13 2020 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/father-of-fathers/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/TRBC-6-21-20.png" />
+                        
+                    </div>
+                    <h5>Father of Fathers</h5>
+                    <h5 class="date">June 20th, 2020</h5>
+                </a>
             </div>
             
         
@@ -636,18 +656,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/Jocko.png" />
-                    
-                </div>
-                <h5 class="title">No One Else to Blame</h5>
-                <h5>Jocko.png </h5>
-                <h5 class="date">Tue Jun 09 2020 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/run-the-race-running-with-heart-part-ii/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/TRBC-6-14-20.png" />
+                        
+                    </div>
+                    <h5>Run the Race: Running with Heart Part II</h5>
+                    <h5 class="date">June 13th, 2020</h5>
+                </a>
             </div>
             
         
@@ -655,18 +673,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/TRBC-6-7-20.png" />
-                    
-                </div>
-                <h5 class="title">Run the Race: Run it with Heart!</h5>
-                <h5>TRBC-6-7-20.png </h5>
-                <h5 class="date">Sat Jun 06 2020 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/no-one-else-to-blame/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/Jocko.png" />
+                        
+                    </div>
+                    <h5>No One Else to Blame</h5>
+                    <h5 class="date">June 9th, 2020</h5>
+                </a>
             </div>
             
         
@@ -674,18 +690,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/Falwell.png" />
-                    
-                </div>
-                <h5 class="title">Jonathan Falwell on Racism</h5>
-                <h5>Falwell.png </h5>
-                <h5 class="date">Mon Jun 01 2020 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/run-the-race-run-it-with-heart/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/TRBC-6-7-20.png" />
+                        
+                    </div>
+                    <h5>Run the Race: Run it with Heart!</h5>
+                    <h5 class="date">June 6th, 2020</h5>
+                </a>
             </div>
             
         
@@ -693,18 +707,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/TRBC-5-31-20.png" />
-                    
-                </div>
-                <h5 class="title">Run the Race: Running into the Wind</h5>
-                <h5>TRBC-5-31-20.png </h5>
-                <h5 class="date">Sat May 30 2020 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/jonathan-falwell-quote/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/Falwell.png" />
+                        
+                    </div>
+                    <h5>Jonathan Falwell on Racism</h5>
+                    <h5 class="date">June 1st, 2020</h5>
+                </a>
             </div>
             
         
@@ -712,18 +724,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/TRBC-5-24-20.png" />
-                    
-                </div>
-                <h5 class="title">Run The Race: A New Beginning</h5>
-                <h5>TRBC-5-24-20.png </h5>
-                <h5 class="date">Sat May 23 2020 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/run-the-race-running-into-the-wind/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/TRBC-5-31-20.png" />
+                        
+                    </div>
+                    <h5>Run the Race: Running into the Wind</h5>
+                    <h5 class="date">May 30th, 2020</h5>
+                </a>
             </div>
             
         
@@ -731,18 +741,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/prayed-for.png" />
-                    
-                </div>
-                <h5 class="title">You've Been Prayed For Today</h5>
-                <h5>prayed-for.png </h5>
-                <h5 class="date">Thu May 21 2020 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/run-the-race-a-new-beginning/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/TRBC-5-24-20.png" />
+                        
+                    </div>
+                    <h5>Run The Race: A New Beginning</h5>
+                    <h5 class="date">May 23rd, 2020</h5>
+                </a>
             </div>
             
         
@@ -750,18 +758,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/Furtick.png" />
-                    
-                </div>
-                <h5 class="title">Steven Furtick Quote</h5>
-                <h5>Furtick.png </h5>
-                <h5 class="date">Wed May 20 2020 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/youve-been-prayed-for-today/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/prayed-for.png" />
+                        
+                    </div>
+                    <h5>You've Been Prayed For Today</h5>
+                    <h5 class="date">May 21st, 2020</h5>
+                </a>
             </div>
             
         
@@ -769,18 +775,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/TRBC-5-17-20.png" />
-                    
-                </div>
-                <h5 class="title">Run The Race: Never, Never Quit</h5>
-                <h5>TRBC-5-17-20.png </h5>
-                <h5 class="date">Sat May 16 2020 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/steven-furtick-quote/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/Furtick.png" />
+                        
+                    </div>
+                    <h5>Steven Furtick Quote</h5>
+                    <h5 class="date">May 20th, 2020</h5>
+                </a>
             </div>
             
         
@@ -788,18 +792,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/TRBC-5-10-20-1.png" />
-                    
-                </div>
-                <h5 class="title">The Power of a Godly Woman...and Man!</h5>
-                <h5>TRBC-5-10-20-1.png </h5>
-                <h5 class="date">Sat May 09 2020 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/run-the-race-never-never-quit/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/TRBC-5-17-20.png" />
+                        
+                    </div>
+                    <h5>Run The Race: Never, Never Quit</h5>
+                    <h5 class="date">May 16th, 2020</h5>
+                </a>
             </div>
             
         
@@ -807,18 +809,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/TRBC-5-3-20.png" />
-                    
-                </div>
-                <h5 class="title">Acorns and Oak Trees</h5>
-                <h5>TRBC-5-3-20.png </h5>
-                <h5 class="date">Sat May 02 2020 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/the-power-of-a-godly-woman-and-man/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/TRBC-5-10-20-1.png" />
+                        
+                    </div>
+                    <h5>The Power of a Godly Woman...and Man!</h5>
+                    <h5 class="date">May 9th, 2020</h5>
+                </a>
             </div>
             
         
@@ -826,18 +826,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/TRBC-4-26-20.png" />
-                    
-                </div>
-                <h5 class="title">And You Shall...</h5>
-                <h5>TRBC-4-26-20.png </h5>
-                <h5 class="date">Sat Apr 25 2020 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/acorns-and-oak-trees/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/TRBC-5-3-20.png" />
+                        
+                    </div>
+                    <h5>Acorns and Oak Trees</h5>
+                    <h5 class="date">May 2nd, 2020</h5>
+                </a>
             </div>
             
         
@@ -845,18 +843,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/TRBC-4-19-20.png" />
-                    
-                </div>
-                <h5 class="title">Famous Last Words: Never Alone</h5>
-                <h5>TRBC-4-19-20.png </h5>
-                <h5 class="date">Sat Apr 18 2020 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/and-you-shall/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/TRBC-4-26-20.png" />
+                        
+                    </div>
+                    <h5>And You Shall...</h5>
+                    <h5 class="date">April 25th, 2020</h5>
+                </a>
             </div>
             
         
@@ -864,18 +860,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/TRBC-4-12-20.png" />
-                    
-                </div>
-                <h5 class="title">Easter Sunday: He Lives!</h5>
-                <h5>TRBC-4-12-20.png </h5>
-                <h5 class="date">Sat Apr 11 2020 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/famous-last-words-never-alone/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/TRBC-4-19-20.png" />
+                        
+                    </div>
+                    <h5>Famous Last Words: Never Alone</h5>
+                    <h5 class="date">April 18th, 2020</h5>
+                </a>
             </div>
             
         
@@ -883,18 +877,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/TRBC-4-5-20.png" />
-                    
-                </div>
-                <h5 class="title">Famous Last Words, Part II</h5>
-                <h5>TRBC-4-5-20.png </h5>
-                <h5 class="date">Sat Apr 04 2020 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/easter-sunday-he-lives/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/TRBC-4-12-20.png" />
+                        
+                    </div>
+                    <h5>Easter Sunday: He Lives!</h5>
+                    <h5 class="date">April 11th, 2020</h5>
+                </a>
             </div>
             
         
@@ -902,18 +894,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/Pen-test.png" />
-                    
-                </div>
-                <h5 class="title">Pen Test!</h5>
-                <h5>Pen-test.png </h5>
-                <h5 class="date">Mon Mar 30 2020 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/famous-last-words-part-ii/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/TRBC-4-5-20.png" />
+                        
+                    </div>
+                    <h5>Famous Last Words, Part II</h5>
+                    <h5 class="date">April 4th, 2020</h5>
+                </a>
             </div>
             
         
@@ -921,18 +911,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/TRBC-3-29-20.png" />
-                    
-                </div>
-                <h5 class="title">Famous Last Words, Part I</h5>
-                <h5>TRBC-3-29-20.png </h5>
-                <h5 class="date">Sat Mar 28 2020 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/pen-test/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/Pen-test.png" />
+                        
+                    </div>
+                    <h5>Pen Test!</h5>
+                    <h5 class="date">March 30th, 2020</h5>
+                </a>
             </div>
             
         
@@ -940,18 +928,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/Godin.png" />
-                    
-                </div>
-                <h5 class="title">Seth Godin : Is everything going to be ok?</h5>
-                <h5>Godin.png </h5>
-                <h5 class="date">Thu Mar 26 2020 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/famous-last-words-part-i/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/TRBC-3-29-20.png" />
+                        
+                    </div>
+                    <h5>Famous Last Words, Part I</h5>
+                    <h5 class="date">March 28th, 2020</h5>
+                </a>
             </div>
             
         
@@ -959,18 +945,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/TRBC-3-22-20.png" />
-                    
-                </div>
-                <h5 class="title">Lessons from the Belly of the Whale</h5>
-                <h5>TRBC-3-22-20.png </h5>
-                <h5 class="date">Sat Mar 21 2020 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/seth-godin-is-everything-going-to-be-ok/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/Godin.png" />
+                        
+                    </div>
+                    <h5>Seth Godin : Is everything going to be ok?</h5>
+                    <h5 class="date">March 26th, 2020</h5>
+                </a>
             </div>
             
         
@@ -978,18 +962,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/fresco-tiger.png" />
-                    
-                </div>
-                <h5 class="title">Trying out Adobe Fresco</h5>
-                <h5>fresco-tiger.png </h5>
-                <h5 class="date">Wed Mar 18 2020 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/lessons-from-the-belly-of-the-whale/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/TRBC-3-22-20.png" />
+                        
+                    </div>
+                    <h5>Lessons from the Belly of the Whale</h5>
+                    <h5 class="date">March 21st, 2020</h5>
+                </a>
             </div>
             
         
@@ -997,18 +979,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/TRBC-3-15-20.png" />
-                    
-                </div>
-                <h5 class="title">Living the Dash</h5>
-                <h5>TRBC-3-15-20.png </h5>
-                <h5 class="date">Sat Mar 14 2020 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/trying-out-adobe-fresco/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/fresco-tiger.png" />
+                        
+                    </div>
+                    <h5>Trying out Adobe Fresco</h5>
+                    <h5 class="date">March 18th, 2020</h5>
+                </a>
             </div>
             
         
@@ -1016,18 +996,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/Managing-leadership-anxiety.png" />
-                    
-                </div>
-                <h5 class="title">Managing Leadership Anxiety - Steve Cuss</h5>
-                <h5>Managing-leadership-anxiety.png </h5>
-                <h5 class="date">Tue Mar 10 2020 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/living-the-dash/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/TRBC-3-15-20.png" />
+                        
+                    </div>
+                    <h5>Living the Dash</h5>
+                    <h5 class="date">March 14th, 2020</h5>
+                </a>
             </div>
             
         
@@ -1035,18 +1013,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/proverbs-30-29-31.png" />
-                    
-                </div>
-                <h5 class="title">Proverbs 30:29-31</h5>
-                <h5>proverbs-30-29-31.png </h5>
-                <h5 class="date">Mon Mar 09 2020 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/managing-leadership-anxiety-steve-cuss/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/Managing-leadership-anxiety.png" />
+                        
+                    </div>
+                    <h5>Managing Leadership Anxiety - Steve Cuss</h5>
+                    <h5 class="date">March 10th, 2020</h5>
+                </a>
             </div>
             
         
@@ -1054,18 +1030,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/TRBC-3-8-20.png" />
-                    
-                </div>
-                <h5 class="title">A Changed Life</h5>
-                <h5>TRBC-3-8-20.png </h5>
-                <h5 class="date">Sat Mar 07 2020 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/proverbs-3029-31/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/proverbs-30-29-31.png" />
+                        
+                    </div>
+                    <h5>Proverbs 30:29-31</h5>
+                    <h5 class="date">March 9th, 2020</h5>
+                </a>
             </div>
             
         
@@ -1073,18 +1047,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/lion-2.png" />
-                    
-                </div>
-                <h5 class="title">Proverbs 30:30</h5>
-                <h5>lion-2.png </h5>
-                <h5 class="date">Wed Mar 04 2020 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/a-changed-life/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/TRBC-3-8-20.png" />
+                        
+                    </div>
+                    <h5>A Changed Life</h5>
+                    <h5 class="date">March 7th, 2020</h5>
+                </a>
             </div>
             
         
@@ -1092,18 +1064,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/Fileta.png" />
-                    
-                </div>
-                <h5 class="title">Debra Fileta Quote</h5>
-                <h5>Fileta.png </h5>
-                <h5 class="date">Tue Mar 03 2020 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/proverbs-3030/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/lion-2.png" />
+                        
+                    </div>
+                    <h5>Proverbs 30:30</h5>
+                    <h5 class="date">March 4th, 2020</h5>
+                </a>
             </div>
             
         
@@ -1111,18 +1081,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/TRBC-3-1-20.png" />
-                    
-                </div>
-                <h5 class="title">The Best Job With The Best Pay</h5>
-                <h5>TRBC-3-1-20.png </h5>
-                <h5 class="date">Sat Feb 29 2020 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/debra-fileta-quote/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/Fileta.png" />
+                        
+                    </div>
+                    <h5>Debra Fileta Quote</h5>
+                    <h5 class="date">March 3rd, 2020</h5>
+                </a>
             </div>
             
         
@@ -1130,18 +1098,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/Strange.png" />
-                    
-                </div>
-                <h5 class="title">Plugged In by Dr. Daniel Strange</h5>
-                <h5>Strange.png </h5>
-                <h5 class="date">Thu Feb 27 2020 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/the-best-job-with-the-best-pay/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/TRBC-3-1-20.png" />
+                        
+                    </div>
+                    <h5>The Best Job With The Best Pay</h5>
+                    <h5 class="date">February 29th, 2020</h5>
+                </a>
             </div>
             
         
@@ -1149,18 +1115,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/TRBC-2-23-20.png" />
-                    
-                </div>
-                <h5 class="title">God's Road Is Better Than Ours</h5>
-                <h5>TRBC-2-23-20.png </h5>
-                <h5 class="date">Sat Feb 22 2020 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/plugged-in-by-dr-daniel-strange/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/Strange.png" />
+                        
+                    </div>
+                    <h5>Plugged In by Dr. Daniel Strange</h5>
+                    <h5 class="date">February 27th, 2020</h5>
+                </a>
             </div>
             
         
@@ -1168,18 +1132,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/powersource-2-20-20.png" />
-                    
-                </div>
-                <h5 class="title">Powersource - None of Your Business</h5>
-                <h5>powersource-2-20-20.png </h5>
-                <h5 class="date">Wed Feb 19 2020 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/gods-road-is-better-than-ours/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/TRBC-2-23-20.png" />
+                        
+                    </div>
+                    <h5>God's Road Is Better Than Ours</h5>
+                    <h5 class="date">February 22nd, 2020</h5>
+                </a>
             </div>
             
         
@@ -1187,18 +1149,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/Howes-McManus.png" />
-                    
-                </div>
-                <h5 class="title">School of Greatness #763</h5>
-                <h5>Howes-McManus.png </h5>
-                <h5 class="date">Mon Feb 17 2020 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/powersource-none-of-your-business/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/powersource-2-20-20.png" />
+                        
+                    </div>
+                    <h5>Powersource - None of Your Business</h5>
+                    <h5 class="date">February 19th, 2020</h5>
+                </a>
             </div>
             
         
@@ -1206,18 +1166,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/TRBC-2-16-20.png" />
-                    
-                </div>
-                <h5 class="title">The Truth that Sets You Free</h5>
-                <h5>TRBC-2-16-20.png </h5>
-                <h5 class="date">Sat Feb 15 2020 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/school-of-greatness-763/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/Howes-McManus.png" />
+                        
+                    </div>
+                    <h5>School of Greatness #763</h5>
+                    <h5 class="date">February 17th, 2020</h5>
+                </a>
             </div>
             
         
@@ -1225,18 +1183,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/McManus-McManus.png" />
-                    
-                </div>
-                <h5 class="title">Battle Ready Podcast</h5>
-                <h5>McManus-McManus.png </h5>
-                <h5 class="date">Thu Feb 13 2020 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/the-truth-that-sets-you-free/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/TRBC-2-16-20.png" />
+                        
+                    </div>
+                    <h5>The Truth that Sets You Free</h5>
+                    <h5 class="date">February 15th, 2020</h5>
+                </a>
             </div>
             
         
@@ -1244,18 +1200,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/TRBC-2-9-20.png" />
-                    
-                </div>
-                <h5 class="title">Psalm 27: Afraid and Alone</h5>
-                <h5>TRBC-2-9-20.png </h5>
-                <h5 class="date">Sat Feb 08 2020 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/battle-ready-podcast/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/McManus-McManus.png" />
+                        
+                    </div>
+                    <h5>Battle Ready Podcast</h5>
+                    <h5 class="date">February 13th, 2020</h5>
+                </a>
             </div>
             
         
@@ -1263,18 +1217,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/Friday-habit.png" />
-                    
-                </div>
-                <h5 class="title">Friday Habit - Episode 2</h5>
-                <h5>Friday-habit.png </h5>
-                <h5 class="date">Thu Feb 06 2020 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/psalm-27-afraid-and-alone/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/TRBC-2-9-20.png" />
+                        
+                    </div>
+                    <h5>Psalm 27: Afraid and Alone</h5>
+                    <h5 class="date">February 8th, 2020</h5>
+                </a>
             </div>
             
         
@@ -1282,18 +1234,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/perspective-collective-157.png" />
-                    
-                </div>
-                <h5 class="title">Perspective Collective - Iron Bean Coffee</h5>
-                <h5>perspective-collective-157.png </h5>
-                <h5 class="date">Tue Feb 04 2020 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/friday-habit-episode-2/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/Friday-habit.png" />
+                        
+                    </div>
+                    <h5>Friday Habit - Episode 2</h5>
+                    <h5 class="date">February 6th, 2020</h5>
+                </a>
             </div>
             
         
@@ -1301,18 +1251,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/TRBC-2-2-20-1.png" />
-                    
-                </div>
-                <h5 class="title">So Much More: Reaching Beyond Our Grasp</h5>
-                <h5>TRBC-2-2-20-1.png </h5>
-                <h5 class="date">Sat Feb 01 2020 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/perspective-collective-iron-bean-coffee/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/perspective-collective-157.png" />
+                        
+                    </div>
+                    <h5>Perspective Collective - Iron Bean Coffee</h5>
+                    <h5 class="date">February 4th, 2020</h5>
+                </a>
             </div>
             
         
@@ -1320,18 +1268,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/dhh-.png" />
-                    
-                </div>
-                <h5 class="title">@DHH - Tweet</h5>
-                <h5>dhh-.png </h5>
-                <h5 class="date">Sat Feb 01 2020 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/so-much-more-reaching-beyond-our-grasp/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/TRBC-2-2-20-1.png" />
+                        
+                    </div>
+                    <h5>So Much More: Reaching Beyond Our Grasp</h5>
+                    <h5 class="date">February 1st, 2020</h5>
+                </a>
             </div>
             
         
@@ -1339,18 +1285,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/master-of-one.png" />
-                    
-                </div>
-                <h5 class="title">Master of One - Jordan Raynor</h5>
-                <h5>master-of-one.png </h5>
-                <h5 class="date">Thu Jan 30 2020 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/dhh-tweet/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/dhh-.png" />
+                        
+                    </div>
+                    <h5>@DHH - Tweet</h5>
+                    <h5 class="date">February 1st, 2020</h5>
+                </a>
             </div>
             
         
@@ -1358,18 +1302,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/call-to-mastery.png" />
-                    
-                </div>
-                <h5 class="title">Call To Mastery - Luke LeFevre</h5>
-                <h5>call-to-mastery.png </h5>
-                <h5 class="date">Tue Jan 28 2020 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/master-of-one-jordan-raynor/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/master-of-one.png" />
+                        
+                    </div>
+                    <h5>Master of One - Jordan Raynor</h5>
+                    <h5 class="date">January 30th, 2020</h5>
+                </a>
             </div>
             
         
@@ -1377,18 +1319,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/TRBC-1-26-20.png" />
-                    
-                </div>
-                <h5 class="title">So Much More: Being Faithful</h5>
-                <h5>TRBC-1-26-20.png </h5>
-                <h5 class="date">Sat Jan 25 2020 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/call-to-mastery-luke-lefevre/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/call-to-mastery.png" />
+                        
+                    </div>
+                    <h5>Call To Mastery - Luke LeFevre</h5>
+                    <h5 class="date">January 28th, 2020</h5>
+                </a>
             </div>
             
         
@@ -1396,18 +1336,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/finish-acuff.png" />
-                    
-                </div>
-                <h5 class="title">Finish by Jon Acuff</h5>
-                <h5>finish-acuff.png </h5>
-                <h5 class="date">Mon Jan 20 2020 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/so-much-more-being-faithful/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/TRBC-1-26-20.png" />
+                        
+                    </div>
+                    <h5>So Much More: Being Faithful</h5>
+                    <h5 class="date">January 25th, 2020</h5>
+                </a>
             </div>
             
         
@@ -1415,18 +1353,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/TRBC-1-19-20.png" />
-                    
-                </div>
-                <h5 class="title">So Much More: The Heart of Gratitude</h5>
-                <h5>TRBC-1-19-20.png </h5>
-                <h5 class="date">Sat Jan 18 2020 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/finish-by-jon-acuff/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/finish-acuff.png" />
+                        
+                    </div>
+                    <h5>Finish by Jon Acuff</h5>
+                    <h5 class="date">January 20th, 2020</h5>
+                </a>
             </div>
             
         
@@ -1434,18 +1370,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/Congdon.png" />
-                    
-                </div>
-                <h5 class="title">Finding Your Artistic Voice - Lisa Congdon</h5>
-                <h5>Congdon.png </h5>
-                <h5 class="date">Fri Jan 17 2020 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/so-much-more-the-heart-of-gratitude/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/TRBC-1-19-20.png" />
+                        
+                    </div>
+                    <h5>So Much More: The Heart of Gratitude</h5>
+                    <h5 class="date">January 18th, 2020</h5>
+                </a>
             </div>
             
         
@@ -1453,18 +1387,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/hanselminutes.png" />
-                    
-                </div>
-                <h5 class="title">Hanselminutes - Myself</h5>
-                <h5>hanselminutes.png </h5>
-                <h5 class="date">Wed Jan 15 2020 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/finding-your-artistic-voice-lisa-congdon/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/Congdon.png" />
+                        
+                    </div>
+                    <h5>Finding Your Artistic Voice - Lisa Congdon</h5>
+                    <h5 class="date">January 17th, 2020</h5>
+                </a>
             </div>
             
         
@@ -1472,18 +1404,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/keep-going-Kleon.png" />
-                    
-                </div>
-                <h5 class="title">Keep Going - Austin Kleon</h5>
-                <h5>keep-going-Kleon.png </h5>
-                <h5 class="date">Tue Jan 14 2020 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/hanselminutes-myself/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/hanselminutes.png" />
+                        
+                    </div>
+                    <h5>Hanselminutes - Myself</h5>
+                    <h5 class="date">January 15th, 2020</h5>
+                </a>
             </div>
             
         
@@ -1491,18 +1421,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/TRBC-1-12-20.png" />
-                    
-                </div>
-                <h5 class="title">So Much More - Conversations and Commitments</h5>
-                <h5>TRBC-1-12-20.png </h5>
-                <h5 class="date">Sat Jan 11 2020 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/keep-going-austin-kleon/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/keep-going-Kleon.png" />
+                        
+                    </div>
+                    <h5>Keep Going - Austin Kleon</h5>
+                    <h5 class="date">January 14th, 2020</h5>
+                </a>
             </div>
             
         
@@ -1510,18 +1438,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/perspective-collective-congdon.png" />
-                    
-                </div>
-                <h5 class="title">Perspective Collective - Lisa Congdon</h5>
-                <h5>perspective-collective-congdon.png </h5>
-                <h5 class="date">Mon Jan 06 2020 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/so-much-more-conversations-and-commitments/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/TRBC-1-12-20.png" />
+                        
+                    </div>
+                    <h5>So Much More - Conversations and Commitments</h5>
+                    <h5 class="date">January 11th, 2020</h5>
+                </a>
             </div>
             
         
@@ -1529,18 +1455,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/TRBC-1-5-20.png" />
-                    
-                </div>
-                <h5 class="title">So Much More - A Walk in the World</h5>
-                <h5>TRBC-1-5-20.png </h5>
-                <h5 class="date">Sat Jan 04 2020 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/perspective-collective-lisa-congdon/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/perspective-collective-congdon.png" />
+                        
+                    </div>
+                    <h5>Perspective Collective - Lisa Congdon</h5>
+                    <h5 class="date">January 6th, 2020</h5>
+                </a>
             </div>
             
         
@@ -1548,18 +1472,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/iwtytbr-sethi.png" />
-                    
-                </div>
-                <h5 class="title">I Will Teach You To Be Rich - Ramit Sethi</h5>
-                <h5>iwtytbr-sethi.png </h5>
-                <h5 class="date">Sat Jan 04 2020 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/so-much-more-a-walk-in-the-world/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/TRBC-1-5-20.png" />
+                        
+                    </div>
+                    <h5>So Much More - A Walk in the World</h5>
+                    <h5 class="date">January 4th, 2020</h5>
+                </a>
             </div>
             
         
@@ -1567,18 +1489,33 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/img_0211.png" />
-                    
-                </div>
-                <h5 class="title">Atomic Habits by James Clear</h5>
-                <h5>img_0211.png </h5>
-                <h5 class="date">Wed Jan 01 2020 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/i-will-teach-you-to-be-rich-ramit-sethi/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/iwtytbr-sethi.png" />
+                        
+                    </div>
+                    <h5>I Will Teach You To Be Rich - Ramit Sethi</h5>
+                    <h5 class="date">January 4th, 2020</h5>
+                </a>
+            </div>
+            
+        
+            
+            
+             
+            
+             <div class="grid-item quarter">
+                <a href="/post/atomic-habits-by-james-clear/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/img_0211.png" />
+                        
+                    </div>
+                    <h5>Atomic Habits by James Clear</h5>
+                    <h5 class="date">January 1st, 2020</h5>
+                </a>
             </div>
             
         
@@ -1955,7 +1892,7 @@ quotes
         </div>
     </div>
 
-    <h2>2019</h2>
+    <h2 class="header">2019</h2>
     <div class="post-image-list">
         <div class="grid-row">
         
@@ -2293,18 +2230,21 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/" />
-                    
-                </div>
-                <h5 class="title">Parables</h5>
-                <h5> </h5>
-                <h5 class="date">Sun Dec 29 2019 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
-
-                
+        
+            
+            
+             
+            
+             <div class="grid-item quarter">
+                <a href="/post/parables/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/fullsizeoutput_18e3.jpeg" />
+                        
+                    </div>
+                    <h5>Parables</h5>
+                    <h5 class="date">December 29th, 2019</h5>
+                </a>
             </div>
             
         
@@ -2312,18 +2252,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/" />
-                    
-                </div>
-                <h5 class="title">The Most Important Thing</h5>
-                <h5> </h5>
-                <h5 class="date">Sat Dec 28 2019 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/the-most-important-thing/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/TRBC-12-29-19.png" />
+                        
+                    </div>
+                    <h5>The Most Important Thing</h5>
+                    <h5 class="date">December 28th, 2019</h5>
+                </a>
             </div>
             
         
@@ -2331,18 +2269,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/Joy-to-the-world.png" />
-                    
-                </div>
-                <h5 class="title">Sing Noel - Joy to the World!</h5>
-                <h5>Joy-to-the-world.png </h5>
-                <h5 class="date">Sat Dec 21 2019 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/sing-noel-joy-to-the-world/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/Joy-to-the-world.png" />
+                        
+                    </div>
+                    <h5>Sing Noel - Joy to the World!</h5>
+                    <h5 class="date">December 21st, 2019</h5>
+                </a>
             </div>
             
         
@@ -2350,18 +2286,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/" />
-                    
-                </div>
-                <h5 class="title">Receiving Gods Peace</h5>
-                <h5> </h5>
-                <h5 class="date">Sat Dec 21 2019 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/receiving-gods-peace/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/westendbaptist-12-22-2019.png" />
+                        
+                    </div>
+                    <h5>Receiving Gods Peace</h5>
+                    <h5 class="date">December 21st, 2019</h5>
+                </a>
             </div>
             
         
@@ -2369,18 +2303,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/" />
-                    
-                </div>
-                <h5 class="title">Rickisms!</h5>
-                <h5> </h5>
-                <h5 class="date">Thu Dec 19 2019 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/rickisms/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/rickisms.png" />
+                        
+                    </div>
+                    <h5>Rickisms!</h5>
+                    <h5 class="date">December 19th, 2019</h5>
+                </a>
             </div>
             
         
@@ -2388,18 +2320,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/img_0171.png" />
-                    
-                </div>
-                <h5 class="title">Discipline Equals Freedom</h5>
-                <h5>img_0171.png </h5>
-                <h5 class="date">Wed Dec 18 2019 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/discipline-equals-freedom/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/img_0171.png" />
+                        
+                    </div>
+                    <h5>Discipline Equals Freedom</h5>
+                    <h5 class="date">December 18th, 2019</h5>
+                </a>
             </div>
             
         
@@ -2407,18 +2337,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/" />
-                    
-                </div>
-                <h5 class="title">Sing Noel - O’ Holy Night</h5>
-                <h5> </h5>
-                <h5 class="date">Sun Dec 15 2019 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/sing-noel-o-holy-night/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/TRBC-12-15-19.png" />
+                        
+                    </div>
+                    <h5>Sing Noel - O’ Holy Night</h5>
+                    <h5 class="date">December 15th, 2019</h5>
+                </a>
             </div>
             
         
@@ -2426,18 +2354,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/preachers-n-sneakers.png" />
-                    
-                </div>
-                <h5 class="title">Preachers N Sneakers - Whitney Bauck</h5>
-                <h5>preachers-n-sneakers.png </h5>
-                <h5 class="date">Sun Dec 15 2019 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/preachers-n-sneakers-whitney-bauck/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/preachers-n-sneakers.png" />
+                        
+                    </div>
+                    <h5>Preachers N Sneakers - Whitney Bauck</h5>
+                    <h5 class="date">December 15th, 2019</h5>
+                </a>
             </div>
             
         
@@ -2445,18 +2371,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/" />
-                    
-                </div>
-                <h5 class="title">Sing Noel - Hark! The Herald Angels Sing</h5>
-                <h5> </h5>
-                <h5 class="date">Sat Dec 07 2019 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/sing-noel-hark-the-herald-angels-sing/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/TRBC-12-8-19.png" />
+                        
+                    </div>
+                    <h5>Sing Noel - Hark! The Herald Angels Sing</h5>
+                    <h5 class="date">December 7th, 2019</h5>
+                </a>
             </div>
             
         
@@ -2464,18 +2388,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/IMG_6849-scaled.jpeg" />
-                    
-                </div>
-                <h5 class="title">Drawing at Church</h5>
-                <h5>IMG_6849-scaled.jpeg </h5>
-                <h5 class="date">Thu Dec 05 2019 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/drawing-at-church/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/IMG_6849-scaled.jpeg" />
+                        
+                    </div>
+                    <h5>Drawing at Church</h5>
+                    <h5 class="date">December 5th, 2019</h5>
+                </a>
             </div>
             
         
@@ -2483,18 +2405,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/IMG_0097-scaled.png" />
-                    
-                </div>
-                <h5 class="title">Sing Noel</h5>
-                <h5>IMG_0097-scaled.png </h5>
-                <h5 class="date">Sat Nov 30 2019 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/sing-noel/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/IMG_0097-scaled.png" />
+                        
+                    </div>
+                    <h5>Sing Noel</h5>
+                    <h5 class="date">November 30th, 2019</h5>
+                </a>
             </div>
             
         
@@ -2502,18 +2422,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/IMG_0092-scaled.png" />
-                    
-                </div>
-                <h5 class="title">A Season of Giving for the Joy of Living</h5>
-                <h5>IMG_0092-scaled.png </h5>
-                <h5 class="date">Sat Nov 16 2019 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/a-season-of-giving-for-the-joy-of-living/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/IMG_0092-scaled.png" />
+                        
+                    </div>
+                    <h5>A Season of Giving for the Joy of Living</h5>
+                    <h5 class="date">November 16th, 2019</h5>
+                </a>
             </div>
             
         
@@ -2521,18 +2439,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/IMG_0094-scaled.png" />
-                    
-                </div>
-                <h5 class="title">Resolving Conflict</h5>
-                <h5>IMG_0094-scaled.png </h5>
-                <h5 class="date">Sat Nov 09 2019 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/resolving-conflict/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/IMG_0094-scaled.png" />
+                        
+                    </div>
+                    <h5>Resolving Conflict</h5>
+                    <h5 class="date">November 9th, 2019</h5>
+                </a>
             </div>
             
         
@@ -2540,18 +2456,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/IMG_0087-scaled.png" />
-                    
-                </div>
-                <h5 class="title">Daniel 6</h5>
-                <h5>IMG_0087-scaled.png </h5>
-                <h5 class="date">Sat Nov 09 2019 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/daniel-6/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/IMG_0087-scaled.png" />
+                        
+                    </div>
+                    <h5>Daniel 6</h5>
+                    <h5 class="date">November 9th, 2019</h5>
+                </a>
             </div>
             
         
@@ -2559,18 +2473,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/IMG_0080-scaled.png" />
-                    
-                </div>
-                <h5 class="title">Daniel 3: Though He Slay me, I will trust HIM</h5>
-                <h5>IMG_0080-scaled.png </h5>
-                <h5 class="date">Sat Oct 19 2019 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/daniel-3-though-he-slay-me-i-will-trust-him/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/IMG_0080-scaled.png" />
+                        
+                    </div>
+                    <h5>Daniel 3: Though He Slay me, I will trust HIM</h5>
+                    <h5 class="date">October 19th, 2019</h5>
+                </a>
             </div>
             
         
@@ -2578,18 +2490,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/IMG_0076-scaled.png" />
-                    
-                </div>
-                <h5 class="title">Daniel 2: But God!</h5>
-                <h5>IMG_0076-scaled.png </h5>
-                <h5 class="date">Sat Oct 12 2019 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/daniel-2-but-god/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/IMG_0076-scaled.png" />
+                        
+                    </div>
+                    <h5>Daniel 2: But God!</h5>
+                    <h5 class="date">October 12th, 2019</h5>
+                </a>
             </div>
             
         
@@ -2597,18 +2507,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/IMG_0112-scaled.png" />
-                    
-                </div>
-                <h5 class="title">Daniel 1: The Story of Daniel</h5>
-                <h5>IMG_0112-scaled.png </h5>
-                <h5 class="date">Sat Oct 05 2019 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/daniel-1-the-story-of-daniel/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/IMG_0112-scaled.png" />
+                        
+                    </div>
+                    <h5>Daniel 1: The Story of Daniel</h5>
+                    <h5 class="date">October 5th, 2019</h5>
+                </a>
             </div>
             
         
@@ -2616,18 +2524,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/IMG_0111-scaled.png" />
-                    
-                </div>
-                <h5 class="title">Won't you be my Neighbor - Part IV</h5>
-                <h5>IMG_0111-scaled.png </h5>
-                <h5 class="date">Sat Sep 28 2019 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/wont-you-be-my-neighbor-part-iv/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/IMG_0111-scaled.png" />
+                        
+                    </div>
+                    <h5>Won't you be my Neighbor - Part IV</h5>
+                    <h5 class="date">September 28th, 2019</h5>
+                </a>
             </div>
             
         
@@ -2635,18 +2541,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/IMG_0110-scaled.png" />
-                    
-                </div>
-                <h5 class="title">Won't you be my Neighbor - Part III</h5>
-                <h5>IMG_0110-scaled.png </h5>
-                <h5 class="date">Sat Sep 21 2019 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/wont-you-be-my-neighbor-part-iii/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/IMG_0110-scaled.png" />
+                        
+                    </div>
+                    <h5>Won't you be my Neighbor - Part III</h5>
+                    <h5 class="date">September 21st, 2019</h5>
+                </a>
             </div>
             
         
@@ -2654,18 +2558,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/IMG_0109-scaled.png" />
-                    
-                </div>
-                <h5 class="title">Won't you be my Neighbor - Part II</h5>
-                <h5>IMG_0109-scaled.png </h5>
-                <h5 class="date">Sat Sep 14 2019 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/wont-you-be-my-neighbor-part-ii/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/IMG_0109-scaled.png" />
+                        
+                    </div>
+                    <h5>Won't you be my Neighbor - Part II</h5>
+                    <h5 class="date">September 14th, 2019</h5>
+                </a>
             </div>
             
         
@@ -2673,18 +2575,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/IMG_0108-scaled.png" />
-                    
-                </div>
-                <h5 class="title">Won't you be my Neighbor</h5>
-                <h5>IMG_0108-scaled.png </h5>
-                <h5 class="date">Sat Sep 07 2019 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/wont-you-be-my-neighbor/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/IMG_0108-scaled.png" />
+                        
+                    </div>
+                    <h5>Won't you be my Neighbor</h5>
+                    <h5 class="date">September 7th, 2019</h5>
+                </a>
             </div>
             
         
@@ -2692,18 +2592,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/IMG_0107-scaled.png" />
-                    
-                </div>
-                <h5 class="title">Jesus in the House</h5>
-                <h5>IMG_0107-scaled.png </h5>
-                <h5 class="date">Sat Aug 31 2019 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/jesus-in-the-house/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/IMG_0107-scaled.png" />
+                        
+                    </div>
+                    <h5>Jesus in the House</h5>
+                    <h5 class="date">August 31st, 2019</h5>
+                </a>
             </div>
             
         
@@ -2711,18 +2609,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/IMG_0106-scaled.png" />
-                    
-                </div>
-                <h5 class="title">Get in the Game</h5>
-                <h5>IMG_0106-scaled.png </h5>
-                <h5 class="date">Sat Aug 24 2019 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/get-in-the-game/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/IMG_0106-scaled.png" />
+                        
+                    </div>
+                    <h5>Get in the Game</h5>
+                    <h5 class="date">August 24th, 2019</h5>
+                </a>
             </div>
             
         
@@ -2730,18 +2626,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/IMG_0105-scaled.png" />
-                    
-                </div>
-                <h5 class="title">Good News for Hard Times - Part IV</h5>
-                <h5>IMG_0105-scaled.png </h5>
-                <h5 class="date">Sat Jul 20 2019 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/good-news-for-hard-times-part-iv/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/IMG_0105-scaled.png" />
+                        
+                    </div>
+                    <h5>Good News for Hard Times - Part IV</h5>
+                    <h5 class="date">July 20th, 2019</h5>
+                </a>
             </div>
             
         
@@ -2749,18 +2643,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/IMG_0104-scaled.png" />
-                    
-                </div>
-                <h5 class="title">Good New for Hard Times - Part III</h5>
-                <h5>IMG_0104-scaled.png </h5>
-                <h5 class="date">Sat Jul 13 2019 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/good-new-for-hard-times-part-iii/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/IMG_0104-scaled.png" />
+                        
+                    </div>
+                    <h5>Good New for Hard Times - Part III</h5>
+                    <h5 class="date">July 13th, 2019</h5>
+                </a>
             </div>
             
         
@@ -2768,18 +2660,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/IMG_0103-scaled.png" />
-                    
-                </div>
-                <h5 class="title">Good New for Hard Times - Part II</h5>
-                <h5>IMG_0103-scaled.png </h5>
-                <h5 class="date">Sat Jul 06 2019 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/good-new-for-hard-times-part-ii/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/IMG_0103-scaled.png" />
+                        
+                    </div>
+                    <h5>Good New for Hard Times - Part II</h5>
+                    <h5 class="date">July 6th, 2019</h5>
+                </a>
             </div>
             
         
@@ -2787,18 +2677,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/IMG_0102-scaled.png" />
-                    
-                </div>
-                <h5 class="title">Good News for Hard Times - Part I</h5>
-                <h5>IMG_0102-scaled.png </h5>
-                <h5 class="date">Sat Jun 29 2019 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/good-news-for-hard-times-part-i/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/IMG_0102-scaled.png" />
+                        
+                    </div>
+                    <h5>Good News for Hard Times - Part I</h5>
+                    <h5 class="date">June 29th, 2019</h5>
+                </a>
             </div>
             
         
@@ -2806,18 +2694,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/IMG_0101-scaled.png" />
-                    
-                </div>
-                <h5 class="title">The Call to Continue</h5>
-                <h5>IMG_0101-scaled.png </h5>
-                <h5 class="date">Sat Jun 22 2019 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/the-call-to-continue/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/IMG_0101-scaled.png" />
+                        
+                    </div>
+                    <h5>The Call to Continue</h5>
+                    <h5 class="date">June 22nd, 2019</h5>
+                </a>
             </div>
             
         
@@ -2825,18 +2711,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/IMG_0100-scaled.png" />
-                    
-                </div>
-                <h5 class="title">God's Timing is Always Perfect</h5>
-                <h5>IMG_0100-scaled.png </h5>
-                <h5 class="date">Sat Jun 15 2019 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/gods-timing-is-always-perfect/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/IMG_0100-scaled.png" />
+                        
+                    </div>
+                    <h5>God's Timing is Always Perfect</h5>
+                    <h5 class="date">June 15th, 2019</h5>
+                </a>
             </div>
             
         
@@ -2844,18 +2728,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/IMG_0098-scaled.png" />
-                    
-                </div>
-                <h5 class="title">Discipline Goes a Long Way</h5>
-                <h5>IMG_0098-scaled.png </h5>
-                <h5 class="date">Sat May 25 2019 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/discipline-goes-a-long-way/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/IMG_0098-scaled.png" />
+                        
+                    </div>
+                    <h5>Discipline Goes a Long Way</h5>
+                    <h5 class="date">May 25th, 2019</h5>
+                </a>
             </div>
             
         
@@ -2863,18 +2745,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/5-5-2019.png" />
-                    
-                </div>
-                <h5 class="title">Survive or Thrive, Part II</h5>
-                <h5>5-5-2019.png </h5>
-                <h5 class="date">Sat May 04 2019 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/survive-or-thrive-part-ii/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/5-5-2019.png" />
+                        
+                    </div>
+                    <h5>Survive or Thrive, Part II</h5>
+                    <h5 class="date">May 4th, 2019</h5>
+                </a>
             </div>
             
         
@@ -2882,18 +2762,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/4-28-2019.png" />
-                    
-                </div>
-                <h5 class="title">Survive or Thrive</h5>
-                <h5>4-28-2019.png </h5>
-                <h5 class="date">Sat Apr 27 2019 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/survive-or-thrive/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/4-28-2019.png" />
+                        
+                    </div>
+                    <h5>Survive or Thrive</h5>
+                    <h5 class="date">April 27th, 2019</h5>
+                </a>
             </div>
             
         
@@ -2901,18 +2779,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/4-14-2019.png" />
-                    
-                </div>
-                <h5 class="title">Words Matter, Part IV</h5>
-                <h5>4-14-2019.png </h5>
-                <h5 class="date">Sat Apr 13 2019 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/words-matter-part-iv/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/4-14-2019.png" />
+                        
+                    </div>
+                    <h5>Words Matter, Part IV</h5>
+                    <h5 class="date">April 13th, 2019</h5>
+                </a>
             </div>
             
         
@@ -2920,18 +2796,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/4-7-2019.png" />
-                    
-                </div>
-                <h5 class="title">Words Matter, Part III</h5>
-                <h5>4-7-2019.png </h5>
-                <h5 class="date">Sat Apr 06 2019 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/words-matter-part-iii/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/4-7-2019.png" />
+                        
+                    </div>
+                    <h5>Words Matter, Part III</h5>
+                    <h5 class="date">April 6th, 2019</h5>
+                </a>
             </div>
             
         
@@ -2939,18 +2813,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/3-24-2019.jpeg" />
-                    
-                </div>
-                <h5 class="title">Words Matter</h5>
-                <h5>3-24-2019.jpeg </h5>
-                <h5 class="date">Sat Mar 23 2019 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/words-matter/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/3-24-2019.jpeg" />
+                        
+                    </div>
+                    <h5>Words Matter</h5>
+                    <h5 class="date">March 23rd, 2019</h5>
+                </a>
             </div>
             
         
@@ -2958,18 +2830,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/3-17-2019.jpeg" />
-                    
-                </div>
-                <h5 class="title">The Impact of a Godly Man</h5>
-                <h5>3-17-2019.jpeg </h5>
-                <h5 class="date">Sat Mar 16 2019 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/the-impact-of-a-godly-man/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/3-17-2019.jpeg" />
+                        
+                    </div>
+                    <h5>The Impact of a Godly Man</h5>
+                    <h5 class="date">March 16th, 2019</h5>
+                </a>
             </div>
             
         
@@ -2977,18 +2847,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/3-10-2019.jpeg" />
-                    
-                </div>
-                <h5 class="title">Love in Action, Part II</h5>
-                <h5>3-10-2019.jpeg </h5>
-                <h5 class="date">Sat Mar 09 2019 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/love-in-action-part-ii/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/3-10-2019.jpeg" />
+                        
+                    </div>
+                    <h5>Love in Action, Part II</h5>
+                    <h5 class="date">March 9th, 2019</h5>
+                </a>
             </div>
             
         
@@ -2996,18 +2864,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/3-3-2019.png" />
-                    
-                </div>
-                <h5 class="title">Love in Action</h5>
-                <h5>3-3-2019.png </h5>
-                <h5 class="date">Sat Mar 02 2019 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/love-in-action/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/3-3-2019.png" />
+                        
+                    </div>
+                    <h5>Love in Action</h5>
+                    <h5 class="date">March 2nd, 2019</h5>
+                </a>
             </div>
             
         
@@ -3015,18 +2881,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/fullsizeoutput_1920.jpeg" />
-                    
-                </div>
-                <h5 class="title">And The Greatest of These is Love</h5>
-                <h5>fullsizeoutput_1920.jpeg </h5>
-                <h5 class="date">Sat Feb 16 2019 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/and-the-greatest-of-these-is-love/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/fullsizeoutput_1920.jpeg" />
+                        
+                    </div>
+                    <h5>And The Greatest of These is Love</h5>
+                    <h5 class="date">February 16th, 2019</h5>
+                </a>
             </div>
             
         
@@ -3034,18 +2898,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/IMG_0349.png" />
-                    
-                </div>
-                <h5 class="title">Say Yes...Time to Follow, Part II</h5>
-                <h5>IMG_0349.png </h5>
-                <h5 class="date">Sat Feb 09 2019 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/say-yes-time-to-follow-part-ii/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/IMG_0349.png" />
+                        
+                    </div>
+                    <h5>Say Yes...Time to Follow, Part II</h5>
+                    <h5 class="date">February 9th, 2019</h5>
+                </a>
             </div>
             
         
@@ -3053,18 +2915,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/test_image.jpg" />
-                    
-                </div>
-                <h5 class="title">Say Yes...Time to Follow</h5>
-                <h5>test_image.jpg </h5>
-                <h5 class="date">Sat Feb 02 2019 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/say-yes-time-to-follow/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/test_image.jpg" />
+                        
+                    </div>
+                    <h5>Say Yes...Time to Follow</h5>
+                    <h5 class="date">February 2nd, 2019</h5>
+                </a>
             </div>
             
         
@@ -3072,18 +2932,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/say-yes-2.jpg" />
-                    
-                </div>
-                <h5 class="title">Say Yes: First and Foremost...Love!</h5>
-                <h5>say-yes-2.jpg </h5>
-                <h5 class="date">Sat Jan 26 2019 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/say-yes-first-and-foremost-love/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/say-yes-2.jpg" />
+                        
+                    </div>
+                    <h5>Say Yes: First and Foremost...Love!</h5>
+                    <h5 class="date">January 26th, 2019</h5>
+                </a>
             </div>
             
         
@@ -3250,7 +3108,7 @@ quotes
         </div>
     </div>
 
-    <h2>2018</h2>
+    <h2 class="header">2018</h2>
     <div class="post-image-list">
         <div class="grid-row">
         
@@ -3798,18 +3656,21 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/fullsizeoutput_1910.jpeg" />
-                    
-                </div>
-                <h5 class="title">Final Word (For the Year)</h5>
-                <h5>fullsizeoutput_1910.jpeg </h5>
-                <h5 class="date">Sat Dec 29 2018 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
-
-                
+        
+            
+            
+             
+            
+             <div class="grid-item quarter">
+                <a href="/post/final-word-for-the-year/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/fullsizeoutput_1910.jpeg" />
+                        
+                    </div>
+                    <h5>Final Word (For the Year)</h5>
+                    <h5 class="date">December 29th, 2018</h5>
+                </a>
             </div>
             
         
@@ -3817,18 +3678,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/fullsizeoutput_190e.jpeg" />
-                    
-                </div>
-                <h5 class="title">Christmas 2018</h5>
-                <h5>fullsizeoutput_190e.jpeg </h5>
-                <h5 class="date">Sun Dec 23 2018 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/christmas-2018/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/fullsizeoutput_190e.jpeg" />
+                        
+                    </div>
+                    <h5>Christmas 2018</h5>
+                    <h5 class="date">December 23rd, 2018</h5>
+                </a>
             </div>
             
         
@@ -3836,18 +3695,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/fullsizeoutput_190d.jpeg" />
-                    
-                </div>
-                <h5 class="title">For Unto You...A Savior</h5>
-                <h5>fullsizeoutput_190d.jpeg </h5>
-                <h5 class="date">Sat Dec 22 2018 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/for-unto-you-a-savior/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/fullsizeoutput_190d.jpeg" />
+                        
+                    </div>
+                    <h5>For Unto You...A Savior</h5>
+                    <h5 class="date">December 22nd, 2018</h5>
+                </a>
             </div>
             
         
@@ -3855,18 +3712,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/fullsizeoutput_190c.jpeg" />
-                    
-                </div>
-                <h5 class="title">For Unto You...A Messiah</h5>
-                <h5>fullsizeoutput_190c.jpeg </h5>
-                <h5 class="date">Sat Dec 15 2018 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/for-unto-you-a-messiah/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/fullsizeoutput_190c.jpeg" />
+                        
+                    </div>
+                    <h5>For Unto You...A Messiah</h5>
+                    <h5 class="date">December 15th, 2018</h5>
+                </a>
             </div>
             
         
@@ -3874,18 +3729,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/for-unto-us-righteousness.png" />
-                    
-                </div>
-                <h5 class="title">For Unto You...Righteousness</h5>
-                <h5>for-unto-us-righteousness.png </h5>
-                <h5 class="date">Sat Dec 08 2018 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/for-unto-you-righteousness/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/for-unto-us-righteousness.png" />
+                        
+                    </div>
+                    <h5>For Unto You...Righteousness</h5>
+                    <h5 class="date">December 8th, 2018</h5>
+                </a>
             </div>
             
         
@@ -3893,18 +3746,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/fullsizeoutput_190b.jpeg" />
-                    
-                </div>
-                <h5 class="title">For Unto You...A Son is Given</h5>
-                <h5>fullsizeoutput_190b.jpeg </h5>
-                <h5 class="date">Sat Dec 01 2018 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/for-unto-you-a-son-is-given/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/fullsizeoutput_190b.jpeg" />
+                        
+                    </div>
+                    <h5>For Unto You...A Son is Given</h5>
+                    <h5 class="date">December 1st, 2018</h5>
+                </a>
             </div>
             
         
@@ -3912,18 +3763,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/fullsizeoutput_18ed.jpeg" />
-                    
-                </div>
-                <h5 class="title">Being Thankful is Not Enough</h5>
-                <h5>fullsizeoutput_18ed.jpeg </h5>
-                <h5 class="date">Sat Nov 24 2018 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/being-thankful-is-not-enough/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/fullsizeoutput_18ed.jpeg" />
+                        
+                    </div>
+                    <h5>Being Thankful is Not Enough</h5>
+                    <h5 class="date">November 24th, 2018</h5>
+                </a>
             </div>
             
         
@@ -3931,18 +3780,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/fullsizeoutput_18ec.jpeg" />
-                    
-                </div>
-                <h5 class="title">Giving, Gaining, and Greed</h5>
-                <h5>fullsizeoutput_18ec.jpeg </h5>
-                <h5 class="date">Sat Nov 10 2018 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/giving-gaining-and-greed/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/fullsizeoutput_18ec.jpeg" />
+                        
+                    </div>
+                    <h5>Giving, Gaining, and Greed</h5>
+                    <h5 class="date">November 10th, 2018</h5>
+                </a>
             </div>
             
         
@@ -3950,18 +3797,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/fullsizeoutput_18eb.jpeg" />
-                    
-                </div>
-                <h5 class="title">Uncaged</h5>
-                <h5>fullsizeoutput_18eb.jpeg </h5>
-                <h5 class="date">Sat Nov 03 2018 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/uncaged/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/fullsizeoutput_18eb.jpeg" />
+                        
+                    </div>
+                    <h5>Uncaged</h5>
+                    <h5 class="date">November 3rd, 2018</h5>
+                </a>
             </div>
             
         
@@ -3969,18 +3814,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/fullsizeoutput_18ea.jpeg" />
-                    
-                </div>
-                <h5 class="title">Masquerade: Take Off the Mask</h5>
-                <h5>fullsizeoutput_18ea.jpeg </h5>
-                <h5 class="date">Sat Oct 27 2018 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/masquerade-take-off-the-mask/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/fullsizeoutput_18ea.jpeg" />
+                        
+                    </div>
+                    <h5>Masquerade: Take Off the Mask</h5>
+                    <h5 class="date">October 27th, 2018</h5>
+                </a>
             </div>
             
         
@@ -3988,18 +3831,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/fullsizeoutput_18e9.jpeg" />
-                    
-                </div>
-                <h5 class="title">Masks of Addiction</h5>
-                <h5>fullsizeoutput_18e9.jpeg </h5>
-                <h5 class="date">Sat Oct 20 2018 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/masks-of-addiction/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/fullsizeoutput_18e9.jpeg" />
+                        
+                    </div>
+                    <h5>Masks of Addiction</h5>
+                    <h5 class="date">October 20th, 2018</h5>
+                </a>
             </div>
             
         
@@ -4007,18 +3848,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/fullsizeoutput_18e6.jpeg" />
-                    
-                </div>
-                <h5 class="title">Masquerade</h5>
-                <h5>fullsizeoutput_18e6.jpeg </h5>
-                <h5 class="date">Sat Sep 29 2018 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/masquerade/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/fullsizeoutput_18e6.jpeg" />
+                        
+                    </div>
+                    <h5>Masquerade</h5>
+                    <h5 class="date">September 29th, 2018</h5>
+                </a>
             </div>
             
         
@@ -4026,18 +3865,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/fullsizeoutput_18e5.jpeg" />
-                    
-                </div>
-                <h5 class="title">Why Church?</h5>
-                <h5>fullsizeoutput_18e5.jpeg </h5>
-                <h5 class="date">Sat Sep 15 2018 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/why-church-2/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/fullsizeoutput_18e5.jpeg" />
+                        
+                    </div>
+                    <h5>Why Church?</h5>
+                    <h5 class="date">September 15th, 2018</h5>
+                </a>
             </div>
             
         
@@ -4045,18 +3882,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/fullsizeoutput_18e4.jpeg" />
-                    
-                </div>
-                <h5 class="title">Why Church</h5>
-                <h5>fullsizeoutput_18e4.jpeg </h5>
-                <h5 class="date">Sat Sep 08 2018 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/why-church/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/fullsizeoutput_18e4.jpeg" />
+                        
+                    </div>
+                    <h5>Why Church</h5>
+                    <h5 class="date">September 8th, 2018</h5>
+                </a>
             </div>
             
         
@@ -4064,18 +3899,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/fullsizeoutput_18e3.jpeg" />
-                    
-                </div>
-                <h5 class="title">Passing It On</h5>
-                <h5>fullsizeoutput_18e3.jpeg </h5>
-                <h5 class="date">Sat Aug 11 2018 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/passing-it-on/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/fullsizeoutput_18e3.jpeg" />
+                        
+                    </div>
+                    <h5>Passing It On</h5>
+                    <h5 class="date">August 11th, 2018</h5>
+                </a>
             </div>
             
         
@@ -4083,18 +3916,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/" />
-                    
-                </div>
-                <h5 class="title">Wilson Community Church Children’s Ministry</h5>
-                <h5> </h5>
-                <h5 class="date">Fri Aug 10 2018 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/wilson-community-church-childrens-ministry/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/wilson-community-church-mural.jpg" />
+                        
+                    </div>
+                    <h5>Wilson Community Church Children’s Ministry</h5>
+                    <h5 class="date">August 10th, 2018</h5>
+                </a>
             </div>
             
         
@@ -4102,18 +3933,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/fullsizeoutput_18e1.jpeg" />
-                    
-                </div>
-                <h5 class="title">Flannel Graph Faith</h5>
-                <h5>fullsizeoutput_18e1.jpeg </h5>
-                <h5 class="date">Sat Aug 04 2018 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/flannel-graph-faith/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/fullsizeoutput_18e1.jpeg" />
+                        
+                    </div>
+                    <h5>Flannel Graph Faith</h5>
+                    <h5 class="date">August 4th, 2018</h5>
+                </a>
             </div>
             
         
@@ -4121,18 +3950,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/fullsizeoutput_18df.jpeg" />
-                    
-                </div>
-                <h5 class="title">Reframing the Familiar</h5>
-                <h5>fullsizeoutput_18df.jpeg </h5>
-                <h5 class="date">Sat Jul 28 2018 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/reframing-the-familiar/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/fullsizeoutput_18df.jpeg" />
+                        
+                    </div>
+                    <h5>Reframing the Familiar</h5>
+                    <h5 class="date">July 28th, 2018</h5>
+                </a>
             </div>
             
         
@@ -4140,18 +3967,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/fullsizeoutput_18dc.jpeg" />
-                    
-                </div>
-                <h5 class="title">Flannel Graph Faith 2nd Edition</h5>
-                <h5>fullsizeoutput_18dc.jpeg </h5>
-                <h5 class="date">Sat Jul 07 2018 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/flannel-graph-faith-2nd-edition/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/fullsizeoutput_18dc.jpeg" />
+                        
+                    </div>
+                    <h5>Flannel Graph Faith 2nd Edition</h5>
+                    <h5 class="date">July 7th, 2018</h5>
+                </a>
             </div>
             
         
@@ -4159,18 +3984,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/fullsizeoutput_18db.jpeg" />
-                    
-                </div>
-                <h5 class="title">The Church Here and Now</h5>
-                <h5>fullsizeoutput_18db.jpeg </h5>
-                <h5 class="date">Sat Jun 30 2018 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/the-church-here-and-now/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/fullsizeoutput_18db.jpeg" />
+                        
+                    </div>
+                    <h5>The Church Here and Now</h5>
+                    <h5 class="date">June 30th, 2018</h5>
+                </a>
             </div>
             
         
@@ -4178,18 +4001,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/fullsizeoutput_18f5.jpeg" />
-                    
-                </div>
-                <h5 class="title">The Holy Spirit</h5>
-                <h5>fullsizeoutput_18f5.jpeg </h5>
-                <h5 class="date">Sat Jun 09 2018 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/the-holy-spirit/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/fullsizeoutput_18f5.jpeg" />
+                        
+                    </div>
+                    <h5>The Holy Spirit</h5>
+                    <h5 class="date">June 9th, 2018</h5>
+                </a>
             </div>
             
         
@@ -4197,18 +4018,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/fullsizeoutput_18f4.jpeg" />
-                    
-                </div>
-                <h5 class="title">How to Live</h5>
-                <h5>fullsizeoutput_18f4.jpeg </h5>
-                <h5 class="date">Sat Jun 02 2018 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/how-to-live/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/fullsizeoutput_18f4.jpeg" />
+                        
+                    </div>
+                    <h5>How to Live</h5>
+                    <h5 class="date">June 2nd, 2018</h5>
+                </a>
             </div>
             
         
@@ -4216,18 +4035,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/fullsizeoutput_18f3.jpeg" />
-                    
-                </div>
-                <h5 class="title">I Didn't Catch the title of this One...</h5>
-                <h5>fullsizeoutput_18f3.jpeg </h5>
-                <h5 class="date">Sat May 05 2018 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/i-didnt-catch-the-title-of-this-one/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/fullsizeoutput_18f3.jpeg" />
+                        
+                    </div>
+                    <h5>I Didn't Catch the title of this One...</h5>
+                    <h5 class="date">May 5th, 2018</h5>
+                </a>
             </div>
             
         
@@ -4235,18 +4052,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/fullsizeoutput_18f1.jpeg" />
-                    
-                </div>
-                <h5 class="title">A Brand New Day of Relating</h5>
-                <h5>fullsizeoutput_18f1.jpeg </h5>
-                <h5 class="date">Sat Apr 14 2018 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/a-brand-new-day-of-relating/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/fullsizeoutput_18f1.jpeg" />
+                        
+                    </div>
+                    <h5>A Brand New Day of Relating</h5>
+                    <h5 class="date">April 14th, 2018</h5>
+                </a>
             </div>
             
         
@@ -4293,7 +4108,7 @@ quotes
         </div>
     </div>
 
-    <h2>2017</h2>
+    <h2 class="header">2017</h2>
     <div class="post-image-list">
         <div class="grid-row">
         
@@ -4961,18 +4776,21 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/fullsizeoutput_1900.jpeg" />
-                    
-                </div>
-                <h5 class="title">Tiny Giants</h5>
-                <h5>fullsizeoutput_1900.jpeg </h5>
-                <h5 class="date">Sat Nov 18 2017 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
-
-                
+        
+            
+            
+             
+            
+             <div class="grid-item quarter">
+                <a href="/post/tiny-giants/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/fullsizeoutput_1900.jpeg" />
+                        
+                    </div>
+                    <h5>Tiny Giants</h5>
+                    <h5 class="date">November 18th, 2017</h5>
+                </a>
             </div>
             
         
@@ -4980,18 +4798,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/fullsizeoutput_18fb.jpeg" />
-                    
-                </div>
-                <h5 class="title">Start!</h5>
-                <h5>fullsizeoutput_18fb.jpeg </h5>
-                <h5 class="date">Fri Oct 13 2017 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/start/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/fullsizeoutput_18fb.jpeg" />
+                        
+                    </div>
+                    <h5>Start!</h5>
+                    <h5 class="date">October 13th, 2017</h5>
+                </a>
             </div>
             
         
@@ -4999,18 +4815,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/fullsizeoutput_18fe.jpeg" />
-                    
-                </div>
-                <h5 class="title">Men's Summit 2017</h5>
-                <h5>fullsizeoutput_18fe.jpeg </h5>
-                <h5 class="date">Fri Oct 13 2017 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/mens-summit-2017/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/fullsizeoutput_18fe.jpeg" />
+                        
+                    </div>
+                    <h5>Men's Summit 2017</h5>
+                    <h5 class="date">October 13th, 2017</h5>
+                </a>
             </div>
             
         
@@ -5018,18 +4832,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/fullsizeoutput_18f9.jpeg" />
-                    
-                </div>
-                <h5 class="title">This is Your Life</h5>
-                <h5>fullsizeoutput_18f9.jpeg </h5>
-                <h5 class="date">Sat Jun 24 2017 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/this-is-your-life/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/fullsizeoutput_18f9.jpeg" />
+                        
+                    </div>
+                    <h5>This is Your Life</h5>
+                    <h5 class="date">June 24th, 2017</h5>
+                </a>
             </div>
             
         
@@ -5037,18 +4849,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/fullsizeoutput_18f7.jpeg" />
-                    
-                </div>
-                <h5 class="title">The Case for Christ</h5>
-                <h5>fullsizeoutput_18f7.jpeg </h5>
-                <h5 class="date">Sat Apr 22 2017 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/the-case-for-christ/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/fullsizeoutput_18f7.jpeg" />
+                        
+                    </div>
+                    <h5>The Case for Christ</h5>
+                    <h5 class="date">April 22nd, 2017</h5>
+                </a>
             </div>
             
         
@@ -5056,18 +4866,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/fullsizeoutput_18f6.jpeg" />
-                    
-                </div>
-                <h5 class="title">Outsiders</h5>
-                <h5>fullsizeoutput_18f6.jpeg </h5>
-                <h5 class="date">Sat Apr 01 2017 20:00:00 GMT-0400 (Eastern Daylight Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/outsiders/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/fullsizeoutput_18f6.jpeg" />
+                        
+                    </div>
+                    <h5>Outsiders</h5>
+                    <h5 class="date">April 1st, 2017</h5>
+                </a>
             </div>
             
         
@@ -5075,18 +4883,16 @@ quotes
             
              
             
-            <div class="grid-item">
-                <div class="preview">
-
-                    
-                    <img src="/images/posts/fullsizeoutput_18f0.jpeg" />
-                    
-                </div>
-                <h5 class="title">5 Things to Build Wealth</h5>
-                <h5>fullsizeoutput_18f0.jpeg </h5>
-                <h5 class="date">Sat Jan 14 2017 19:00:00 GMT-0500 (Eastern Standard Time)</h5>
-
-                
+             <div class="grid-item quarter">
+                <a href="/post/5-things-to-build-wealth/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/fullsizeoutput_18f0.jpeg" />
+                        
+                    </div>
+                    <h5>5 Things to Build Wealth</h5>
+                    <h5 class="date">January 14th, 2017</h5>
+                </a>
             </div>
             
         
@@ -5104,62 +4910,7 @@ quotes
 
     </div>
     
-    <style>
-    /*header*/
-
-    #logo-container{
-        width: 100%;
-        text-align: center;
-    }
-
-    #site-header nav{
-        text-align: center;
-    }
-
-    #site-header nav ul{
-        padding:10px 0;
-    }
-
-    #site-header nav ul li{
-        display:inline-block;
-        padding:0 5px;
-    }
-
-    /*footer*/
-
-    #copyright{
-        border-top:1px solid #dcd7ca;
-        padding:40px 0px;
-    }
-
-    .footer-widgets{
-        display:flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-
-    .widget{
-        flex: 0 50%;
-        /*height: 100px;
-        margin-bottom: 2%; /* (100-32*3)/2 */
-    }
-
-        .widget ul{
-            padding:10px 0;
-        }
-
-        .widget ul li{
-            list-style-type: none;
-        }
-
-    @media only screen and (max-width: 600px) {
-        .widget{
-            flex: 0 100%;
-        }
-    }
-
-</style>
-
+    
 <footer id="site-footer">
     <div class="footer-widgets">
         <div class="widget">
@@ -5177,6 +4928,7 @@ quotes
 <ul>
     <li><a href="/">Home</a></li>
     <li><a href="/about">About</a></li>
+    <li><a href="/contact">Contact</a></li>
 </ul>
 
         </div>
@@ -5196,9 +4948,14 @@ quotes
         <img class="footer-splash" src="/images/sketchy-footer.jpg" />
     </div>
     <aside id="copyright">
-        <span>&copy; 2020</span>
-        <span><a href="/">Sketchy Sermons</a></span>
-        <span><a href="/privacy">Privacy Policy</a></span>
+        <div class="left">
+            <span>&copy; 2020</span>
+            <span><a href="/">Sketchy Sermons</a></span>
+            <span><a href="/privacy">Privacy Policy</a></span>
+        </div> 
+        <div class="right">
+            <span>All content here is under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Common</a> license.
+        </div>
     </aside>
 </footer>
 

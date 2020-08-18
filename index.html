@@ -4,106 +4,65 @@ layout: home
 eleventyExcludeFromCollections: true
 ---
 
-<style>
-
-
-.post-image-list {
-  max-width: 1024px;
-  margin: 0 auto;
-}
-
-.grid-row {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-start;
-}
-
-.grid-item {
-  flex-basis: 33%;
-  -ms-flex: auto;
-  position: relative;
-  padding: 10px;
-  box-sizing: border-box;
-}
-
-    .grid-item .preview{
-        text-align:center;
-    }
-
-    .grid-item .preview img{
-        width:auto;
-        height:200px;
-        min-height:200px;
-        min-width:200px;
-        box-shadow:0 5px 5px rgba(0,0,0,.5);
-        padding: 5px;
-        border: 1px solid rgba(0,0,0,.1);
-    }
-
-    .grid-item .title,.grid-item .date{
-        text-align:center;
-    }
-
-.post-image-list .post{
-    background-color:yellow;
-}
-
-.main-preview img{
-    width: 100% !important;
-    height: auto !important;
-}
-
-</style>
-
-
-
 {% for post in collections.latestPost %}
-    <h2>Latest Post: {{ post.data.title }}</h2>
-    <div class="main-preview">
-    {% responsiveImage post.data.coverImage post.data.title 1050 %}
-    </div>
-    {% comment %}
-    <img style="width:100%;height:auto" src="{{ config.imageDirectory }}{{ post.data.coverImage }}" />
-    {% endcomment %}
-
-    <br /><span>{{ post.url }}</span>
-    <br /><span>{{ post.date }}</span>
-    <br /><span>{{ post.data.tags }}</span>
-    <br /><span>{{ post.data.download }}</span>
-    <p>{{ post.templateContent }}</p>
+    {% assign latestPost = post %}
 {% endfor %}
+<div id="latest-post">
+    <h2 class="header">{{ latestPost.data.title }}</h2>
+    <h3 class="date">{{ latestPost.date | formatDate }}</h3>
+    <div class="main-preview">
 
-<h3>Last 6 posts!</h3>
+        {% if config.debug %}
+            <img src="{{ config.imageDirectory }}{{ latestPost.data.coverImage}}" />
+        {% else %}
+            {% responsiveImage latestPost.data.coverImage latestPost.data.title 1050 %}
+        {% endif %}
+        
+    </div>
+    <p>{{ latestPost.templateContent }}</p>
+    
+    {% if latestPost.data.tags != nil %}
+    <div class="tag-container">
+        <ul class="tags">
+            <span>🔖 </span> 
+            {% for tag in latestPost.data.tags %}
+                <li><a href="/tags/{{ tag }}">{{ tag }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="download-container">
+        <a href="{{ latestPost.data.download }}">Download! </a>
+    </div>
+    {% endif %}
 
+</div> 
+
+
+<h2 class="header">Last 6 posts!</h2>
 <div class="post-image-list">
     <div class="grid-row">
     {% for post in collections.getLatestPostCluster %}
-        <div class="grid-item">
-            <div class="preview">
-
-                {% responsiveImage post.data.coverImage post.data.title 275 %}
-                
-            </div>
-            <h5>{{ post.data.title }}</h5>
-            <h5 class="date">{{ post.date }}</h5>
+        <div class="grid-item third">
+            <a href="{{ post.url }}">
+                <div class="preview">
+                    {% if config.debug %}
+                        <img src="{{ config.imageDirectory }}{{ post.data.coverImage }}" />
+                    {% else %}
+                        {% responsiveImage post.data.coverImage post.data.title 275 %}
+                    {% endif %}
+                </div>
+                <h5>{{ post.data.title }}{{ post.data.url }}</h5>
+                <h5 class="date">{{ post.date | formatDate }}</h5>
+            </a>
         </div>
     {% endfor %}
     </div class="row">
 </div>
 
-
-<h2>What do I do here?</h2>
-
-sermon notes
-
-book summaries
-
-quotes
-
-<h2>Every Single Post Ever!</h2>
+<h2 class="header">Every Single Post Ever!</h2>
 
 {% for year in postYears %}
-    <h2>{{ year }}</h2>
+    <h2 class="header">{{ year }}</h2>
     <div class="post-image-list">
         <div class="grid-row">
         {% for post in collections.all reversed %}
@@ -111,23 +70,18 @@ quotes
             {% assign t = post.date | date: '%Y' %}
              
             {% if t contains year %}
-            <div class="grid-item">
-                <div class="preview">
-{% comment %}
-                    {% responsiveImage post.data.coverImage post.data.title 200 %}
-{% endcomment %}
-                    
-                    <img src="{{ config.imageDirectory }}{{ post.data.coverImage }}" />
-                    
-                </div>
-                <h5 class="title">{{ post.data.title }}</h5>
-                <h5>{{ post.data.coverImage }} </h5>
-                <h5 class="date">{{ post.date }}</h5>
-
-                {% comment %}
-                <br /><span>{{ post.data.tags }}</span>
-                <br /><span>{{ post.data.download }}</span>
-                {% endcomment %}
+             <div class="grid-item quarter">
+                <a href="{{ post.url }}">
+                    <div class="preview">
+                        {% if config.debug %}
+                            <img src="{{ config.imageDirectory }}{{ post.data.coverImage }}" />
+                        {% else %}
+                            {% responsiveImage post.data.coverImage post.data.title 275 true %}
+                        {% endif %}
+                    </div>
+                    <h5>{{ post.data.title }}{{ post.data.url }}</h5>
+                    <h5 class="date">{{ post.date | formatDate }}</h5>
+                </a>
             </div>
             {% endif %}
         {% endfor %}

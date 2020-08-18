@@ -14,6 +14,7 @@
     "@11ty/eleventy-plugin-rss": "^1.0.9"
   },
   "dependencies": {
-    "@11ty/eleventy-img": "^0.3.0"
+    "@11ty/eleventy-img": "^0.3.0",
+    "moment": "^2.27.0"
   }
 }
