@@ -58,12 +58,14 @@
       {% endif %}
 
       {% if tags != nil %}
-      <ul class="tags">
+      <div class="tag-container">
         <span>🔖 </span> 
-        {%- for tag in tags -%}
-          <li><a href="/tags/{{ tag }}">{{ tag }}</a></li>
-        {%- endfor -%}
-      </ul>
+        <ul class="tags">
+          {%- for tag in tags -%}
+            <li><a href="/tags/{{ tag }}">{{ tag }}</a></li>
+          {%- endfor -%}
+        </ul>
+      </div>
       {% endif %}
       </article>
       <footer>
