@@ -41,7 +41,7 @@ eleventyExcludeFromCollections: true
 
 <h2 class="header">Last 6 posts!</h2>
 <div class="post-image-list">
-    <div class="grid-row">
+    <div class="grid-row prominent">
     {% for post in collections.getLatestPostCluster %}
         <div class="grid-item third">
             <a href="{{ post.url }}">
@@ -53,7 +53,7 @@ eleventyExcludeFromCollections: true
                     {% endif %}
                 </div>
                 <h5>{{ post.data.title }}{{ post.data.url }}</h5>
-                <h5 class="date">{{ post.date | formatDate }}</h5>
+                <h6 class="date">{{ post.date | formatDate }}</h6>
             </a>
         </div>
     {% endfor %}
@@ -81,7 +81,7 @@ eleventyExcludeFromCollections: true
                         {% endif %}
                     </div>
                     <h5>{{ post.data.title }}{{ post.data.url }}</h5>
-                    <h5 class="date">{{ post.date | formatDate }}</h5>
+                    <h6 class="date">{{ post.date | formatDate }}</h6>
                 </a>
             </div>
             {% endif %}

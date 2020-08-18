@@ -10,24 +10,29 @@ eleventyExcludeFromCollections: true
         text-align:center;
     }
 
-    img.medium{
-        max-width:450px;
+    img{
+        max-width:1050px;
         width:100%;
         height:auto;
-    }
-
-    img.circle{
-        border-radius:50%;
     }
 
     .date{
         display:none;
     }
 
+    .author{
+        display:none;
+    }
+
 </style>
 
 <div class="cover-image">
-    <img class="medium circle" src="https://i2.wp.com/sketchysermons.com/wp-content/uploads/2020/03/Untitled_Artwork.png?resize=1536%2C1536&ssl=1" />
+    {% if config.debug %}
+            <img src="/images/site/about-sketchy-sermons.jpg" />
+        {% else %}
+            {% responsiveImage latestPost.data.coverImage latestPost.data.title 1050 %}
+        {% endif %}
+    
 </div>
 
 <p>Hi – my name is Paul Mignard. I own a tiny e-learning development company by day and other times when I’m not with my wife or my boys I’m creating art for this site.</p>
