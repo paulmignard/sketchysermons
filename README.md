@@ -1,4 +1,12 @@
-# I haven't written the readme yet 🤷‍♂️
+# This README is a work in progress 😬
+
+# Sketchy Sermons!
+
+This is the repo for my site: https:sketchysermons.com.
+
+# License
+
+All content here is licensed under the [Creative Commons license](https://creativecommons.org/licenses/by-nc-sa/4.0/). That means you're free to download, remix, redistribute, etc. Just don't sell something I've made here or include it in your products that you sell without contacting me first OK? 
 
 # Netlify Production Deploy
 
