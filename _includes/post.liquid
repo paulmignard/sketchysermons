@@ -43,7 +43,10 @@
       {% if download != null %}
         
         <div class="download-container">
-          <a href="/downloads/{{ download }}" download>Download 💾</a>
+          <a href="/downloads/{{ download }}" download>
+            <span>Download</span>
+            <img src="/images/site/feather-icons/download-cloud.svg" alt="cloud download icon" />
+          </a>
 
           <div class="download-preview">
             <img src="{{ featuredImage }}" />

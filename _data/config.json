@@ -1,4 +1,7 @@
 {
+    "siteUrl"           : "https://sketchysermons",
+    "siteName"          : "Sketchy Sermons",
+    "siteDescription"   : "Christian-themed artwork updated regularly!",
     "imageDirectory"    : "/images/posts/",
     "downloadDirectory" : "/downloads/", 
     "debug"             : true  

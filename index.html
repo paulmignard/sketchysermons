@@ -31,7 +31,7 @@ eleventyExcludeFromCollections: true
         </ul>
     </div>
     <div class="download-container">
-        <a href="{{ latestPost.data.download }}">Download! </a>
+        <a href="/downloads/{{ latestPost.data.download }}" download>Download! </a>
     </div>
     {% endif %}
 
@@ -46,7 +46,7 @@ eleventyExcludeFromCollections: true
             <a href="{{ post.url }}">
                 <div class="preview">
                     {% if config.debug %}
-                        <img src="{{ config.imageDirectory }}{{ post.data.coverImage }}" />
+                        <img src="{{ config.imageDirectory }}{{ post.data.coverImage }}" loading="lazy" />
                     {% else %}
                         {% responsiveImage post.data.coverImage post.data.title 275 %}
                     {% endif %}
@@ -74,7 +74,7 @@ eleventyExcludeFromCollections: true
                 <a href="{{ post.url }}">
                     <div class="preview">
                         {% if config.debug %}
-                            <img src="{{ config.imageDirectory }}{{ post.data.coverImage }}" />
+                            <img src="{{ config.imageDirectory }}{{ post.data.coverImage }}" loading="lazy" />
                         {% else %}
                             {% responsiveImage post.data.coverImage post.data.title 275 true %}
                         {% endif %}

@@ -3,8 +3,6 @@ var moment = require('moment');
 
 module.exports = function(eleventyConfig) {
 
-
-
     eleventyConfig.setQuietMode(true);
 
     // Alright, let's resize some images!

@@ -5,6 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }}</title>
 
+    
+    <meta name="robots" content="index,follow"/>
+
+    {% if title != nil %}
+    <meta property="og:title" content="{{ title }}">
+    <meta name="twitter:title" content="{{ title }}">
+    {% else %}
+    <meta property="og:title" content="{{ config.siteName }}">
+    <meta name="twitter:title" content="{{ config.siteName }}">
+    {% endif %}
+
+    <meta name="description" content="{{ config.siteDescription }}"/>
+    <meta property="og:description" content="{{ config.siteDescription }}">
+    
+    {% if coverImage != nil %}
+    <meta property="og:image" content="/images/post/{{ coverImage }}">
+    {% else %}
+    <meta property="og:image" content="/images/site/sketchy-header-v2.png">
+    {% endif %}
+    <meta property="og:url" content="{{ config.siteUrl }}{{ page.url }}">
+    <meta property="og:type" content="website"/>
+    <meta property="og:locale" content="en_US"/>
+
+    
+    <meta name="twitter:description" content="{{ config.siteDescription }}">
+    <meta name="twitter:image" content="/images/site/sketchy-twitter-card.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:creator" content="@paulmignard"/>
+
+    <meta property="fb:app_id" content="219386746046677"/>
+
     <style>
         @import url("https://use.typekit.net/ldl2qrh.css");
 
@@ -39,6 +70,57 @@
         height:auto;
       }
 
+
+    #logo-container{
+        width: 100%;
+        text-align: center;
+    }
+
+    #site-header nav{
+        text-align: center;
+    }
+
+    #site-header nav ul{
+        padding:10px 0;
+    }
+
+    #site-header nav ul li{
+        display:inline-block;
+        padding:0 5px;
+    }
+
+    /*footer*/
+
+    #copyright{
+        border-top:1px solid #dcd7ca;
+        padding:40px 0px;
+    }
+
+    .footer-widgets{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .widget{
+        flex: 0 50%;
+        /*height: 100px;
+        margin-bottom: 2%; /* (100-32*3)/2 */
+    }
+
+        .widget ul{
+            padding:10px 0;
+        }
+
+        .widget ul li{
+            list-style-type: none;
+        }
+
+    @media only screen and (max-width: 600px) {
+        .widget{
+            flex: 0 100%;
+        }
+    }
 
       #avatar img{
         border-radius:50%;
@@ -176,7 +258,7 @@
           text-align:center;
           margin-bottom:50px;
       }
-      
+
       .download-container{
         border: 1px solid lightgray;
         width: 100%;
@@ -227,7 +309,6 @@
       }
 
 </style>
-    </style>
 
   </head>
     <body>
