@@ -3,7 +3,7 @@ title: "Run The Race: Never, Never Quit"
 date: "2020-05-17"
 coverImage: "TRBC-5-17-20.png"
 
-tags:           ['post','download','sermon notes','dr jerry falwell','trbc']
+tags:           ['post','download','sermon notes','jerry falwell','trbc']
 download:       "TRBC-5-17-20.pdf"
 ---
 
