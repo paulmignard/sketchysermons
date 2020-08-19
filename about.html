@@ -16,19 +16,25 @@ eleventyExcludeFromCollections: true
         height:auto;
     }
 
-    .date,.author{
+    .date{
+        display:none;
+    }
+
+    .author{
         display:none;
     }
 
 </style>
 
 <div class="cover-image">
+    <img src="/images/site/about-sketchy-sermons.jpg" alt="Illustrated #toonme of Paul Mignard" />
+    {% comment %}
     {% if config.debug %}
-            <img src="/images/site/about-sketchy-sermons.jpg" />
-        {% else %}
-            {% responsiveImage latestPost.data.coverImage latestPost.data.title 1050 %}
-        {% endif %}
-    
+        <img src="/images/site/about-sketchy-sermons.jpg" />
+    {% else %}
+        {% responsiveImage "/images/site/about-sketchy-sermons.jpg" "Illustrated #toonme of Paul Mignard" 1050 %}
+    {% endif %}
+    {% endcomment %}
 </div>
 
 <p>Hi – my name is Paul Mignard. I own a tiny e-learning development company by day and other times when I’m not with my wife or my boys I’m creating art for this site.</p>

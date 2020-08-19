@@ -14,8 +14,10 @@ module.exports = function(eleventyConfig) {
         throw new Error(`Missing \`alt\` on myResponsiveImage from: ${src}`);
       }*/
 
-      src = "images/posts/" + src;
-      
+      if(!src.includes("/")){
+        src = "images/posts/" + src;
+      }
+
       console.log("Messing with image: " + src);
 
       // Let's figure out our width strategy here:
