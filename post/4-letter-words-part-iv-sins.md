@@ -1,6 +1,6 @@
 ---
 title: "4-Letter Words Part IV: Sins"
-date: "2020-08-016"
+date: "2020-08-16"
 coverImage: "reschurch-8-16-20.png"
 
 tags:           ['post','download','sermon notes','resurrection church','bryan shore']
