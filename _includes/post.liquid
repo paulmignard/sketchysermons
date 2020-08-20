@@ -21,18 +21,12 @@
           <aside id="featured-container">
             
             {% if config.debug %}
-                <img id="featured-image" src="/images/posts/{{ coverImage }}" alt="Cover Image for {{ coverImage }}" />
+                <img src="/images/posts/{{ coverImage }}" alt="Cover Image for {{ coverImage }}" />
             {% else %}
-                {% responsiveImage coverImage post.data.title 1050 %}
+                {% responsiveImage coverImage title 1050 %}
             {% endif %}
             
 
-            {% comment %}
-            {{ coverImage | makeResponsive: alt:"moar alt text", options:"options" }}
-
-              
-              <img id="featured-image" src="/images/posts/{{ coverImage }}" alt="Cover Image for {{ coverImage }}" />
-            {% endcomment %}
 
           </aside>
           {% endif %}
