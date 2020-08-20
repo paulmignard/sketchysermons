@@ -1,9 +1,15 @@
 const Image = require("@11ty/eleventy-img");
 var moment = require('moment');
+const CleanCSS = require("clean-css");
 
 module.exports = function(eleventyConfig) {
 
     eleventyConfig.setQuietMode(true);
+
+    // Let's clean and minify our css
+    eleventyConfig.addLiquidFilter("cssmin", function(code) {
+      return new CleanCSS({}).minify(code).styles;
+    });
 
     // Alright, let's resize some images!
     eleventyConfig.addLiquidShortcode("responsiveImage", async function(src, alt, size, lazy=false) {
@@ -96,6 +102,7 @@ module.exports = function(eleventyConfig) {
     });
 
     eleventyConfig.setTemplateFormats([
+        "css",
         "html",
         "liquid",
         "md"

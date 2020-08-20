@@ -30,333 +30,322 @@
 
     <meta property="fb:app_id" content="219386746046677"/>
 
+    <!-- feed it through our cssmin filter to minify -->
     <style>
-        @import url("https://use.typekit.net/ldl2qrh.css");
+    @import url("https://use.typekit.net/ldl2qrh.css");
 
-      body{
-        font-family: source-sans-pro, sans-serif;
-        letter-spacing: normal;
-        line-height: 1.8em;
-        font-size:1.2em;
-      }
-
-      h1,h2,h3,h4{
-        font-family: flood-std, sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        letter-spacing: -0.0415625em;
-        line-height: 1.25;
-        -webkit-font-smoothing: antialiased;
-      }
-
-      h1{
-        font-size:3em;
-        text-align:center;
-      }
-
-      h3{
-        font-size: 2.4rem;
-        text-align:center;
-      }
-
-      #featured-image{
-        width:100%;
-        height:auto;
-      }
-
-
-    #logo-container{
-        width: 100%;
-        text-align: center;
+    body{
+    font-family: source-sans-pro, sans-serif;
+    letter-spacing: normal;
+    line-height: 1.8em;
+    font-size:1.2em;
     }
 
-    #site-header nav{
-        text-align: center;
+    h1,h2,h3,h4{
+    font-family: flood-std, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: -0.0415625em;
+    line-height: 1.25;
+    -webkit-font-smoothing: antialiased;
     }
 
-    #site-header nav ul{
+    h1{
+    font-size:3em; 
+    text-align:center;
+    }
+
+    h3{
+    font-size: 2.4rem;
+    text-align:center;
+    }
+
+    #featured-container img{
+    width:97%;
+    height:auto;
+
+    border: 1px solid rgba(0,0,0,.1);
+    padding: 5px;
+    box-shadow: 0 2px 45px rgba(0,0,0,.2);
+    }
+
+
+#logo-container{
+    width: 100%;
+    text-align: center;
+}
+
+#site-header nav{
+    text-align: center;
+}
+
+#site-header nav ul{
+    padding:10px 0;
+}
+
+#site-header nav ul li{
+    display:inline-block;
+    padding:0 5px;
+}
+
+.latest-header{
+    text-align: center;
+    font-weight: 500;
+}
+
+/*footer*/
+
+#copyright{
+    border-top:1px solid #dcd7ca;
+    padding:40px 0px;
+}
+
+.footer-widgets{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.widget{
+    flex: 0 50%;
+    /*height: 100px;
+    margin-bottom: 2%; /* (100-32*3)/2 */
+}
+
+    .widget ul{
         padding:10px 0;
     }
 
-    #site-header nav ul li{
+    .widget ul li{
+        list-style-type: none;
+    }
+
+    #avatar img{
+    border-radius:50%;
+    width:100px;
+    }
+
+
+    #site-header{
+        margin:0 auto;
+        max-width:900px;
+        padding:15px;
+    }
+
+    #content,#site-footer{
+        margin:0 auto;
+        max-width:1024px;
+        padding:15px;
+    }
+
+    #site-footer .splash{
+        text-align:center;
+    }
+
+    .logo img{
+        width:100%;
+        max-width:550px;
+        text-align:center;
+    }
+
+    .tags{
+        padding-left:0;
+    }
+
+    .tags li{
         display:inline-block;
         padding:0 5px;
     }
 
-    .latest-header{
-        text-align: center;
-        font-weight: 500;
-        color: lightgray;
+    .footer-splash{
+        width:100%;
+        height:auto;
+        padding:50px 0 50px;
     }
 
-    /*footer*/
 
-    #copyright{
-        border-top:1px solid #dcd7ca;
-        padding:40px 0px;
+    a{
+        color: #cd2653;
+        font-weight: 700;
     }
 
-    .footer-widgets{
-        display:flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+    .post-image-list {
+    max-width: 1024px;
+    margin: 0 auto;
     }
 
-    .widget{
-        flex: 0 50%;
-        /*height: 100px;
-        margin-bottom: 2%; /* (100-32*3)/2 */
+    .grid-row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
     }
 
-        .widget ul{
-            padding:10px 0;
-        }
+    .grid-item {
+    -ms-flex: auto;
+    position: relative;
+    padding: 10px;
+    box-sizing: border-box;
+    }
 
-        .widget ul li{
-            list-style-type: none;
-        }
+    .third{
+        flex-basis: 33%;
+    }
 
-      #avatar img{
-        border-radius:50%;
-        width:100px;
-      }
+    .quarter{
+        flex-basis: 25%;
+    }
 
+    .grid-item .preview{
+        text-align:center;
+    }
 
-      #site-header{
-          margin:0 auto;
-          max-width:900px;
-          padding:15px;
-      }
-
-      #content,#site-footer{
-          margin:0 auto;
-          max-width:1024px;
-          padding:15px;
-      }
-
-      #site-footer .splash{
-          text-align:center;
-      }
-
-      .logo img{
-          width:100%;
-          max-width:550px;
-          text-align:center;
-      }
-
-      .tags{
-          padding-left:0;
-      }
-
-      .tags li{
-          display:inline-block;
-          padding:0 5px;
-      }
-
-      .footer-splash{
-          width:100%;
-          height:auto;
-          padding:50px 0 50px;
-      }
-
-
-      a{
-          color: #cd2653;
-          font-weight: 700;
-      }
-
-      .post-image-list {
-        max-width: 1024px;
-        margin: 0 auto;
-      }
-
-      .grid-row {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: flex-start;
-      }
-
-      .grid-item {
-        -ms-flex: auto;
-        position: relative;
-        padding: 10px;
-        box-sizing: border-box;
-      }
-
-      .third{
-          flex-basis: 33%;
-      }
-
-      .quarter{
-          flex-basis: 25%;
-      }
-
-      .grid-item .preview{
-          text-align:center;
-      }
-  
-      .grid-item .preview img{
-          width:auto;
-          height:150px;
-          /*min-height:200px;
-          min-width:200px;*/
-          box-shadow: 0 5px 5px rgba(0,0,0,.5);
-          border: 1px solid rgba(0,0,0,.1);
-          padding: 5px;
-      }
-
-      .prominent .preview img{
-          height:240px !important;
-      }
-
-      .grid-item .title,.grid-item .date{
-          margin-top:0;
-          text-align:center;
-      }
-
-      .grid-item h5{
-          font-weight: normal;
-          text-align: center;
-          margin-bottom: 0;
-          margin-top: 10px;
-      }
-
-      .grid-item h5.date{
-          color:#666;
-          font-weight: normal;
-          text-align: center;
-          margin-top: 0;
-      }
-
-      .post-image-list .post{
-          background-color:yellow;
-      }
-
-      .main-preview img{
-          width: 100% !important;
-          height: auto !important;
-      }
-
-      h2.header{
-          font-size:3em;
-          text-align:center;
-      }
-
-      h3.date{
-          text-align:center;
-      }
-
-      .post .title{
-          margin-top:0;
-          margin-bottom:0;
-      }
-
-      .post .date{
-          color: rgb(109, 109, 109);
-          font-weight:bold;
-          text-align:center;
-          margin-bottom:50px;
-      }
-
-      .download-container{
-        border: 1px solid lightgray;
-        width: 100%;
-        height: 160px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin:50px 0;
-        transform-style: preserve-3d;
-        perspective: 400px;
-      }
-
-      .download-container:hover .download-preview{
-        transform: rotateY(-35deg);
-      }
-
-
-
-      .download-preview{
-        position:absolute;
+    .grid-item .preview img{
+        width:auto;
         height:150px;
-        width:auto;
-        right: 46px;
-        top: 3px;
-        box-shadow:5px 5px 15px rgba(0,0,0,.5);
-        transform: rotateY(-30deg);
-        transition: transform 1s ease;
-      }
+        /*min-height:200px;
+        min-width:200px;*/
+        border: 1px solid rgba(0,0,0,.1);
+        padding: 5px;
+        box-shadow: 0 2px 45px rgba(0,0,0,.2);
+    }
 
-      .download-preview img{
-        height:100%;
-        width:auto;
-      }
 
-      
+    .grid-item .title,.grid-item .date{
+        text-align:center;
+    }
 
-      .download-container a{
-        font-size:2em;
-        color:lightgray;
-      }
+    .grid-item h5{
+        font-weight: normal;
+        text-align: center;
+        margin-bottom: 0;
+        margin-top: 10px;
+    }
+
+    .grid-item h6.date{
+        font-weight: normal;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    .post-image-list .post{
+        background-color:yellow;
+    }
+
+    .main-preview img{
+        width: 100% !important;
+        height: auto !important;
+        border: 1px solid rgba(0,0,0,.1);
+        padding: 5px;
+        box-shadow: 0 2px 45px rgba(0,0,0,.2);
+    }
+
+    h2.header{
+        font-size:3em;
+        text-align:center;
+    }
+
+    h3.date{
+        text-align:center;
+    }
+
+    .post .title{
+        margin-top:0;
+        margin-bottom:0;
+    }
+
+    .post .date{
+        font-weight:bold;
+        text-align:center;
+        margin-bottom:50px;
+    }
+
+    .download-container{
+    border: 1px solid lightgray;
+    width: 100%;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:50px 0;
+    transform-style: preserve-3d;
+    perspective: 400px;
+    }
+
+    .download-container:hover .download-preview{
+    transform: rotateY(-35deg);
+    }
+
+
+
+    .download-preview{
+    position:absolute;
+    height:150px;
+    width:auto;
+    right: 46px;
+    top: 3px;
+    box-shadow:5px 5px 15px rgba(0,0,0,.5);
+    transform: rotateY(-30deg);
+    transition: transform 1s ease;
+    }
+
+    .download-preview img{
+    height:100%;
+    width:auto;
+    }
+
     
+
+    .download-container a{
+    font-size:2em;
+    }
+
+.left{
+    text-align:left;
+}
+
+.right{
+    text-align:right;
+}
+
+@media only screen and (max-width: 600px) {
+    .download-container{
+        padding:0;
+    }
+    
+    .download-preview{
+        display:none;
+    }
+
     .left{
-        text-align:left;
+        text-align:center;
     }
 
     .right{
-        text-align:right;
+        text-align:center;
     }
 
-    .small-text{
-        font-size:.75em;
+    .quarter {
+        flex-basis: 100%;
     }
 
-    .tiny-icon{
-        width: 15px;
+    .third {
+        flex-basis: 100%;
+    }
+
+    .grid-item .preview img {
+        width: 90%;
         height: auto;
     }
 
-    @media only screen and (max-width: 600px) {
-        .download-container{
-            padding:0;
-        }
-        
-        .download-preview{
-            display:none;
-        }
-
-        .left{
-            text-align:center;
-        }
-
-        .right{
-            text-align:center;
-        }
-
-        .quarter {
-            flex-basis: 100%;
-        }
-
-        .third {
-            flex-basis: 100%;
-        }
-
-        .grid-item .preview img {
-            width: 90%;
-            height: auto;
-        }
-
-        .widget{
-            flex: 0 100%;
-        }
-
-        .widget h2{
-            text-align:center;
-        }
+    .widget{
+        flex: 0 100%;
     }
 
-</style>
-
+    .widget h2{
+        text-align:center;
+    }
+}
+    </style>
   </head>
     <body>
     <header id="site-header">
@@ -383,16 +372,18 @@
 
 <div id="latest-post">
     <div class="latest-header">Latest Post:</div>
-    <h2 class="header">Whom Do We Serve</h2>
+    <h2 class="header">4-Letter Words Part IV: Sins</h2>
     <h3 class="date">August 15th, 2020</h3>
     <div class="main-preview">
 
         
-            <img src="/images/posts/TRBC-8-16-20.png" />
+            <img src="/images/posts/reschurch-8-16-20.png" />
         
         
     </div>
-    <p><p>“Never forget your purpose.” I feel like that could be the last point to just about any mission statement out there. Pastor Jonathan was bringing some 🔥 at Thomas Road Baptist Church yesterday!</p>
+    <p><p>I finished the series of 4-letter Words from Resurrection Church in Aurora, IL and let me tell you; they don't shy away from the hard stuff over there. 😳 I really appreciated Pastor Bryans preaching and he spoke what is probably my new favorite phrase, &quot;I've read the book, we're not ok.&quot;</p>
+<p>Step into the light daily my brothers and sisters. 🙌</p>
+<p><a href="http://reschurch.net">Resurrection Church</a></p>
 </p>
     
     
@@ -406,16 +397,14 @@
             
                 <li><a href="/tags/sermon notes">sermon notes</a></li>
             
-                <li><a href="/tags/trbc">trbc</a></li>
+                <li><a href="/tags/resurrection church">resurrection church</a></li>
             
-                <li><a href="/tags/jonathan falwell">jonathan falwell</a></li>
-            
-                <li><a href="/tags/jerry falwell">jerry falwell</a></li>
+                <li><a href="/tags/bryan shore">bryan shore</a></li>
             
         </ul>
     </div>
     <div class="download-container">
-        <a href="/downloads/TRBC-8-16-20.pdf" download>Download! </a>
+        <a href="/downloads/reschurch-8-16-20.pdf" download>Download! </a>
     </div>
     
 
@@ -425,6 +414,18 @@
 <h2 class="header">Last 6 posts!</h2>
 <div class="post-image-list">
     <div class="grid-row prominent">
+    
+        <div class="grid-item third">
+            <a href="/post/whom-do-we-serve/">
+                <div class="preview">
+                    
+                        <img src="/images/posts/TRBC-8-16-20.png" loading="lazy" />
+                    
+                </div>
+                <h5>Whom Do We Serve</h5>
+                <h6 class="date">August 15th, 2020</h6>
+            </a>
+        </div>
     
         <div class="grid-item third">
             <a href="/post/ezekiel-37_9/">
@@ -486,18 +487,6 @@
             </a>
         </div>
     
-        <div class="grid-item third">
-            <a href="/post/4-letter-words-part-ii-hell/">
-                <div class="preview">
-                    
-                        <img src="/images/posts/reschurch-8-2-20.png" loading="lazy" />
-                    
-                </div>
-                <h5>4-Letter Words Part II: Hell</h5>
-                <h6 class="date">August 1st, 2020</h6>
-            </a>
-        </div>
-    
     </div class="row">
 </div>
 
@@ -520,6 +509,23 @@
                         
                     </div>
                     <h5>Whom Do We Serve</h5>
+                    <h6 class="date">August 15th, 2020</h6>
+                </a>
+            </div>
+            
+        
+            
+            
+             
+            
+             <div class="grid-item quarter">
+                <a href="/post/4-letter-words-part-iv-sins/">
+                    <div class="preview">
+                        
+                            <img src="/images/posts/reschurch-8-16-20.png" loading="lazy" />
+                        
+                    </div>
+                    <h5>4-Letter Words Part IV: Sins</h5>
                     <h6 class="date">August 15th, 2020</h6>
                 </a>
             </div>
@@ -2363,6 +2369,11 @@
             
              
             
+        
+            
+            
+             
+            
              <div class="grid-item quarter">
                 <a href="/post/parables/">
                     <div class="preview">
@@ -3789,6 +3800,11 @@
             
              
             
+        
+            
+            
+             
+            
              <div class="grid-item quarter">
                 <a href="/post/final-word-for-the-year/">
                     <div class="preview">
@@ -4239,6 +4255,11 @@
     <h2 class="header">2017</h2>
     <div class="post-image-list">
         <div class="grid-row">
+        
+            
+            
+             
+            
         
             
             
