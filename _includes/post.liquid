@@ -53,8 +53,8 @@
 
       {% if tags != nil %}
       <div class="tag-container">
-        <span>🔖 </span> 
         <ul class="tags">
+          <li>🔖</li>
           {%- for tag in tags -%}
             <li><a href="/tags/{{ tag }}">{{ tag }}</a></li>
           {%- endfor -%}

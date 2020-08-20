@@ -9,7 +9,7 @@ eleventyExcludeFromCollections: true
 {% endfor %}
 <div id="latest-post">
     <div class="latest-header">Latest Post:</div>
-    <h2 class="header">{{ latestPost.data.title }}</h2>
+    <h2 class="header"><a href="{{ latestPost.url}}">{{ latestPost.data.title }}</a></h2>
     <h3 class="date">{{ latestPost.date | formatDate }}</h3>
     <div class="main-preview">
 
@@ -24,8 +24,8 @@ eleventyExcludeFromCollections: true
     
     {% if latestPost.data.tags != nil %}
     <div class="tag-container">
-        <span>🔖 </span> 
         <ul class="tags">
+            <li>🔖</li>
             {% for tag in latestPost.data.tags %}
                 <li><a href="/tags/{{ tag }}">{{ tag }}</a></li>
             {% endfor %}
