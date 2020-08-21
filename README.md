@@ -2,7 +2,7 @@
 
 # Sketchy Sermons!
 
-This is the repo for my site: https:sketchysermons.com.
+This is the repo for my site: https:sketchysermons.com. This is definitely NOT a tutorial of how to properly build an eleventy site; I'm just putting things together part by part and trying to smooth out the rough edges. 🤷‍♂️
 
 # License
 
