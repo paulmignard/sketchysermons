@@ -166,6 +166,8 @@
     }
 
     .grid-item .download .icon{
+        /* PUT THIS BACK IN */
+        display:none;
         background-color:white;
         position:absolute;
         width:30px;
