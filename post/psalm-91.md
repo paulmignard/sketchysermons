@@ -1,5 +1,5 @@
 ---
-title:          "Psalm 27"
+title:          "Psalm 91: Angels"
 date:           "2020-08-21"
 coverImage:     "Psalm-91-11.png"
 
