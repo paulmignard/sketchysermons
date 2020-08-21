@@ -46,6 +46,14 @@ eleventyExcludeFromCollections: true
         <div class="grid-item third">
             <a href="{{ post.url }}">
                 <div class="preview">
+                    {% if post.data.download != nil %}
+                        <div class="download">
+                            <a href="{{ config.downloadDirectory }}{{ post.data.download }}" download>
+                                <img class="icon" src="/images/site/feather-icons/download-cloud.svg" alt="Download High Resolution PDF" />
+                            </a>
+                        </div>
+                    {% endif %}
+
                     {% if config.debug %}
                         <img src="{{ config.imageDirectory }}{{ post.data.coverImage }}" loading="lazy" />
                     {% else %}
@@ -83,6 +91,13 @@ eleventyExcludeFromCollections: true
                     <h5>{{ post.data.title }}{{ post.data.url }}</h5>
                     <h6 class="date">{{ post.date | formatDate }}</h6>
                 </a>
+                {% if post.data.download != nil %}
+                    <div class="download">
+                        <a href="{{ config.downloadDirectory }}{{ post.data.download }}" download>
+                            <img class="icon" src="/images/site/feather-icons/download-cloud.svg" alt="Download High Resolution PDF" />
+                        </a>
+                    </div>
+                {% endif %}
             </div>
             {% endif %}
         {% endfor %}

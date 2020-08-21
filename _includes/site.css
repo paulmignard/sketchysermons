@@ -165,6 +165,27 @@
         text-align:center;
     }
 
+    .grid-item .download .icon{
+        background-color:white;
+        position:absolute;
+        width:30px;
+        height:30px;
+        right:15px;
+        top:140px;
+        padding:5px;
+        border-radius:50%;
+        border: 1px solid rgba(0,0,0,.1);
+        box-shadow: 0 2px 45px rgba(0,0,0,.2);
+        opacity:.5;
+        transition: opacity .5s;
+        transition-timing-function: ease-in;
+    }
+
+    .grid-item .download .icon:hover{
+        opacity:1;
+        box-shadow: 0 2px 45px rgba(0,0,0,.3);
+    }
+
     .grid-item .preview img{
         width:auto;
         height:150px;
