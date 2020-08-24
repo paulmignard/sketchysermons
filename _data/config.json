@@ -4,5 +4,5 @@
     "siteDescription"   : "Christian-themed artwork updated regularly!",
     "imageDirectory"    : "/images/posts/",
     "downloadDirectory" : "/downloads/", 
-    "debug"             : false  
+    "debug"             : true  
 }
