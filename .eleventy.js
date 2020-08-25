@@ -6,7 +6,12 @@ module.exports = function(eleventyConfig) {
 
     eleventyConfig.setQuietMode(true);
 
-    // Let's clean and minify our css
+    // I don't know if this matters where I place these
+    eleventyConfig.addPassthroughCopy("downloads");
+    eleventyConfig.addPassthroughCopy("images/posts");
+    eleventyConfig.addPassthroughCopy("images/site");
+
+    // Let's clean and minify our csss
     eleventyConfig.addLiquidFilter("cssmin", function(code) {
       return new CleanCSS({}).minify(code).styles;
     });
@@ -109,9 +114,6 @@ module.exports = function(eleventyConfig) {
     ]);
 
     eleventyConfig.addPassthroughCopy("img");
-    eleventyConfig.addPassthroughCopy("downloads");
-    eleventyConfig.addPassthroughCopy("images/posts");
-    eleventyConfig.addPassthroughCopy("images/site");
 
     // Let's set up liquid!
     let liquidJs = require("liquidjs");
