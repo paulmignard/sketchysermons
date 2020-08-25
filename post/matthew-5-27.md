@@ -4,7 +4,7 @@ date: "2020-08-24"
 coverImage: "Matthew-5-27.png"
 
 tags:           ['post','download','verse','matthew','sermon on the mount']
-download:       "Matthew-5-27.pdf"
+download:       "Matthew-5-27.pdf" 
 ---
 
-Pastor Jonathan spoke of hypocrisy and how to be an example on Sunday and what a powerful message it is. Christians in particular will have the light of truth pointed at them at one time or another and it’s vitally important that what we say and what we do match. I know so many times it’s easy to look like the world; we allow everything to be permissible and end up in the same predicaments that we actively preach against. We can do better. Like Pastor Jonathan said; we’ve been given a gift. What are we doing with it?
+I know I know…Jesus was being hyperbolic when he said this. He didn’t expect a legion of Christians to gouge out their eyes to prevent themselves from sinning. Why I drew this though (besides the interesting imagery) is because I’m impacted by Jesus’ message of personal responsibility here. Almost everything he speaks about in the Sermon on the Mount is about us taking responsibility for our actions, our feelings, and the not-obvious ways we are supposed to react to strife and adversity. It’s a poetic and prescriptive solution to many of the problems we face. You may or may not be able to change the situation - but you can always change yourself.
