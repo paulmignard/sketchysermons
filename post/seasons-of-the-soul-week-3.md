@@ -1,5 +1,5 @@
 ---
-title: "Season of the Soul - Week 2"
+title: "Season of the Soul - Week 3"
 date: "2020-09-20T00:10"
 coverImage: "waymaker-9-20-20.png"
 
